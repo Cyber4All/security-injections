@@ -1,2 +1,4 @@
 node_modules
 public
+scripts/*.csv
+.DS_Store
