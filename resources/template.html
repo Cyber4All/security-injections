@@ -85,7 +85,7 @@
 
 								<div ng-switch-when="image" class="col-sm-12">
 									<img src="{{ unit.src }}" alt="{{ unit.alt }}"
-										style="width: {{ unit.width }} px; height: {{ unit.height }} px; float: {{ unit.float }}; align: {{ unit.align }};"
+										ng-style="{ 'width': '{{unit.width}}px', 'height': '{{ unit.height }} px', 'float': '{{ unit.float }}', 'align': '{{ unit.align }}'}"
 										class="img-responsive">
 								</div>
 								<div ng-switch-when="video" class="col-sm-12 embed-responsive embed-responsive-16by9">
@@ -234,7 +234,7 @@
 										</div>
 									</div>
 									<div class="col-sm-7 checklist-block" style="position:relative;">
-										<p>Complete by clicking the corresponding code below</p>
+										<p ng-if="unit.code">Complete by clicking the corresponding code below</p>
 										<pre ng-if="unit.code" class="si-checklist-code" ng-bind-html="unit.code"></pre>
 										<script ng-if="unit.javascript" ng-bind="unit.javascript"></script>
 										<noscript>
