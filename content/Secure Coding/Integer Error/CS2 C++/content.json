@@ -298,7 +298,7 @@
                         },
                         {
                             "id": "vuln",
-                            "header": "For each variable:",
+                            "header": "Check each variable instance:",
                             "items": [
                                 {
                                     "id": "input",

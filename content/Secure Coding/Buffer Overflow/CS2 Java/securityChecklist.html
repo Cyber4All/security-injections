@@ -22,8 +22,8 @@ public class Overflow {
   }
 
   public static void copyVals(<span class="span-Pgm1CL Pgm1CL-function-loop-Pgm1CL">String s</span>,  <span class="span-Pgm1CL Pgm1CL-array-dec-Pgm1CL">char[] vals</span>) {   <span class = "span-Pgm1CL Pgm1CL-function-range-Pgm1CL"></span>
-    for (<span class="span-Pgm1CL Pgm1CL-var-modify-Pgm1CL">int <span class="span-Pgm1CL Pgm1CL-var-occur-Pgm1CL">i</span> = 0;</span> <span class="span-Pgm1CL Pgm1CL-var-occur-Pgm1CL">i</span> < <span class="span-Pgm1CL Pgm1CL-loop-limit-Pgm1CL">s.length()</span>; <span class="span-Pgm1CL Pgm1CL-var-modify-Pgm1CL"><span class="span-Pgm1CL Pgm1CL-var-occur-Pgm1CL">i++</span></span>) { <span class = "span-Pgm1CL Pgm1CL-loop-range-Pgm1CL"></span>
-      <span class="span-Pgm1CL Pgm1CL-var-array-Pgm1CL"><span class="span-Pgm1CL Pgm1CL-array-ref-Pgm1CL">vals[<span class="span-Pgm1CL Pgm1CL-var-occur-Pgm1CL">i</span>]</span></span> = s.charAt(<span class="span-Pgm1CL Pgm1CL-var-occur-Pgm1CL">i</span>);  <span class = "span-Pgm1CL Pgm1CL-var-range-Pgm1CL"></span>
+    for (<span class="span-Pgm1CL Pgm1CL-var-modify-Pgm1CL">int<span class="span-Pgm1CL Pgm1CL-var-occur-Pgm1CL"> i </span>= 0;</span><span class="span-Pgm1CL Pgm1CL-var-occur-Pgm1CL"> i </span>< <span class="span-Pgm1CL Pgm1CL-loop-limit-Pgm1CL">s.length()</span>; <span class="span-Pgm1CL Pgm1CL-var-modify-Pgm1CL"><span class="span-Pgm1CL Pgm1CL-var-occur-Pgm1CL">i++</span></span>) { <span class = "span-Pgm1CL Pgm1CL-loop-range-Pgm1CL"></span>
+      <span class="span-Pgm1CL Pgm1CL-var-array-Pgm1CL"><span class="span-Pgm1CL Pgm1CL-array-ref-Pgm1CL">vals<span class="span-Pgm1CL Pgm1CL-var-occur-Pgm1CL">[i]</span></span></span> = s.charAt<span class="span-Pgm1CL Pgm1CL-var-occur-Pgm1CL">(i)</span>;  <span class = "span-Pgm1CL Pgm1CL-var-range-Pgm1CL"></span>
     }
   }
 
@@ -40,8 +40,8 @@ public class Overflow {
   public static char[] getChars(<span class="span-Pgm1CL Pgm1CL-function-index-Pgm1CL">int start</span>, <span class="span-Pgm1CL Pgm1CL-function-index-Pgm1CL">int end</span>,  <span class="span-Pgm1CL Pgm1CL-array-dec-Pgm1CL">char[] vals</span>) {   <span class = "span-Pgm1CL Pgm1CL-function-range-Pgm1CL"></span>
     int sz = end - start;
     <span class="span-Pgm1CL Pgm1CL-array-dec-Pgm1CL">char[] result</span> = new char[sz];
-    for (<span class="span-Pgm1CL Pgm1CL-var-modify-Pgm1CL">int <span class="span-Pgm1CL Pgm1CL-var-occur-Pgm1CL">i</span> = 0;</span> <span class="span-Pgm1CL Pgm1CL-var-occur-Pgm1CL">i</span> < <span class="span-Pgm1CL Pgm1CL-loop-limit-Pgm1CL">sz</span>; <span class="span-Pgm1CL Pgm1CL-var-modify-Pgm1CL"><span class="span-Pgm1CL Pgm1CL-var-occur-Pgm1CL">i++</span></span>) {  <span class = "span-Pgm1CL Pgm1CL-loop-range-Pgm1CL"></span>
-      <span class="span-Pgm1CL Pgm1CL-var-array-Pgm1CL"><span class="span-Pgm1CL Pgm1CL-array-ref-Pgm1CL">result[<span class="span-Pgm1CL Pgm1CL-var-occur-Pgm1CL">i</span>]</span></span> = <span class="span-Pgm1CL Pgm1CL-array-ref-Pgm1CL"><span class="span-Pgm1CL Pgm1CL-var-array-Pgm1CL">vals[<span class="span-Pgm1CL Pgm1CL-var-modify-Pgm1CL">start + <span class="span-Pgm1CL Pgm1CL-var-occur-Pgm1CL">i</span></span>]</span></span>;  <span class = "span-Pgm1CL Pgm1CL-var-range-Pgm1CL"></span>
+    for (<span class="span-Pgm1CL Pgm1CL-var-modify-Pgm1CL">int<span class="span-Pgm1CL Pgm1CL-var-occur-Pgm1CL"> i </span>= 0;</span><span class="span-Pgm1CL Pgm1CL-var-occur-Pgm1CL"> i </span>< <span class="span-Pgm1CL Pgm1CL-loop-limit-Pgm1CL">sz</span>; <span class="span-Pgm1CL Pgm1CL-var-modify-Pgm1CL"><span class="span-Pgm1CL Pgm1CL-var-occur-Pgm1CL">i++</span></span>) {  <span class = "span-Pgm1CL Pgm1CL-loop-range-Pgm1CL"></span>
+      <span class="span-Pgm1CL Pgm1CL-var-array-Pgm1CL"><span class="span-Pgm1CL Pgm1CL-array-ref-Pgm1CL">result<span class="span-Pgm1CL Pgm1CL-var-occur-Pgm1CL">[i]</span></span></span> = <span class="span-Pgm1CL Pgm1CL-array-ref-Pgm1CL"><span class="span-Pgm1CL Pgm1CL-var-array-Pgm1CL">vals[<span class="span-Pgm1CL Pgm1CL-var-modify-Pgm1CL">start +<span class="span-Pgm1CL Pgm1CL-var-occur-Pgm1CL"> i;</span></span>]</span></span>  <span class = "span-Pgm1CL Pgm1CL-var-range-Pgm1CL"></span>
     }
     return <span class="span-Pgm1CL Pgm1CL-array-ref-Pgm1CL">result</span>;
   }

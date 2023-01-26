@@ -320,7 +320,7 @@
                             "items": [
                                 {
                                     "id": "var",
-                                    "text": "Click each declaration of an integer variable.",
+                                    "text": "Click each declaration of a variable.",
                                     "ans": true,
                                     "js": true
                                 }
@@ -328,7 +328,7 @@
                         },
                         {
                             "id": "vuln",
-                            "header": "For each variable:",
+                            "header": "Check each variable instance:",
                             "items": [
                                 {
                                     "id": "input",

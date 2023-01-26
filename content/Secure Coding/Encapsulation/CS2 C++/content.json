@@ -507,13 +507,13 @@
         								},
         								{
         									"id": "access",
-        									"text": "Click the method header of each method that accesses the values of private data members, but does not change them",
+        									"text": "For each method that accesses the values of private data members, click the method header",
         									"ans": true,
         									"js": true
         								},
         								{
         									"id": "modify",
-        									"text": "Click the method header of each method that changes the value of any private data member",
+        									"text": "For each method that accesses the values of private data members, click the method header",
         									"ans": true,
         									"js": true
         								}

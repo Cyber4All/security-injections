@@ -306,13 +306,13 @@
                             "items": [
                                 {
                                     "id": "dec",
-                                    "text": "Click each array declaration in the above code",
+                                    "text": "Click the array declaration in the above code",
                                     "ans": true,
                                     "js": true
                                 },
                                 {
                                     "id": "ref",
-                                    "text": "For each array, click all subsequent references",
+                                    "text": "Click any subsequent array references",
                                     "ans": true,
                                     "js": true
                                 }
@@ -324,25 +324,25 @@
                             "items": [
                                 {
                                     "id": "range",
-                                    "text": "For each array access that uses a variable as an index, write the legal index range next to it",
+                                    "text": "Write the legal index range of the array that uses a variable as an index",
                                     "ans": true,
                                     "js": true
                                 },
                                 {
                                     "id": "occur",
-                                    "text": "For each index marked in the previous step, click all occurrences of that variable",
+                                    "text": "Click all occurrences of the index variable from the previous step",
                                     "ans": true,
                                     "js": true
                                 },
                                 {
                                     "id": "modify",
-                                    "text": "Click any assignments, inputs or operations that may modify these index variables",
+                                    "text": "Click any assignments, inputs or operations that may modify the index variable",
                                     "ans": true,
                                     "js": true
                                 },
                                 {
                                     "id": "array",
-                                    "text": "Click any array that is indexed by a highlighted index variable",
+                                    "text": "Click the array reference that gets indexed by the variable",
                                     "ans": true,
                                     "js": true
                                 }
@@ -354,13 +354,13 @@
                             "items": [
                                 {
                                     "id": "limit",
-                                    "text": "Find loops that modify variables used to index arrays. For any index that occurs as part of a loop conditional, click the loop limit",
+                                    "text": "Find the loop that modifies the array index variable and click the loop limit",
                                     "ans": true,
                                     "js": true
                                 },
                                 {
                                     "id": "range",
-                                    "text": "Fill in the legal range of the array index next to the loop limit. Note if the loop limit could exceed the legal range of the array index.",
+                                    "text": "Fill in the legal range of the array index. Note if the loop limit could exceed the legal range of the array index.",
                                     "ans": true,
                                     "js": true
                                 }
