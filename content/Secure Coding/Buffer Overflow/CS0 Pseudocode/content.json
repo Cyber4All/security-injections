@@ -275,7 +275,7 @@
       								},
                       {
       									"id": "array",
-      									"text": "Click the array reference that gets indexed by the variable",
+      									"text": "Click the array that is indexed by a variable",
       									"ans": true,
       									"js": true
       								}
