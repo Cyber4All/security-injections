@@ -10,6 +10,8 @@ $(document).ready(function() {
 
 	var spans = [];
 
+	var previousWaitingOnCount = 0;
+
 	/**
 	 * returns the id of the next question, and rearranges class indicators
 	 * if question is not provided, initialize the first question
@@ -27,7 +29,6 @@ $(document).ready(function() {
 						// take focus away from current question
 						$("#"+question+"-label").removeClass("si-checklist-active");
 
-
 						switch(question) { // here's where flow is really controlled
 						case name+"-array-dec":		next = name+"-array-ref";	break;
 						case name+"-array-ref":	next = name+"-var-range";	break;
@@ -40,6 +41,11 @@ $(document).ready(function() {
 
 					// focus on next question
 					$("#"+next+"-label").addClass("si-checklist-active");
+
+					// remove hidden class from progress bar when user clicks correct answer
+					$("#" + next + "-progress-label").removeClass("progress-hidden");
+					// add the progress bar fill
+					$("#" + next + "-progress-label").addClass("progress");
 
 				if(next === name+"-var-range"){ //IF POPOVER IS NEEDED
 					waitingOn = []; //Gather spans
@@ -102,6 +108,9 @@ $(document).ready(function() {
 					span.addClass("si-code-vulnerability"); //	some spans get extra graphics to indicate vulnerability
 				}
 
+				// logic for increasing the progress bar
+				let currentProgress = ((clicked.length - previousWaitingOnCount)/waitingOn.length)*100;
+				document.getElementById(current + "-progress-data-label").style.width = `${currentProgress}%`;
 
 				// Check if 'current' question is finished yet
 				var finished = true;
@@ -110,7 +119,10 @@ $(document).ready(function() {
 				}
 
 				// if it is, go to next question
-				if(finished) current = advance(current);
+				if(finished) {
+					previousWaitingOnCount += waitingOn.length;
+					current = advance(current);
+				}
 			}
 		});
 	});

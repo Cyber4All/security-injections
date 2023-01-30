@@ -8,6 +8,8 @@ $(document).ready(function() {
 	// track which spans are needed for current question
 	var waitingOn = [];
 
+	var previousWaitingOnCount = 0;
+
 
 	/**
 	 * returns the id of the next question, and rearranges class indicators
@@ -29,6 +31,11 @@ $(document).ready(function() {
 		}
 		// focus on next question
 		$("#"+next+"-label").addClass("si-checklist-active");
+
+		// remove hidden class from progress bar when user clicks correct answer
+        $("#" + next + "-progress-label").removeClass("progress-hidden");
+        // add the progress bar fill
+        $("#" + next + "-progress-label").addClass("progress");
 
 		// track which spans are needed for next question
 		waitingOn = [];
@@ -60,13 +67,20 @@ $(document).ready(function() {
 				}
 
 
+				// logic for increasing the progress bar
+				let currentProgress = ((clicked.length - previousWaitingOnCount)/waitingOn.length)*100;
+				document.getElementById(current + "-progress-data-label").style.width = `${currentProgress}%`;
+
 				// Check if 'current' question is finished yet
 				var finished = true;
 				for(i in waitingOn) {
 					finished &= $.inArray(waitingOn[i],clicked) >= 0;
 				}
 				// if it is, go to next question
-				if(finished) current = advance(current);
+				if(finished) {
+					previousWaitingOnCount += waitingOn.length;
+					current = advance(current);
+				}
 			}
 		});
 	});

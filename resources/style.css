@@ -529,3 +529,30 @@ z-index: 1;
 .si-code-vulnerability {
 	background-color: yellow;
 }
+
+
+.progress{
+	width: auto;
+	height: 20px;
+	opacity: 100%;
+	margin-top: 10px;
+	position:relative;
+	border-radius: 10px;
+	background-color: #c9c9c9;
+	transition-delay: 1s;
+	transition: opacity 1s;
+}
+
+.progress-data{
+	width: 0%;
+	height: 100%;
+	background-color: darkgreen;
+	border-radius: 10px;
+	position: absolute;
+	transition: width 1s;
+}
+
+.progress-hidden {
+	visibility: hidden;
+	opacity: 0%;
+}
