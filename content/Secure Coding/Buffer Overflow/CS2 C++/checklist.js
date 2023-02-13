@@ -40,9 +40,6 @@ $(document).ready(function () {
 				next = name + "-array-ref";
 				break;
 			case name + "-array-ref":
-				next = name + "-var-range";
-				break;
-			case name + "-var-range":
 				next = name + "-var-occur";
 				break;
 			case name + "-var-occur":
@@ -64,9 +61,6 @@ $(document).ready(function () {
 				next = name + "-function-loop";
 				break;
 			case name + "-function-loop":
-				next = name + "-function-range";
-				break;
-			case name + "-function-range":
 				next = name + "-function-call";
 				break;
 	
@@ -83,17 +77,11 @@ $(document).ready(function () {
 		$("#" + next + "-progress-label").addClass("progress");
   
 		//IF POPOVER IS NEEDED
-		if (
-			next === name + "-var-range" ||
-			next === name + "-loop-range" ||
-			next === name + "-function-range"
-		) {
+		if (next === name + "-loop-range") {
 
-			// remove progress bar
-			if (next.endsWith("var-occur") || next.endsWith("var-range") || next.endsWith("-loop-range")) {
-				$("#"+next+"-progress-label").removeClass("progress");
-				$("#"+next+"-progress-label").addClass("progress-hidden");
-			}
+			//remove progress bar
+			$("#"+next+"-progress-label").removeClass("progress");
+			$("#"+next+"-progress-label").addClass("progress-hidden");
 	
 			waitingOn = []; // gather spans remaining to be clicked
 	
@@ -208,7 +196,7 @@ $(document).ready(function () {
 	  $(".popover").css({
 		position: "absolute",
 		top: (position.top - (theHeight / 2) - 5) + "px",
-		left: (position.left + 100) + "px",
+		left: (position.left + 50) + "px",
 	  });
 	}
   });
