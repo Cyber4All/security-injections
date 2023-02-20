@@ -126,7 +126,7 @@ $(document).ready(function () {
 						$(".span-" + name).click(); //click the empty span so that next question is asked.
 					}
 				} else {
-					//$('.popover').css('background-color', 'lightpink');
+					$('.popover').css('background-color', 'lightpink');
 				}
 			});
 		} else { // NORMAL QUESTION
