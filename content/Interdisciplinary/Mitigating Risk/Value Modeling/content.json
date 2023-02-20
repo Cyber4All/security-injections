@@ -48,7 +48,7 @@
                 },
                 {
                     "type": "image",
-                    "src": "http://cis1.towson.edu/~cyber4all/wp-content/uploads/2017/08/marylandmap.png",
+                    "src": "https://cisserv1.towson.edu/~cyber4all/wp-content/uploads/2017/08/marylandmap.png",
                     "alt": " ",
                     "width": "858",
                     "height": "416",
@@ -165,7 +165,7 @@
                         },
                         {
                             "type": "image",
-                            "src": "http://cis1.towson.edu/~cyber4all/wp-content/uploads/2017/08/scsHeirarchy.png",
+                            "src": "https://cisserv1.towson.edu/~cyber4all/wp-content/uploads/2017/08/scsHeirarchy.png",
                             "alt": " ",
                             "width": "910",
                             "height": "525",
@@ -234,7 +234,7 @@
                         },
                         {
                             "type": "image",
-                            "src": "http://cis1.towson.edu/~cyber4all/wp-content/uploads/2017/08/math1.png",
+                            "src": "https://cisserv1.towson.edu/~cyber4all/wp-content/uploads/2017/08/math1.png",
                             "alt": " ",
                             "width": "125",
                             "height": "65",
@@ -246,7 +246,7 @@
                         },
                         {
                             "type": "image",
-                            "src": "http://cis1.towson.edu/~cyber4all/wp-content/uploads/2017/08/math2.png",
+                            "src": "https://cisserv1.towson.edu/~cyber4all/wp-content/uploads/2017/08/math2.png",
                             "alt": " ",
                             "width": "144",
                             "height": "70",

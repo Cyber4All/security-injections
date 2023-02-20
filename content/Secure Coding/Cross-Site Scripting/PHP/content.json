@@ -76,7 +76,7 @@
                 },
                 {
                     "type": "paragraph",
-                    "text": "<a href = http://cis1.towson.edu/~cssecinj/modules/other-modules/web-development/cross-site-scripting-xss-web-development/shopwithtrust.com/post-rating.php?product=5&comment=somecomment>Click here to post a comment for the product you just bought</a>"
+                    "text": "<a href = https://cisserv1.towson.edu/~cssecinj/modules/other-modules/web-development/cross-site-scripting-xss-web-development/shopwithtrust.com/post-rating.php?product=5&comment=somecomment>Click here to post a comment for the product you just bought</a>"
                 },
                 {
                     "type": "paragraph",
@@ -84,7 +84,7 @@
                 },
                 {
                     "type": "paragraph",
-                    "text": "<a href = http://cis1.towson.edu/~cssecinj/modules/other-modules/web-development/cross-site-scripting-xss-web-development/shopwithtrust.com/post-rating.php?product=5&comment=somecomment>Click here to post a comment for the product you just bought</a>"
+                    "text": "<a href = https://cisserv1.towson.edu/~cssecinj/modules/other-modules/web-development/cross-site-scripting-xss-web-development/shopwithtrust.com/post-rating.php?product=5&comment=somecomment>Click here to post a comment for the product you just bought</a>"
                 },
                 {
                     "type": "paragraph",
@@ -284,7 +284,7 @@
                 },
                 {
                     "type": "paragraph",
-                    "text": "1. Complete the security checklist for this program (click <a href = http://cis1.towson.edu/~cssecinj/modules/other-modules/web-development/cross-site-scripting-xss-web-development/checklist-cross-site-scripting-xss-–-web-development/> here</a> to print the checklist and the code above)."
+                    "text": "1. Complete the security checklist for this program (click <a href = https://cisserv1.towson.edu/~cssecinj/modules/other-modules/web-development/cross-site-scripting-xss-web-development/checklist-cross-site-scripting-xss-–-web-development/> here</a> to print the checklist and the code above)."
                 },
                 {
                     "type": "paragraph",

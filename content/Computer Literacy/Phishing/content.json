@@ -52,7 +52,7 @@
                 },
                 {
                     "type": "image",
-                    "src": "http://cis1.towson.edu/~cssecinj/wp-content/uploads/cis0/phishing-email.jpg",
+                    "src": "https://cisserv1.towson.edu/~cssecinj/wp-content/uploads/cis0/phishing-email.jpg",
                     "alt": "Amazon phising example",
                     "width": 581,
                     "height": 292,
@@ -117,7 +117,7 @@
                 },
                 {
                     "type": "image",
-                    "src": "http://cis1.towson.edu/~cssecinj/wp-content/uploads/cis0/phishing-comic.jpg",
+                    "src": "https://cisserv1.towson.edu/~cssecinj/wp-content/uploads/cis0/phishing-comic.jpg",
                     "alt": "Phising comic",
                     "width": 992,
                     "height": 603,
@@ -133,7 +133,7 @@
                 },
                 {
                     "type": "image",
-                    "src": "http://cis1.towson.edu/~cssecinj/wp-content/uploads/cis0/phish-game1.jpg",
+                    "src": "https://cisserv1.towson.edu/~cssecinj/wp-content/uploads/cis0/phish-game1.jpg",
                     "alt": "Anti-Phising",
                     "width": 552,
                     "height": 414,
@@ -304,7 +304,7 @@
                 },
                 {
                     "type": "image",
-                    "src": "http://cis1.towson.edu/~cssecinj/wp-content/uploads/cis0/paypal-email-cis0.jpg",
+                    "src": "https://cisserv1.towson.edu/~cssecinj/wp-content/uploads/cis0/paypal-email-cis0.jpg",
                     "alt": "PayPal",
                     "width": 612,
                     "height": 797,

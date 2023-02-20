@@ -48,7 +48,7 @@
                 },
                 {
                     "type": "image",
-                    "src": "http://cis1.towson.edu/~cssecinj/wp-content/uploads/fat_finger.jpg",
+                    "src": "https://cisserv1.towson.edu/~cssecinj/wp-content/uploads/fat_finger.jpg",
                     "alt": "Dominik Joswig",
                     "width": 406,
                     "height": 226,
@@ -286,7 +286,7 @@
             "units": [
                 {
                     "type": "image",
-                    "src": "http://cis1.towson.edu/~cssecinj/wp-content/uploads/fat_finger.jpg",
+                    "src": "https://cisserv1.towson.edu/~cssecinj/wp-content/uploads/fat_finger.jpg",
                     "alt": "Dominik Joswig",
                     "width": 406,
                     "height": 226,

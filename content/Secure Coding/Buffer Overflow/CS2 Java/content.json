@@ -52,7 +52,7 @@
                 },
                 {
                     "type": "image",
-                    "src": "http://cis1.towson.edu/~cssecinj/wp-content/uploads/cs2/buffer-overflow.jpg",
+                    "src": "https://cisserv1.towson.edu/~cssecinj/wp-content/uploads/cs2/buffer-overflow.jpg",
                     "alt": "buffer overflow",
                     "width": 471,
                     "height": 376,
@@ -304,13 +304,13 @@
                       "items": [
                         {
                           "id": "dec",
-                          "text": "Click each array declaration in the adjacent code",
+                          "text": "Click each array declaration",
                           "ans": true,
                           "js": true
                         },
                         {
                           "id": "ref",
-                          "text": "For each array, click all subsequent references",
+                          "text": "Click all references to an array",
                           "ans": true,
                           "js": true
                         }
@@ -321,26 +321,20 @@
                       "header": "2. Index Variables:",
                       "items": [
                         {
-                          "id": "range",
-                          "text": "For each array access that uses a variable as an index, write the legal index range next to it",
-                          "ans": true,
-                          "js": true
-                        },
-                        {
                           "id": "occur",
-                          "text": "For each index marked in the previous step, click all occurrences of that variable",
+                          "text": "Click all occurences of index variables",
                           "ans": true,
                           "js": true
                         },
                         {
                           "id": "modify",
-                          "text": "Click any assignments, inputs or operations that may modify these index variables",
+                          "text": "Click any operations that can modify an index variable",
                           "ans": true,
                           "js": true
                         },
                         {
                           "id": "array",
-                          "text": "Click any array that is indexed by a highlighted index variable",
+                          "text": "Click each array reference where the array is being accessed by an index variable",
                           "ans": true,
                           "js": true
                         }
@@ -348,17 +342,17 @@
                     },
                       {
                       "id": "loop",
-                      "header": "3. Loops that modify index variables:",
+                      "header": "3. Loops containing index variables:",
                       "items": [
                         {
                           "id": "limit",
-                          "text": "Find loops that modify variables used to index arrays. For any index that occurs as part of a loop conditional, click the loop limit",
+                          "text": "Click the condition in each loop that limits the range of the index variable",
                           "ans": true,
                           "js": true
                         },
                         {
                           "id": "range",
-                          "text": "Fill in the legal range of the array index next to the loop limit. Note if the loop limit could exceed the legal range of the array index",
+                          "text": "Fill in the legal range of the index variable for each loop",
                           "ans": true,
                           "js": true
                         }
@@ -370,25 +364,19 @@
                     "items": [
                       {
                         "id": "index",
-                        "text": "Click any function arguments that are used to send array indices in",
+                        "text": "Click any function arguments that send in array indices",
                         "ans": true,
                         "js": true
                       },
                       {
                         "id": "loop",
-                        "text": "Click any function arguments that are used to send loop limits in",
-                        "ans": true,
-                        "js": true
-                      },
-                      {
-                        "id": "range",
-                        "text": "Write the legal range next to each underlined argument. Note any argument that is not verified to be within these limits.",
+                        "text": "Click any function arguments that send in loop limits",
                         "ans": true,
                         "js": true
                       },
                       {
                         "id": "call",
-                        "text": "Click any calls to the function. If the function does not verify that the arguments are within the required range, the code calling the function should do so",
+                        "text": "Click the function calls that pass in array indices or loop limits",
                         "ans": true,
                         "js": true
                       }

@@ -1,14 +1,16 @@
 $(document).ready(function() {
+	
 	var name = "Pgm1CL";
-
 	// track id of the current checklist task (initialized later)
 	var current;
 	// track which spans have been clicked appropriately
 	var clicked = [];
 	// track which spans are needed for current question
 	var waitingOn = [];
-
+	// collects total num spans per question
 	var spans = [];
+	// helps reset prog bar for each question
+	var previousWaitingOnCount = 0;
 
 	/**
 	 * returns the id of the next question, and rearranges class indicators
@@ -16,100 +18,135 @@ $(document).ready(function() {
 	 */
 	function advance(question) {
 		var next;
+
+		// remove highlight from previous question
+		$(".span-" + name).removeClass("si-code-clicked");
+
 		if(typeof(question)==='undefined') {
-			next = name+"-array-dec";				// first question
+			next = name+"-array-dec";	// first question
 		} else {
-			// check off question
-			$("#"+question).prop('checked', true);
+			$("#"+question).prop('checked', true); // check off question
 
+			// timeout allows progress bar to show when full
+			setTimeout(function(){
+				// take focus away from current question
+				$("#"+question+"-label").removeClass("si-checklist-active");
+				$("#" + question + "-progress-label").addClass("progress-hidden");
+				$("#" + question + "-progress-label").removeClass("progress");
+			}, 500);
 
+			switch(question) { // here's where flow is really controlled
+				case name+"-array-dec":		
+					next = name+"-array-ref";	
+					break;
+				case name+"-array-ref":	
+					next = name+"-var-range";	
+					break;
+				case name+"-var-range":		
+					next = name+"-var-occur";	
+					break;
+				case name+"-var-occur":	
+					next = name+"-var-modify";	
+					break;
+				case name+"-var-modify":	
+					next = name+"-var-array";	
+					break;
+				case name+"-var-array":	
+					next = name+"-loop-limit";	
+					break;
+				case name+"-loop-limit":	
+					next = name+"-loop-range";	
+					break;
+				default:	
+				return;	// input invalid or question is complete
+			}
+		}
 
-						// take focus away from current question
-						$("#"+question+"-label").removeClass("si-checklist-active");
+		// focus on next question
+		$("#"+next+"-label").addClass("si-checklist-active");
+		// if the question only has 1 span to click, don't show progress bar
+		if(next.endsWith("-array-dec") || next.endsWith("-array-ref") || next.endsWith("-var-array")){ }else{
+			// remove hidden class from progress bar
+			$("#" + next + "-progress-label").removeClass("progress-hidden");
+			// add the progress bar fill
+			$("#" + next + "-progress-label").addClass("progress");
+		}
 
+		//IF POPOVER IS NEEDED
+		if((next === name+"-var-range") || (next === name+'-loop-range')) { 
+			
+			// If popover is needed, remove progress bar
+			if (next.endsWith("var-occur") || next.endsWith("var-range")) { 
+				$("#"+next+"-progress-label").removeClass("progress");
+				$("#"+next+"-progress-label").addClass("progress-hidden");
+			}
 
-						switch(question) { // here's where flow is really controlled
-						case name+"-array-dec":		next = name+"-array-ref";	break;
-						case name+"-array-ref":	next = name+"-var-range";	break;
-						case name+"-var-range":		next = name+"-var-occur";	break;
-						case name+"-var-occur":	next = name+"-var-modify";	break;
-						case name+"-var-modify":	next = name+"-var-array";	break;
-						case name+"-var-array":	next = name+"-loop-limit";	break;
-						case name+"-loop-limit":	next = name+"-loop-range";	break;
-						default:	return;	// input invalid or question is complete
-						}
-					}
+			waitingOn = []; // gather spans remaining to be clicked
 
-					// focus on next question
-					$("#"+next+"-label").addClass("si-checklist-active");
-
-				if((next === name+"-var-range") ||(next === name+'-loop-range')){ //IF POPOVER IS NEEDED
-					waitingOn = []; //Gather spans
-					$(".span-"+name).each(function(index) {
-						if( $(this).hasClass(next+"-"+name) ) {
-							waitingOn.push(index);
-						}
-					});
-					var spanLoc;
-					if(next === name+"-var-range"){spanLoc = 11;} //NEED TO BE SET TO THE RIGHT SPAN
-					else if (next === name+'-loop-range'){spanLoc = 7;}
-
-					//show Popover over the index span
-					showPopOver(spans[spanLoc]);
-
-					var tag = "Pgm1CL-var-range"; //the one that needs the popover
-					$('input[name=popSave2]').on('click', function() {
-						if ($('#lowInt').val() == "0" && $('#popSelect1').val() == "<="
-						 	&& $('#popSelect2').val() == "<" && $('#highInt').val() == "10"){//these need to change to the right answer for the question
-							//$("#"+tag).prop('checked', true); //not needed because click event handles this.
-							$('.rangepop').hide();
-							$(".span-"+name).click(); //click the empty span so that next question is asked.
-							$('#lowInt').val('');
-							$('#popSelect1').val('<');
-							$('#popSelect2').val('<');
-							$('#highInt').val('');
-							$('.popover').css('background-color', 'white');
-						}
-						else{
-							$('.popover').css('background-color', 'lightpink');
-						}
-
-					});
-
-
+			$(".span-"+name).each(function(index) {
+				if( $(this).hasClass(next+"-"+name) ) {
+					waitingOn.push(index);
 				}
+			});
 
-				else{ //normal question
+			var spanLoc;
+			if(next === name+"-var-range"){
+				spanLoc = 11;
+			} //NEED TO BE SET TO THE RIGHT SPAN
+			else if (next === name+'-loop-range'){
+				spanLoc = 7;
+			}
 
-					waitingOn = [];
-					$(".span-"+name).each(function(index) {
-						if( $(this).hasClass(next+"-"+name) ) {
-							waitingOn.push(index);
-						}
-					});
+			showPopOver(spans[spanLoc]); //show Popover over the index span
+			var tag = "Pgm1CL-var-range"; //the one that needs the popover
+
+			$('input[name=popSave2]').on('click', function() {
+				if (
+				$('#lowInt').val() == "0" && 
+				$('#popSelect1').val() == "<=" && 
+				$('#popSelect2').val() == "<" && 
+				$('#highInt').val() == "10"
+				) { // these need to change to the right answer for the question
+					$('.rangepop').hide();
+					$(".span-"+name).click(); //click the empty span so that next question is asked.
+					$('#lowInt').val('');
+					$('#popSelect1').val('<');
+					$('#popSelect2').val('<');
+					$('#highInt').val('');
+					$('.popover').css('background-color', 'white');
+				} else {
+					$('.popover').css('background-color', 'lightpink');
 				}
+			});
+		} else { // NORMAL QUESTION
 
-					return next;
+			waitingOn = [];
+			$(".span-"+name).each(function(index) {
+				if( $(this).hasClass(next+"-"+name) ) {
+					waitingOn.push(index);
 				}
+			});
+		}
+		return next;
+	}
 
+	current = advance();
 
-				current = advance();
-
-
+	// Handles score for each individual question
 	$(".span-"+name).each(function(index) {
 		spans.push($(this));
-		//console.log(spans);
+
 		$(this).on('click', function() {
 			span = $(this);
 
 			// continue if user is currently supposed to click this span, and hasn't already
-			if( span.hasClass(current+"-"+name) && $.inArray(index,clicked) < 0 ) {
-				clicked.push(index);					// 		note that it's been clicked, programmatically
-				span.addClass("si-code-clicked");		//		note that it's been clicked, graphically
-				if(span.hasClass(name+"-var-modify-"+name)|| span.hasClass(name+"-var-array-"+name)) { //needs to be changed for vulnerabilities
-					span.addClass("si-code-vulnerability"); //	some spans get extra graphics to indicate vulnerability
-				}
+			if(span.hasClass(current+"-"+name) && $.inArray(index,clicked) < 0 ) {
+				clicked.push(index);  // note that it's been clicked, programmatically
+				span.addClass("si-code-clicked");  // note that it's been clicked, graphically
 
+				// logic for increasing the progress bar
+				let currentProgress = ((clicked.length - previousWaitingOnCount)/waitingOn.length)*100;
+				document.getElementById(current + "-progress-data-label").style.width = `${currentProgress}%`;
 
 				// Check if 'current' question is finished yet
 				var finished = true;
@@ -118,12 +155,19 @@ $(document).ready(function() {
 				}
 
 				// if it is, go to next question
-				if(finished) current = advance(current);
+				if (finished) {
+					// highlights correct answer before moving on to next question
+					setTimeout(function(){
+						previousWaitingOnCount += waitingOn.length;
+						current = advance(current);
+					}, 500);
+				}
 			}
 		});
 	});
 
-	function showPopOver(span) { //showsPopover over span
+	//showsPopover over span
+	function showPopOver(span) { 
 	    var offset = span.offset();
 	    var position = span.position();
 	    var theHeight = $('.popover').height();
@@ -131,8 +175,7 @@ $(document).ready(function() {
 			$(".popover").css({
              'position': 'absolute',
              'top': (position.top-(theHeight/2)-5) + 'px',
-             'left': (position.left+50) + 'px'
+             'left': (position.left + 100) + 'px'
        });
 	}
-
 });
