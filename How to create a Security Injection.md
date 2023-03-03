@@ -12,7 +12,7 @@ To write a Security Injection, you must know JSON, JavaScript, and HTML. A Secur
 
 ## Step 0: Configuration
 
-To make any additions or modifications to our repository, you need to make a pull request on GitHub first. If you have any questions or problems, please contact info@secured.team.
+To make any additions or modifications to our repository, you need to make a pull request on GitHub first.
 
 1. Clone this repository onto your machine.
 2. On the root of the repository, create a folder called "public". This will be your repository for all GETtable content, including images, published injections, and minified JSON content.
@@ -41,7 +41,7 @@ Navigate to the content folder using a code editor, and browse our current Secur
 
 `security-injections/content/Secure Coding/Buffer Overflow/CS0 C++`
 
-### Content folder:
+### Content folder
 
 The content folder currently contains four different categories of modules.
 
@@ -51,13 +51,13 @@ The content folder currently contains four different categories of modules.
 - *Secure Coding* contains modules that teach students how to write secure code.
     - There are three different versions: CSO, CS1, and CS2. Some of the modules have all three versions, and others might only have one or two. CS0 is the earliest version and CS2 is the most recent. Note that the differences between versions are usually subtle.
     - Each version typically comes in four different programming languages: Java, C++, Python, and Pseudocode. You can choose how many languages you want your Security Injection to have, and it does not need to be limited to these four.
-    - A heading of the form `version` `language` (Ex: "CSO C++") is referred to as a *variant*.
+    - A heading of the form `version` `language` (Ex: `CSO C++`) is referred to as a *variant*.
 
-    | Secure Coding | Buffer Overflow | CSO C++ |
-    | ----------- | --------------- | ------- |
-    | Category | Module | Variant |
+| Secure Coding | Buffer Overflow | CSO C++ |
+| ----------- | --------------- | ------- |
+| Category | Module | Variant |
 
-### Design folder:
+### Design folder
 
 The design folder contains several schemas and features in case you need to see syntax or documentation examples.
 
@@ -66,7 +66,7 @@ The design folder contains several schemas and features in case you need to see 
 - `HTML Schema.txt`
 - `JSON Schema.txt`
 
-### Resources folder:
+### Resources folder
 
 The resources folder consists of the components that format a Security Injection.
 
@@ -74,7 +74,7 @@ The resources folder consists of the components that format a Security Injection
 - `style.css`
 - `template.html`
 
-### Scripts:
+### Scripts
 
 - The `create.js` file compiles HTML, CSS, JS, and JSON into a single HTML document. You will use it to build and test your Security Injection.
 - The `server.js` file is a server-side script to handle interaction with clients.
@@ -99,7 +99,7 @@ Now you can brainstorm what you want your Security Injection to look like. In a 
 If you want to add a code block:
 - Create a new file and write the code excerpt you want. Make sure to add it to your JSON as well.
 
-Example file:
+- Example file:
 ``` 
 /*************************
 * filename: add.cpp
