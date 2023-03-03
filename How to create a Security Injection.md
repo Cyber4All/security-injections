@@ -1,6 +1,6 @@
 # How to create a Security Injection
 
-## TL;DR
+### TL;DR
 1. Clone the security-injections repository
 2. Install npm and make public/securityinjections folder
 2. Create module/variant folder inside of content/directory
@@ -16,10 +16,15 @@ To make any additions or modifications to our repository, you need to make a pul
 
 1. Clone this repository onto your machine.
 2. On the root of the repository, create a folder called "public". This will be your repository for all GETtable content, including images, published injections, and minified JSON content.
+
     `mkdir public`
+
 3. Inside that folder, create another folder called "securityinjections". This is where your Security Injection will be located when you build it.
+
     `cd public`
+    
     `mkdir securityinjections`
+
 2. Install node dependencies (includes: express, cors, uglify-js, uglifycss)
     - Install node and npm
     - Navigate to the root of the repository
@@ -32,42 +37,48 @@ Note: If you are an experienced developer, you can read `Developer's Guide.md` f
 
 Navigate to the content folder using a code editor, and browse our current Security Injections modules. Module refers to an individual Security Injection (i.e. "Encapsulation", "Integer Error", "Phishing").
 
-### Example route for browsing:
+### Example path for browsing:
 
 security-injections/content/Secure Coding/Buffer Overflow/CS0 C++
 
-The **content** folder currently contains four different categories of modules:
+### Content folder:
 
-- **Computer Literacy** contains modules about cybersecurity practices.
-- **Development** contains example modules. This folder will be a good reference to use when creating your own Security Injection.
-- **Interdisciplinary** contains modules about other subjects.
-- **Secure Coding** contains modules that teach students how to write secure code.
-    - There are three different versions: **CSO**, **CS1**, and **CS2**. Some of the modules have all three versions, and others might only have one or two. CS0 is the earliest version and CS2 is the most recent. Note that the differences between versions are usually subtle.
-    - Each version typically comes in four different programming languages: **Java**, **C++**, **Python**, and **Pseudocode**. You can choose how many languages you want your Security Injection to have, and it does not need to be limited to these four.
-    - A heading of the form <version> <language> (Ex: "CSO C++") is referred to as a **variant**.
+The content folder currently contains four different categories of modules:
 
-### Terminology
+- Computer Literacy contains modules about cybersecurity practices.
+- Development contains example modules. This folder will be a good reference to use when creating your own Security Injection.
+- Interdisciplinary contains modules about other subjects.
+- Secure Coding contains modules that teach students how to write secure code.
+    - There are three different versions: CSO, CS1, and CS2. Some of the modules have all three versions, and others might only have one or two. CS0 is the earliest version and CS2 is the most recent. Note that the differences between versions are usually subtle.
+    - Each version typically comes in four different programming languages: Java, C++, Python, and Pseudocode. You can choose how many languages you want your Security Injection to have, and it does not need to be limited to these four.
+    - A heading of the form `version` `language` (Ex: "CSO C++") is referred to as a *variant*.
+
+Terminology:
 
 Secure Coding | Buffer Overflow | CSO C++ |
 | ----------- | --------------- | ------- |
 | Category | Module | Variant |
 
-The **design** folder contains several schemas and features in case you need to see syntax or documentation examples:
-- `Blank_Cases.json` shows every **unit type** that a security injection can have (i.e. multiple choice questions, checklist questions, etc.) and how you implement them in JSON.
+### Design folder:
+
+The design folder contains several schemas and features in case you need to see syntax or documentation examples:
+- `Blank_Cases.json` shows every *unit type* that a security injection can have (i.e. multiple choice questions, checklist questions, etc.) and how you implement them in JSON.
 - `Database Schema.docx`
 - `HTML Schema.txt`
 - `JSON Schema.txt`
 
-The **resources** folder consists of the components that format a Security Injection:
+### Resources folder:
+
+The resources folder consists of the components that format a Security Injection:
 - `angular.js` 
 - `style.css`
 - `template.html`
 
-The **create.js** file compiles HTML, CSS, JS, and JSON into a single HTML document. You will use it to build and test your Security Injection.
+### Scripts:
 
-The **server.js** file is a server-side script to handle interaction with clients.
-
-The **validate.js** file parses JSON content and checks that each field is permissible.
+- The `create.js` file compiles HTML, CSS, JS, and JSON into a single HTML document. You will use it to build and test your Security Injection.
+- The `server.js` file is a server-side script to handle interaction with clients.
+- The `validate.js` file parses JSON content and checks that each field is permissible.
 
 ## Step 2: Plan your Security Injection
 
@@ -83,7 +94,7 @@ Now you can brainstorm what you want your Security Injection to look like. In a 
 
 ### Create your additional files (Optional)
 
-If you want to add a **code block**:
+If you want to add a code block:
 - Create a new file and write the code excerpt you want. Make sure to add it to your JSON as well.
 - Example file:
 ``` 
@@ -98,7 +109,7 @@ int AddNums(int a, int b) {
 }
 ```
 
-If you want to add a **code checklist**:
+If you want to add a code checklist:
 - Create a new file called `securityChecklist.html` and write the code excerpt you need.
 - Create a new file called `checklist.js`.
     - This program runs the checklist and is required if you want a code checklist that the user can advance through by clicking parts of the code.
@@ -110,7 +121,7 @@ If you want to add a **code checklist**:
 - Open `create.js` and scroll to the bottom. You will see a list of methods commented out. You will add your own method with the form below:
 `exports.write_3("My Security Injection", "CS0 Java");`
 - When you uncomment a method, the module it specifies will be built when you run the `node create.js` command. So if you only want to build your own Security Injection, comment out all methods except for yours.
-- Finally, on line 23, you will see this line of code: `var contentDir = "content/";`. This controls the route to your Security Injection, so make sure to modify it to hit the correct directory.
+- Finally, on line 23, you will see this line of code: `var contentDir = "content/";`. This controls the path to your Security Injection, so make sure to modify it to hit the correct directory.
     - Example:
         `var contentDir = "content/"Secure Coding"/";`
 
