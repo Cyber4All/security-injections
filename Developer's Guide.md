@@ -1,6 +1,6 @@
-# Injection Creation Manual
+# Developer's Guide
 
-### There are four overall steps to publishing an injection:
+### There are four overall steps to creating an injection:
 1) Create module/variant/ folders inside content/ directory
 2) Create content.json file
 3) Run create.write3() method
