@@ -23,18 +23,12 @@ $(document).ready(function() {
 		if(typeof(question)==='undefined') {
 			next = name+"-var-input"; // first question
 		} else {
-<<<<<<< Updated upstream
-			$("#"+question).prop('checked', true); // check off question
-=======
-			// console.log('Checking all the boxes')
 			$("#"+question).prop('checked', true);	// check off question
 
 			// take focus away from current question
 			$("#"+question+"-label").removeClass("si-checklist-active");
 			$("#" + question + "-progress-label").addClass("progress-hidden");
 			$("#" + question + "-progress-label").removeClass("progress");
-
->>>>>>> Stashed changes
 
 			// timeout allows progress bar to show when full
 			setTimeout(function(){
