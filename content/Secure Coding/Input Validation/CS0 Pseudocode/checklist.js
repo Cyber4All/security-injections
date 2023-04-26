@@ -7,12 +7,8 @@ $(document).ready(function() {
 	var clicked = [];
 	// track which spans are needed for current question
 	var waitingOn = [];
-<<<<<<< Updated upstream
 	// helps reset prog bar for each question
-	var previousWaitingOnCount = 0;
-=======
 	let previousWaitingOnCount = 0;
->>>>>>> Stashed changes
 
 	/**
 	 * returns the id of the next question, and rearranges class indicators
