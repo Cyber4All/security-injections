@@ -137,7 +137,6 @@ exports.write_3 = function(name, variant, dev) {
 // exports.write_3("Buffer Overflow", "CS0 C++");
 	dated upstream
 // exports.write_3("Buffer Overflow", "CS0 Java");
-=======
 // exports.write_3("Buffer Overflow", "CS0 Java"); 
 exports.write_3("Buffer Overflow", "CS0 Pseudocode");
 >>>>>>> Stashed changes
