@@ -169,7 +169,7 @@ public class PopCheck {
 
 Example file:
 
-```java
+```javascript
 $(document).ready(function() {
 	
 	var name = "Pgm1CL";
