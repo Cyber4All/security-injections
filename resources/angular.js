@@ -438,12 +438,6 @@ $scope.checkAnswers = function() {
 			for (j in unit.list) {
 				group = unit.list[j];
 				group_id = id+"-"+group.id;
-<<<<<<< Updated upstream
-
-=======
-				
-				// console.log('EACH BRO ___________________________________');
->>>>>>> Stashed changes
 				for (k in group.items) {
 					// console.log(group.items)
 					item = group.items[k];
