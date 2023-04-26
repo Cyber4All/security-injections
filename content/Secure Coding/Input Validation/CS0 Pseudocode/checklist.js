@@ -81,17 +81,14 @@ $(document).ready(function() {
 
 				// if it is, go to next question
 				if (finished) {
-<<<<<<< Updated upstream
 					// highlights correct answer before moving on to next question
 					setTimeout(function(){
 						previousWaitingOnCount += waitingOn.length;
 						current = advance(current);
 					}, 500);
-=======
 					previousWaitingOnCount += waitingOn.length;
 					// console.log("before advance function");
 					current = advance(current);
->>>>>>> Stashed changes
 				}
 			}
 		});
