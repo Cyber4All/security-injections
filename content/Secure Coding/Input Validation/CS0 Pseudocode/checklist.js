@@ -8,7 +8,7 @@ $(document).ready(function() {
 	// track which spans are needed for current question
 	var waitingOn = [];
 	// helps reset prog bar for each question
-	var previousWaitingOnCount = 0;
+	let previousWaitingOnCount = 0;
 
 	/**
 	 * returns the id of the next question, and rearranges class indicators
@@ -23,7 +23,12 @@ $(document).ready(function() {
 		if(typeof(question)==='undefined') {
 			next = name+"-var-input"; // first question
 		} else {
-			$("#"+question).prop('checked', true); // check off question
+			$("#"+question).prop('checked', true);	// check off question
+
+			// take focus away from current question
+			$("#"+question+"-label").removeClass("si-checklist-active");
+			$("#" + question + "-progress-label").addClass("progress-hidden");
+			$("#" + question + "-progress-label").removeClass("progress");
 
 			// timeout allows progress bar to show when full
 			setTimeout(function(){
@@ -81,6 +86,9 @@ $(document).ready(function() {
 						previousWaitingOnCount += waitingOn.length;
 						current = advance(current);
 					}, 500);
+					previousWaitingOnCount += waitingOn.length;
+					// console.log("before advance function");
+					current = advance(current);
 				}
 			}
 		});

@@ -20,7 +20,7 @@ exports.write_3 = function(name, variant, dev) {
 	if(typeof(dev)==='undefined') dev = false;		// default value for dev
 
 	// CONSTANTS
-	var contentDir = "content/Secure Coding/";	// TODO: Change this variable to generate different modules in different folders
+	var contentDir = "content/";	// TODO: Change this variable to generate different modules in different folders
 
 	var resourceDir = "resources/";
 	var publicDir = "public/";
@@ -122,7 +122,7 @@ exports.write_3 = function(name, variant, dev) {
 // MAIN
 
 // ------------------------------------------
-// Demo Module
+// Demo Modules
 // ------------------------------------------
 
 // exports.write_3("Integer Error", "CS0 C++ Sample");
@@ -134,41 +134,44 @@ exports.write_3 = function(name, variant, dev) {
 // 'Secure Coding' Folder -------------------
 
 // exports.write_3("Best Practices for Secure Variables", "CS1 Java");
-exports.write_3("Buffer Overflow", "CS0 C++");
-exports.write_3("Buffer Overflow", "CS0 Java");
-exports.write_3("Buffer Overflow", "CS0 Python");
+// exports.write_3("Buffer Overflow", "CS0 C++");
+	dated upstream
+// exports.write_3("Buffer Overflow", "CS0 Java");
+// exports.write_3("Buffer Overflow", "CS0 Java"); 
 exports.write_3("Buffer Overflow", "CS0 Pseudocode");
-exports.write_3("Buffer Overflow", "CS1 C++");
-exports.write_3("Buffer Overflow", "CS1 Java");
-exports.write_3("Buffer Overflow", "CS1 Python");
-exports.write_3("Buffer Overflow", "CS2 C++");
-exports.write_3("Buffer Overflow", "CS2 Java");
+// exports.write_3("Buffer Overflow", "CS0 Python");
+// exports.write_3("Buffer Overflow", "CS0 Pseudocode");
+// exports.write_3("Buffer Overflow", "CS1 C++");
+// exports.write_3("Buffer Overflow", "CS1 Java");
+// exports.write_3("Buffer Overflow", "CS1 Python");
+// exports.write_3("Buffer Overflow", "CS2 C++");
+// exports.write_3("Buffer Overflow", "CS2 Java");
 // exports.write_3("Cross-Site Scripting", "PHP");
 // exports.write_3("Cross-Site Scripting", "Ruby on Rails");
 // exports.write_3("Data Hiding","CS0 C++");
 // exports.write_3("Data Hiding","CS2 Java");
 // exports.write_3("Data Hiding","CS2 C++");
 // exports.write_3("Data Hiding","CS2 Python");
-exports.write_3("Encapsulation", "CS2 C++");
-exports.write_3("Encapsulation", "CS2 Java");
+// exports.write_3("Encapsulation", "CS2 C++");
+// exports.write_3("Encapsulation", "CS2 Java");
 // exports.write_3("Exception Handling", "CS2 C++");
 // exports.write_3("Exception Handling", "CS2 Java");
-exports.write_3("Input Validation", "CS0 C++");
-exports.write_3("Input Validation", "CS0 Java");
-exports.write_3("Input Validation", "CS0 Python");
-exports.write_3("Input Validation", "CS0 Pseudocode");
+// exports.write_3("Input Validation", "CS0 C++");
+// exports.write_3("Input Validation", "CS0 Java");
+// exports.write_3("Input Validation", "CS0 Python");
+// exports.write_3("Input Validation", "CS0 Pseudocode");
 // exports.write_3("Input Validation", "CS1 C++");
 // exports.write_3("Input Validation", "CS1 Java");
 // exports.write_3("Input Validation", "CS1 Python");
-exports.write_3("Input Validation", "CS2 C++");
-exports.write_3("Input Validation", "CS2 Java");
-exports.write_3("Integer Error", "CS0 C++");
-exports.write_3("Integer Error", "CS0 Java");
-exports.write_3("Integer Error", "CS0 Pseudocode");
-exports.write_3("Integer Error", "CS1 C++");
-exports.write_3("Integer Error", "CS1 Java");
-exports.write_3("Integer Error", "CS2 C++");
-exports.write_3("Integer Error", "CS2 Java");
+// exports.write_3("Input Validation", "CS2 C++");
+// exports.write_3("Input Validation", "CS2 Java");
+// exports.write_3("Integer Error", "CS0 C++");
+// exports.write_3("Integer Error", "CS0 Java");
+// exports.write_3("Integer Error", "CS0 Pseudocode");
+// exports.write_3("Integer Error", "CS1 C++");
+// exports.write_3("Integer Error", "CS1 Java");
+// exports.write_3("Integer Error", "CS2 C++");
+// exports.write_3("Integer Error", "CS2 Java");
 // exports.write_3("Software Development Lifecycle", "CS0 C++");
 // exports.write_3("Software Development Lifecycle", "CS0 Java");
 // exports.write_3("Software Development Lifecycle", "CS0 Python");
