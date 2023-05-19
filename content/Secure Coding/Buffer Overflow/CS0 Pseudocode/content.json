@@ -239,13 +239,13 @@
       							"items": [
       								{
       									"id": "dec",
-      									"text": "Click each array declaration in the above code",
+      									"text": "Click the array declaration in the code",
       									"ans": true,
       									"js": true
       								},
                       {
       									"id": "ref",
-      									"text": "For each array, click all subsequent references",
+      									"text": "Click the subsequent array reference",
       									"ans": true,
       									"js": true
       								}
@@ -257,25 +257,25 @@
       							"items": [
       								{
       									"id": "range",
-      									"text": "For each array access that uses a variable as an index, write the legal index range next to it",
+      									"text": "Find the array that uses a variable as an index and write the legal index range",
       									"ans": true,
       									"js": true
       								},
       								{
       									"id": "occur",
-      									"text": "For each index marked in the previous step, click all occurrences of that variable",
+      									"text": "Click all occurrences of the index variable from the previous step",
       									"ans": true,
       									"js": true
       								},
       								{
       									"id": "modify",
-      									"text": "Click any assignments, inputs or operations that may modify these index variables",
+      									"text": "Click any assignments, inputs or operations that may modify the index variable",
       									"ans": true,
       									"js": true
       								},
                       {
       									"id": "array",
-      									"text": "Click any array that is indexed by a highlighted index variable",
+      									"text": "Click the array that is indexed by a variable",
       									"ans": true,
       									"js": true
       								}

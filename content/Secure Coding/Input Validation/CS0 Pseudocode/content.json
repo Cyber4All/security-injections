@@ -486,7 +486,7 @@
       								{
       									"id": "length",
       									"text": "Check length?",
-      									"ans": false,
+      									"ans": true,
       									"js": false
       								},
       								{
@@ -498,7 +498,7 @@
       								{
       									"id": "format",
       									"text": "Check format?",
-      									"ans": false,
+      									"ans": true,
       									"js": false
       								},
                       {

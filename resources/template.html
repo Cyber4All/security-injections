@@ -209,6 +209,11 @@
 													<td class="si-checklist-label-cell">
 														<span id="{{ unit.id+'-'+group.id+'-'+item.id }}-label"
 															ng-bind-html="item.text"></span>
+															<div id="{{ unit.id+'-'+group.id+'-'+item.id }}-progress-label"
+															class="progress-hidden">
+															<div id="{{ unit.id+'-'+group.id+'-'+item.id }}-progress-data-label"
+															class="progress-data"></div>
+															</div>
 													</td>
 													<td style="vertical-align: middle;" ng-if="item.js"
 														class="si-checklist-box-cell">

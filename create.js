@@ -20,7 +20,7 @@ exports.write_3 = function(name, variant, dev) {
 	if(typeof(dev)==='undefined') dev = false;		// default value for dev
 
 	// CONSTANTS
-	var contentDir = "content/Interdisciplinary/";	// TODO: Change this variable to generate different modules in different folders
+	var contentDir = "content/";	// TODO: Change this variable to generate different modules in different folders
 
 	var resourceDir = "resources/";
 	var publicDir = "public/";
@@ -122,7 +122,7 @@ exports.write_3 = function(name, variant, dev) {
 // MAIN
 
 // ------------------------------------------
-// Demo Module
+// Demo Modules
 // ------------------------------------------
 
 // exports.write_3("Integer Error", "CS0 C++ Sample");
@@ -135,7 +135,10 @@ exports.write_3 = function(name, variant, dev) {
 
 // exports.write_3("Best Practices for Secure Variables", "CS1 Java");
 // exports.write_3("Buffer Overflow", "CS0 C++");
+	dated upstream
 // exports.write_3("Buffer Overflow", "CS0 Java");
+// exports.write_3("Buffer Overflow", "CS0 Java"); 
+exports.write_3("Buffer Overflow", "CS0 Pseudocode");
 // exports.write_3("Buffer Overflow", "CS0 Python");
 // exports.write_3("Buffer Overflow", "CS0 Pseudocode");
 // exports.write_3("Buffer Overflow", "CS1 C++");
