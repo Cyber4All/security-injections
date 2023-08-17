@@ -39,6 +39,8 @@ exports.parse = function(content, prereqs) {
 	
 	// check if module and variant fields match
 	if(prereqs.name != module.name || prereqs.variant != module.variant) {
+		console.log("'" + prereqs.name + "'");
+		console.log("'" + module.name + "'");
 		throw "Module name and variant must match file location and name";
 	}
 	

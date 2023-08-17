@@ -1,0 +1,301 @@
+{
+    "name": "Interdisciplinary",
+    "variant": "Fall 377 Syllabus",
+	"license": {
+		"name": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License",
+		"link": "http://creativecommons.org/licenses/by-nc-sa/3.0/"
+	},
+    "sections": [
+        {
+            "header": "Learning Outcomes",
+            "units": [
+                {
+                    "type": "list",
+                    "items": [
+                        "Understand the expectations of this class."
+                    ],
+                    "ordered": false
+                }
+            ]
+        },
+        {
+            "header": "Welcome to CIS 377",
+            "units": [
+                {
+                    "type": "paragraph",
+                    "text": "Welcome to CIS 377! I am very happy you are here and hope you are looking forward to an exciting semester."
+                },
+                {
+                    "type": "subheader",
+                    "text": "Course Description"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "This course provides an overview of key cybersecurity concepts and practices and broadly characterizes the global security landscape, including cyber law and cyber warfare. It is structured as a series of ordered modules that cover foundational security principles, risk management, and adversarial thinking as an organizing narrative for a series of modules on data security, system security, network security, personal security, and societal security. Prerequisite: major or minor sophomore standing."
+                },
+                {
+                    "type": "subheader",
+                    "text": "Textbook"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "The textbook is required for quizzes and readings in this course."
+                },
+                {
+                    "type": "table",
+                    "headers": [
+                        "<strong>Title</strong>",
+                        "<strong>Author</strong>",
+                        "<strong>ISBN</strong>"
+                    ],
+                    "cells": [
+                        {
+                            "first": "Computer Security Fundamentals 4th Ed by Chuck Easttorn",
+                            "second": "978-0-13-577477-9"
+                        }
+                    ]
+                },
+                {
+                    "type": "subheader",
+                    "text": "Questions"
+                },
+                {
+                    "type": "question",
+                    "id": "highScoring",
+                    "prompt": "Is the textbook required for this course?",
+                    "ignored": false,
+                    "mode": "radio",
+                    "choices": [
+                        {
+                            "id": "true",
+                            "text": "True"
+                        },
+                        {
+                            "id": "false",
+                            "text": "False"
+                        }
+                    ],
+                    "answer": "true"
+                }
+            ]
+        },
+        {
+            "header": "Hybrid Course Mode",
+            "units": [
+                {
+                    "type": "paragraph",
+                    "text": "This course is a hybrid class that will meet 1 hour and 15 minutes every Wednesday in TM0266. On Mondays you will be expected to complete work asynchronously in preparation for in-class activities including but not limited to: discussions, table top exercises, labs, and lectures."
+                },
+                {
+                    "type": "subheader",
+                    "text": "Class Preparation"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "You are expected to come to in-class sessions prepared to learn. There will be 1-2 Security Injections, similar to the one you are completing now, to complete prior to class each week. You will fill out a form at the end of the module and receive a PDF certificate that you will upload to Blackboard in order to receive participation for that week. These will be due by 12:00PM every Wednesday and count towards your homework grade."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "These are designed to give you background information that will help you on quizzes, homeworks, and in your group project. These will include readings, videos, and examples. There are questions built into the material that you will be required to do in order to complete the module and get the certificate to upload."
+                },
+                {
+                    "type": "subheader",
+                    "text": "Attendance"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "If you are not present in the classroom when I take attendance you will be marked absent. Although there is no attendance portion to your grade there will be in-class activities that will be tied to your group project deliverables. If you do not have an excused absence and are absent you will receive a 0 for that deliverable."
+                },
+                {
+                    "type": "subheader",
+                    "text": "Participation Expectations"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Participation is not limited to in-class discussions. I count actively engaging in Blackboard discussions, group project activities, and preparing for class as participation. I expect all engagement with other people (in-person or online) to be polite and professional."
+                },
+                {
+                    "type": "subheader",
+                    "text": "Questions"
+                },
+                {
+                    "type": "question",
+                    "id": "highScoring",
+                    "prompt": "When are Security Injections due each week?",
+                    "ignored": false,
+                    "mode": "radio",
+                    "choices": [
+                        {
+                            "id": "wednesday12",
+                            "text": "Wednesday 12:00AM"
+                        },
+                        {
+                            "id": "wednesdaycorrect",
+                            "text": "Wednesday 12:00PM"
+                        },
+                        {
+                            "id": "tuesday",
+                            "text": "Tuesday 11:59PM"
+                        }
+                    ],
+                    "answer": "wednesdaycorrect"
+                },
+                {
+                    "type": "question",
+                    "id": "attendance",
+                    "prompt": "Attendance to in-class sessions is required to score well on group project deliverables.",
+                    "ignored": false,
+                    "mode": "radio",
+                    "choices": [
+                        {
+                            "id": "true",
+                            "text": "True"
+                        },
+                        {
+                            "id": "false",
+                            "text": "False"
+                        }
+                    ],
+                    "answer": "true"
+                },
+                {
+                    "type": "question",
+                    "id": "measureSS",
+                    "prompt": "What counts as participation in my class?",
+                    "ignored": false,
+                    "mode": "checkbox",
+                    "choices": [
+                        {
+                            "id": "integrity",
+                            "text": "In-class discussions",
+                            "ans": true
+                        },
+                        {
+                            "id": "patch",
+                            "text": "Blackboard discussions",
+                            "ans": true
+                        },
+                        {
+                            "id": "training",
+                            "text": "Group Project Activities",
+                            "ans": true
+                        },
+                        {
+                            "id": "cloud",
+                            "text": "Cybersecurity Month",
+                            "ans": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Grades",
+            "units": [
+                {
+                    "type": "paragraph",
+                    "text": "Grades are broken down as follows:"
+                },
+                {
+                    "type": "table",
+                    "headers": [
+                        "<strong>Category</strong>",
+                        "<strong>Percentage</strong>"
+                    ],
+                    "cells": [
+                        {
+                            "first": "Homework and Discussions",
+                            "second": "20%"
+                        },
+                        {
+                            "first": "Final/Group Project",
+                            "second": "12%"
+                        },
+                        {
+                            "first": "Quizzes",
+                            "second": "8%"
+                        },
+                        {
+                            "first": "Midterm",
+                            "second": "30%"
+                        },
+                        {
+                            "first": "Final",
+                            "second": "30%"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Exams, Quizzes, and Assignments",
+            "units": [
+                {
+                    "type": "subheader",
+                    "text": "Exams"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "All exams will be administered in-person, on Blackboard and take 1 hours and 15 minutes. Exams will include multiple choice, true/false, and short answer questions."
+                },
+                {
+                    "type": "subheader",
+                    "text": "Submissions"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "All assignments, quizzes, and group project deliverables will be submitted via Blackboard. I will not accept paper or email submissions."
+                },
+                {
+                    "type": "subheader",
+                    "text": "Late Work Policy"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "I do not accept late work. If it is not turned in on time you will receive a 0. I will approve extensions if and only if the request is submitted at least 24 hours before the due date or there is proof of extenuating circumstances. These requests must be submitted via email and include the name of the assignment, the name of the student, the requested extension length, and the reason."
+                },
+                {
+                    "type": "subheader",
+                    "text": "Questions"
+                },
+                {
+                    "type": "question",
+                    "id": "measureSS",
+                    "prompt": "Which of the following are true about my class?",
+                    "ignored": false,
+                    "mode": "checkbox",
+                    "choices": [
+                        {
+                            "id": "integrity",
+                            "text": "I accept late work",
+                            "ans": false
+                        },
+                        {
+                            "id": "patch",
+                            "text": "Exams are administered in-person on Blackboard",
+                            "ans": true
+                        },
+                        {
+                            "id": "training",
+                            "text": "All assignments, quizzes, and group project deliverables can be submitted via email",
+                            "ans": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "Wrap Up",
+            "units": [
+                {
+                    "type": "paragraph",
+                    "text": "I am looking forward to having you in my class and want to welcome you to the Fall 2023 semester! If you have any questions please don't hesitate to reach out to me via email at: pzaleppa@towson.edu."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Please reference the PDF version of the syllabus for a detailed class schedule, course learning outcomes, and grading schema."
+                }
+            ]
+        }
+    ]
+}

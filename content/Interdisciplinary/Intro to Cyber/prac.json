@@ -1,0 +1,18 @@
+{
+    "type": "question",
+    "id": "LQ1",
+    "prompt": "What is the ",
+    "ignored": true,
+    "mode": "textarea",
+    "pattern": "null"
+}
+
+
+
+
+{
+    "type": "paragraph",
+    "text": "The list comes from the NIST Special Publication 800-181, August 2017"
+},
+
+

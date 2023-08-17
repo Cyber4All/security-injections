@@ -135,10 +135,10 @@ exports.write_3 = function(name, variant, dev) {
 
 // exports.write_3("Best Practices for Secure Variables", "CS1 Java");
 // exports.write_3("Buffer Overflow", "CS0 C++");
-	dated upstream
+
 // exports.write_3("Buffer Overflow", "CS0 Java");
 // exports.write_3("Buffer Overflow", "CS0 Java"); 
-exports.write_3("Buffer Overflow", "CS0 Pseudocode");
+// exports.write_3("Buffer Overflow", "CS0 Pseudocode");
 // exports.write_3("Buffer Overflow", "CS0 Python");
 // exports.write_3("Buffer Overflow", "CS0 Pseudocode");
 // exports.write_3("Buffer Overflow", "CS1 C++");
@@ -197,6 +197,8 @@ exports.write_3("Buffer Overflow", "CS0 Pseudocode");
 // exports.write_3("Business", "Government Use Security");
 // exports.write_3("Business", "Personal Use Security");
 // exports.write_3("Healthcare Management", "Risk Management");
+exports.write_3("Interdisciplinary", "Intro to Cyber");
+exports.write_3("Interdisciplinary", "Fall 377 Syllabus");
 // exports.write_3("Healthcare Management", "HIPPA");
 // exports.write_3("Healthcare Management", "Hipaa");
 // exports.write_3("Mitigating Risk", "Value Modeling");
