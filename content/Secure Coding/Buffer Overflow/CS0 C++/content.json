@@ -56,7 +56,7 @@
                 },
                 {
                     "type": "image",
-                    "src": "https://cisserv1.towson.edu/~cssecinj/wp-content/uploads/BufferOverFlowProgramCS0ExampleInCode.png",
+                    "src": "https://s3.amazonaws.com/security-injections.clark.center/assets/Buffer_Overflow/BufferOverFlowProgramCS0ExampleInCode.png",
                     "alt": "code",
                     "width": 603,
                     "height": 299,
@@ -214,7 +214,7 @@
                 },
                 {
                     "type": "image",
-                    "src": "https://cisserv1.towson.edu/~cssecinj/wp-content/uploads/BufferOverFlowProgramCS0ExampleInCode.png",
+                    "src": "https://s3.amazonaws.com/security-injections.clark.center/assets/Buffer_Overflow/BufferOverFlowProgramCS0ExampleInCode.png",
                     "alt": "example in code",
                     "width": 603,
                     "height": 299,
@@ -256,7 +256,7 @@
                 },
                 {
                     "type": "image",
-                    "src": "https://cisserv1.towson.edu/~cssecinj/wp-content/uploads/BufferOverFlowProgramCS0LabAssignment.png",
+                    "src": "https://s3.amazonaws.com/security-injections.clark.center/assets/Buffer_Overflow/BufferOverFlowProgramCS0LabAssignment.png",
                     "alt": "Program 1",
                     "width": 510,
                     "height": 346,

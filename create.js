@@ -20,7 +20,7 @@ exports.write_3 = function(name, variant, dev) {
 	if(typeof(dev)==='undefined') dev = false;		// default value for dev
 
 	// CONSTANTS
-	var contentDir = "content/";	// TODO: Change this variable to generate different modules in different folders
+	var contentDir = "content/Secure Coding/";	// TODO: Change this variable to generate different modules in different folders
 
 	var resourceDir = "resources/";
 	var publicDir = "public/";
@@ -134,11 +134,10 @@ exports.write_3 = function(name, variant, dev) {
 // 'Secure Coding' Folder -------------------
 
 // exports.write_3("Best Practices for Secure Variables", "CS1 Java");
-// exports.write_3("Buffer Overflow", "CS0 C++");
-	dated upstream
+exports.write_3("Buffer Overflow", "CS0 C++");
 // exports.write_3("Buffer Overflow", "CS0 Java");
 // exports.write_3("Buffer Overflow", "CS0 Java"); 
-exports.write_3("Buffer Overflow", "CS0 Pseudocode");
+// exports.write_3("Buffer Overflow", "CS0 Pseudocode");
 // exports.write_3("Buffer Overflow", "CS0 Python");
 // exports.write_3("Buffer Overflow", "CS0 Pseudocode");
 // exports.write_3("Buffer Overflow", "CS1 C++");
