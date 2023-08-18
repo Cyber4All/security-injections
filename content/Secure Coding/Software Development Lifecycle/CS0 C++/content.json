@@ -43,7 +43,7 @@
                 },
                 {
                     "type": "image",
-                    "src": "https://cisserv1.towson.edu/~cssecinj/wp-content/uploads/SDLC.jpg",
+                    "src": "https://s3.amazonaws.com/security-injections.clark.center/assets/Integer_Error/SDLC.jpg",
                     "alt": "SDLC",
                     "width": 550,
                     "height": 301,
@@ -227,7 +227,7 @@
                 },
                 {
                     "type": "image",
-                    "src": "https://cisserv1.towson.edu/~cssecinj/wp-content/uploads/SDLCc++.jpg",
+                    "src": "https://s3.amazonaws.com/security-injections.clark.center/assets/Integer_Error/SDLCc%2B%2B.jpg",
                     "alt": "Software Development Lifecycle Code Block",
                     "width": 522,
                     "height": 261,

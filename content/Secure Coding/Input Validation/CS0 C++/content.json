@@ -48,7 +48,7 @@
                 },
                 {
                     "type": "image",
-                    "src": "https://cisserv1.towson.edu/~cssecinj/wp-content/uploads/fat_finger.jpg",
+                    "src": "https://s3.amazonaws.com/security-injections.clark.center/assets/Input_Validation-CS0_C%2B%2B/fat_finger.jpeg",
                     "alt": "Dominik Joswig",
                     "width": 406,
                     "height": 226,
@@ -430,7 +430,7 @@
                 },
                 {
                     "type": "image",
-                    "src": "https://cisserv1.towson.edu/~cssecinj/wp-content/uploads/program_images/cs0_input_val_program1.png",
+                    "src": "https://s3.amazonaws.com/security-injections.clark.center/assets/Input_Validation-CS0_C%2B%2B/cs0_input_val_program1.png",
                     "alt": "program 1",
                     "width": 469,
                     "height": 278,
