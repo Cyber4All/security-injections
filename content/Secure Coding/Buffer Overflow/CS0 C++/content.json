@@ -48,7 +48,7 @@
                 },
                 {
                     "type": "paragraph",
-                    "text": "Buffer overflow vulnerabilities were exploited by the first major attack on the Internet. Known as the Morris worm, this attack infected more than 60,000 machines and shut down much of the Internet for several days in 1988.<br><small><small><small>Carolyn Duffy Marsan Morris Worm Turns 20: Look what it's Done Network World, October 30, 2008  <a href = http://www.networkworld.com/news/2008/103008-morris-worm.html?page=1 > http://www.networkworld.com/news/2008/103008-morris-worm.html?page=1</a></small></small></small>"
+                    "text": "Buffer overflow vulnerabilities were exploited by the first major attack on the Internet. Known as the Morris worm, this attack infected more than 60,000 machines and shut down much of the Internet for several days in 1988.<br><small><small><small>Carolyn Duffy Marsan Morris Worm Turns 20: Look what it's Done Network World, October 30, 2008  <a href = https://www.networkworld.com/article/2268919/morris-worm-turns-20-look-what-it-s-done.html > https://www.networkworld.com/article/2268919/morris-worm-turns-20-look-what-it-s-done.html</a></small></small></small>"
                 },
                 {
                     "type": "subheader",
@@ -56,7 +56,7 @@
                 },
                 {
                     "type": "image",
-                    "src": "https://cisserv1.towson.edu/~cssecinj/wp-content/uploads/BufferOverFlowProgramCS0ExampleInCode.png",
+                    "src": "https://s3.amazonaws.com/security-injections.clark.center/assets/Buffer_Overflow/BufferOverFlowProgramCS0ExampleInCode.png",
                     "alt": "code",
                     "width": 603,
                     "height": 299,
@@ -214,7 +214,7 @@
                 },
                 {
                     "type": "image",
-                    "src": "https://cisserv1.towson.edu/~cssecinj/wp-content/uploads/BufferOverFlowProgramCS0ExampleInCode.png",
+                    "src": "https://s3.amazonaws.com/security-injections.clark.center/assets/Buffer_Overflow/BufferOverFlowProgramCS0ExampleInCode.png",
                     "alt": "example in code",
                     "width": 603,
                     "height": 299,
@@ -256,7 +256,7 @@
                 },
                 {
                     "type": "image",
-                    "src": "https://cisserv1.towson.edu/~cssecinj/wp-content/uploads/BufferOverFlowProgramCS0LabAssignment.png",
+                    "src": "https://s3.amazonaws.com/security-injections.clark.center/assets/Buffer_Overflow/BufferOverFlowProgramCS0LabAssignment.png",
                     "alt": "Program 1",
                     "width": 510,
                     "height": 346,
