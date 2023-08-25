@@ -52,7 +52,7 @@
                 },
                 {
                     "type": "image",
-                    "src": "https://s3.amazonaws.com/security-injections.clark.center/assets/phishing-email.jpeg",
+                    "src": "https://s3.amazonaws.com/security-injections.clark.center/assets/Computer_Literacy-Phishing/phishing-email.jpeg",
                     "alt": "Amazon phising example",
                     "width": 581,
                     "height": 292,
@@ -117,7 +117,7 @@
                 },
                 {
                     "type": "image",
-                    "src": "https://s3.amazonaws.com/security-injections.clark.center/assets/phishing-comic.jpeg",
+                    "src": "https://s3.amazonaws.com/security-injections.clark.center/assets/Computer_Literacy-Phishing/phishing-comic.jpeg",
                     "alt": "Phising comic",
                     "width": 992,
                     "height": 603,
@@ -133,7 +133,7 @@
                 },
                 {
                     "type": "image",
-                    "src": "https://s3.amazonaws.com/security-injections.clark.center/assets/phish-game1.jpeg",
+                    "src": "https://s3.amazonaws.com/security-injections.clark.center/assets/Computer_Literacy-Phishing/phish-game1.jpeg",
                     "alt": "Anti-Phising",
                     "width": 552,
                     "height": 414,
@@ -302,7 +302,7 @@
                 },
                 {
                     "type": "image",
-                    "src": "https://s3.amazonaws.com/security-injections.clark.center/assets/paypal-email-cis0.jpeg",
+                    "src": "https://s3.amazonaws.com/security-injections.clark.center/assets/Computer_Literacy-Phishing/paypal-email-cis0.jpeg",
                     "alt": "PayPal",
                     "width": 612,
                     "height": 797,
