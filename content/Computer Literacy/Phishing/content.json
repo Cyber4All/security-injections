@@ -2,10 +2,10 @@
     "name": "Computer Literacy",
     "variant": "Phishing",
     "grant": "The Security Injections@Towson, SPLASH@Towson, and Cyber4All projects are supported by the National Science Foundation under grants NSF DUE-1241738, NSF DUE -0817267, NSF DGE-1516113, NSF DGE-1516113, NSF DGE-1241649, the GenCyber program, and the Intel Corporation.",
-	"license": {
-		"name": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License",
-		"link": "http://creativecommons.org/licenses/by-nc-sa/3.0/"
-	},
+    "license": {
+        "name": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License",
+        "link": "http://creativecommons.org/licenses/by-nc-sa/3.0/"
+    },
     "sections": [
         {
             "header": "Background",
@@ -16,7 +16,7 @@
                 },
                 {
                     "type": "paragraph",
-                    "text": "Phishing is a type of social engineering technique in which an attacker sends an e-mail or displays a Web announcement that falsely claims to be from a legitimate organization. The intention of the messenger is to trick the user into surrendering private information."
+                    "text": "Phishing is a type of social engineering technique in which an attacker sends an e-mail or displays a web announcement that falsely claims to be from a legitimate organization. The intention of the messenger is to trick the user into surrendering private information."
                 },
                 {
                     "type": "subheader",
@@ -24,7 +24,7 @@
                 },
                 {
                     "type": "paragraph",
-                    "text": "A more specific definition is offered by the Anti-phishing Working Group (APWG): “Phishing is a criminal mechanism employing both social engineering and technical subterfuge to steal consumers’ personal identity data and financial account credentials.” The victim in a phishing attack is asked to respond to an e-mail or is directed to a Web site to update personal information, such as passwords, credit card numbers, Social Security numbers, bank account numbers, or other information for which the legitimate organization already has a record. However, the site is actually a fraudulent Web site designed to steal the user’s information."
+                    "text": "A more specific definition is offered by the Anti-phishing Working Group (APWG): “Phishing is a criminal mechanism employing both social engineering and technical subterfuge to steal consumers’ personal identity data and financial account credentials.” The victim in a phishing attack is asked to respond to an e-mail or is directed to a website to update personal information, such as passwords, credit card numbers, Social Security numbers, bank account numbers, or other information for which the legitimate organization already has a record. However, the site is actually a fraudulent website designed to steal the user’s information."
                 },
                 {
                     "type": "subheader",
@@ -32,7 +32,7 @@
                 },
                 {
                     "type": "paragraph",
-                    "text": "Phishing can and usually leads to online identity theft. By capturing a user’s personal information, an attacker can gain access to the user’s account on a legitimate Web site, and can engage in a number of activities resulting in substantial financial loss to the user, denial of access to e-mail, and other problems."
+                    "text": "Phishing can and usually leads to online identity theft. By capturing a user’s personal information, an attacker can gain access to the user’s account on a legitimate website, and can engage in a number of activities resulting in substantial financial loss to the user, denial of access to e-mail, and other problems."
                 },
                 {
                     "type": "subheader",
@@ -44,7 +44,7 @@
                 },
                 {
                     "type": "paragraph",
-                    "text": "Twitter responded by reporting the offending domain, and changing the affected users’ passwords. (<a href = https://www.theguardian.com/technology/2009/jan/08/twitter-barack-obama-britney-spears-micro-blog-networking> What sort of Twitter would give away their password?</a>)"
+                    "text": "Twitter responded by reporting the offending domain, and changing the affected users’ passwords. (<a href = https://www.theguardian.com/technology/2009/jan/08/twitter-barack-obama-britney-spears-micro-blog-networking>What sort of Twitter user would give away their password?</a>)"
                 },
                 {
                     "type": "paragraph",
@@ -52,7 +52,7 @@
                 },
                 {
                     "type": "image",
-                    "src": "https://cisserv1.towson.edu/~cssecinj/wp-content/uploads/cis0/phishing-email.jpg",
+                    "src": "https://s3.amazonaws.com/security-injections.clark.center/assets/phishing-email.jpeg",
                     "alt": "Amazon phising example",
                     "width": 581,
                     "height": 292,
@@ -117,7 +117,7 @@
                 },
                 {
                     "type": "image",
-                    "src": "https://cisserv1.towson.edu/~cssecinj/wp-content/uploads/cis0/phishing-comic.jpg",
+                    "src": "https://s3.amazonaws.com/security-injections.clark.center/assets/phishing-comic.jpeg",
                     "alt": "Phising comic",
                     "width": 992,
                     "height": 603,
@@ -129,21 +129,19 @@
                 },
                 {
                     "type": "paragraph",
-                    "text": "Training users to identify a 'phish' is an important component in the fight against phishing. Training has taken two forms: the first is simply to provide anti-phishing information to users through e-mail and other media. The second is to give firsthand experience to users through games, simulated phish, cartoons, etc. Recent studies seem to indicate that the latter—giving firsthand experience to users—might be more effective. The game, Anti-Phishing Phil (see picture), which teaches people how to identify suspicious Web site addresses while providing the experience of being captured by a phisher, is such an example. PhishGuru in the previous section is another example. It delivers cartoon-based, anti-phishing information after a user has been deceived by simulated phishing messages."
+                    "text": "Training users to identify a 'phish' is an important component in the fight against phishing. Training has taken two forms: the first is simply to provide anti-phishing information to users through e-mail and other media. The second is to give firsthand experience to users through games, simulated phish, cartoons, etc. Recent studies seem to indicate that the latter—giving firsthand experience to users—might be more effective. The game, Anti-Phishing Phil (see picture), which teaches people how to identify suspicious website addresses while providing the experience of being captured by a phisher, is such an example. PhishGuru in the previous section is another example. It delivers cartoon-based, anti-phishing information after a user has been deceived by simulated phishing messages."
                 },
                 {
                     "type": "image",
-                    "src": "https://cisserv1.towson.edu/~cssecinj/wp-content/uploads/cis0/phish-game1.jpg",
+                    "src": "https://s3.amazonaws.com/security-injections.clark.center/assets/phish-game1.jpeg",
                     "alt": "Anti-Phising",
                     "width": 552,
                     "height": 414,
-                    "float": "right"
+                    "float": null
                 },
                 {
-                    "type": "attribution",
-                    "copyright": "Anti-Phishing Phil © Wombat Security Technologies, Inc.",
-                    "date": "no date",
-                    "link": "http://heron.towson.edu/securityinjections/comp_lit/01/exams/phishing-code-responsibly"
+                    "type": "paragraph",
+                    "text": "<small><small>Anti-Phishing Phil © Wombat Security Technologies, Inc.</small></small>"
                 },
                 {
                     "type": "subheader",
@@ -151,7 +149,7 @@
                 },
                 {
                     "type": "paragraph",
-                    "text": "Although user ability to identify phish is an important component in the battle against phishing, combining it with technology yields better results. One of the techniques used to automatically identify phish is <strong>filtering</strong>. The objective of filtering is to identify (or flag) phishing attempts in e-mail or on Web pages. Filters are usually integrated into browsers or e-mail software. When a Web address is encountered the software compares it with a so-called \"blacklist\" of known phishing Web sites. It then takes appropriate actions, which usually include informing the user. The blacklist is updated periodically (for example, every 30 minutes) as new phishing sites become available. As with any blacklist, there is also a \"whitelist\" of known legitimate sites."
+                    "text": "Although user ability to identify phish is an important component in the battle against phishing, combining it with technology yields better results. One of the techniques used to automatically identify phish is <strong>filtering</strong>. The objective of filtering is to identify (or flag) phishing attempts in e-mail or on webpages. Filters are usually integrated into browsers or e-mail software. When a web address is encountered the software compares it with a so-called \"blacklist\" of known phishing websites. It then takes appropriate actions, which usually include informing the user. The blacklist is updated periodically (for example, every 30 minutes) as new phishing sites become available. As with any blacklist, there is also a \"whitelist\" of known legitimate sites."
                 },
                 {
                     "type": "subheader",
@@ -240,7 +238,7 @@
                 },
                 {
                     "type": "paragraph",
-                    "text": "Complete this security checklist for the following PayPal e-mail. The Web address in the box, <strong>http://211.248.156/Paypal/cgi-bin/webscrcmd_login.php</strong>, appears when the user 'mouse-overs' the \"Click here to verify your account\" link. Read the e-mail carefully and check the boxes as appropriate."
+                    "text": "Complete this Security Checklist for the following PayPal e-mail. The web address in the box, \"http://211.248.156/Paypal/cgi-bin/webscrcmd_login.php\", appears when the user 'mouse-overs' the \"Click here to verify your account\" link. Read the e-mail carefully and check the boxes as appropriate."
                 },
                 {
                     "type": "checklist",
@@ -304,7 +302,7 @@
                 },
                 {
                     "type": "image",
-                    "src": "https://cisserv1.towson.edu/~cssecinj/wp-content/uploads/cis0/paypal-email-cis0.jpg",
+                    "src": "https://s3.amazonaws.com/security-injections.clark.center/assets/paypal-email-cis0.jpeg",
                     "alt": "PayPal",
                     "width": 612,
                     "height": 797,
@@ -334,7 +332,7 @@
                 {
                     "type": "question",
                     "id": "test",
-                    "prompt": "Take the \"SonicWall Phishing and Spam IQ Test\" a couple of times (<a href = https://www.sonicwall.com/phishing-iq-test/>https://www.sonicwall.com/phishing-iq-test/</a>). What was your maximum score? Look at the test result sheet, and give the name that appears in the \"Subject\" column for three of the questions. For each of the subjects, click on the \"Why?\" link that appears under the \"Explain Answer Column.\" The e-mail you viewed for that question should re-appear—this time with explanations. Copy one of the given explanations for each of the e-mails.",
+                    "prompt": "Take the <a href = https://www.sonicwall.com/phishing-iq-test/>\"SonicWall Phishing and Spam IQ Test\"</a> a couple of times. What was your maximum score? Look at the test result sheet, and give the name that appears in the \"Subject\" column for three of the questions. For each of the subjects, click on the \"Why?\" link that appears under the \"Explain Answer Column.\" The e-mail you viewed for that question should re-appear—this time with explanations. Copy one of the given explanations for each of the e-mails.",
                     "ignored": true,
                     "mode": "textarea",
                     "pattern": "null"
@@ -346,7 +344,7 @@
                 {
                     "type": "question",
                     "id": "spearPhishing",
-                    "prompt": "In recent years, a more insidious form of phishing, known as spear phishing, has taken root. Spear phishing is customized to a particular user. It often addresses the recipient directly (by name) and may include other personal information about the user. Provide a recent example of spear phishing and discuss the peculiarities of the e-mail that makes it a suspected phish. Your example could be taken from an e-mail you or someone you know received, from a handout from your instructor, or from a recent newspaper or Web article.",
+                    "prompt": "In recent years, a more insidious form of phishing, known as spear phishing, has taken root. Spear phishing is customized to a particular user. It often addresses the recipient directly (by name) and may include other personal information about the user. Provide a recent example of spear phishing and discuss the peculiarities of the e-mail that makes it a suspected phish. Your example could be taken from an e-mail you or someone you know received, from a handout from your instructor, or from a recent newspaper or web article.",
                     "ignored": true,
                     "mode": "textarea",
                     "pattern": "null"
@@ -358,7 +356,7 @@
                 {
                     "type": "question",
                     "id": "spearPhishing",
-                    "prompt": "Pharming is yet another recent form of phishing, which automatically redirects the user to a fake Web site—no clicking required. Give a recent example of pharming and discuss the peculiarities of the e-mail that makes it a suspected phish. Again, your example could be taken from an e-mail you or someone you know received, a handout from your instructor, or from a recent newspaper or Web article.",
+                    "prompt": "Pharming is yet another recent form of phishing, which automatically redirects the user to a fake website — no clicking required. Give a recent example of pharming and discuss the peculiarities of the e-mail that makes it a suspected phish. Again, your example could be taken from an e-mail you or someone you know received, a handout from your instructor, or from a recent newspaper or web article.",
                     "ignored": true,
                     "mode": "textarea",
                     "pattern": "null"

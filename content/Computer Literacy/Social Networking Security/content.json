@@ -24,7 +24,7 @@
                 },
                 {
                     "type": "paragraph",
-                    "text": "<img src='https://help.twitter.com/content/dam/help-twitter/brand/logo.png' alt='twitter' style='width:132px; height:70px;' class='col-xs-3'>&nbsp;<img src='http://epsilon-e.com/wp-content/uploads/2016/03/linkedin-icon-logo-vector-400x400.png' alt='linkedin' style='width:132px; height:70px;' class='col-xs-3'>&nbsp;<img src='https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg' alt='facebook' style='width:132px; height:70px;' class='col-xs-3'>&nbsp;<img src='https://store-images.s-microsoft.com/image/apps.31997.13510798887167234.6cd52261-a276-49cf-9b6b-9ef8491fb799.30e70ce4-33c5-43d6-9af1-491fe4679377?mode=scale&q=90&h=300&w=300' alt='instagram' style='width:132px; height:70px;' class='col-xs-3'><br>"
+                    "text": "<img src='https://s3.amazonaws.com/security-injections.clark.center/assets/Computer_Literacy-Social_Networking_Security/logo.png' alt='twitter' style='width:132px; height:70px;' class='col-xs-3'>&nbsp;<img src='https://s3.amazonaws.com/security-injections.clark.center/assets/Computer_Literacy-Social_Networking_Security/linkedin-logo.png' alt='linkedin' style='width:132px; height:70px;' class='col-xs-3'>&nbsp;<img src='https://s3.amazonaws.com/security-injections.clark.center/assets/Computer_Literacy-Social_Networking_Security/fb-logo.svg' alt='facebook' style='width:132px; height:70px;' class='col-xs-3'>&nbsp;<img src='https://s3.amazonaws.com/security-injections.clark.center/assets/Computer_Literacy-Social_Networking_Security/instagram-logo.png' alt='instagram' style='width:132px; height:70px;' class='col-xs-3'><br>"
                 },
                 {
                     "type": "paragraph",
@@ -113,7 +113,7 @@
                 },
                 {
                     "type": "image",
-                    "src": "http://www.clker.com/cliparts/j/L/3/m/C/u/padlock-icon-hi.png",
+                    "src": "https://s3.amazonaws.com/security-injections.clark.center/assets/Computer_Literacy-Social_Networking_Security/padlock-icon-hi.png",
                     "alt": "lock",
                     "width": 103,
                     "height": 150,
@@ -145,7 +145,7 @@
                 },
                 {
                     "type": "image",
-                    "src": "http://freevector.co/wp-content/uploads/2013/01/77871-old-round-clock.png",
+                    "src": "https://s3.amazonaws.com/security-injections.clark.center/assets/Computer_Literacy-Social_Networking_Security/77871-old-round-clock.png",
                     "alt": "clock",
                     "width": 150,
                     "height": 150,
@@ -173,7 +173,7 @@
                 },
                 {
                     "type": "image",
-                    "src": "http://4vector.com/i/free-vector-facebook-style-icon-vector-material_020344_groups.png",
+                    "src": "https://s3.amazonaws.com/security-injections.clark.center/assets/Computer_Literacy-Social_Networking_Security/free-vector-facebook-style-icon-vector-material_020344_groups.png",
                     "alt": "friends",
                     "width": 150,
                     "height": 150,
