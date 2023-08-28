@@ -20,7 +20,7 @@
                 },
                 {
                     "type": "image",
-                    "src": "https://cisserv1.towson.edu/~cssecinj/wp-content/uploads//variablepic.jpg",
+                    "src": "https://s3.amazonaws.com/security-injections.clark.center/assets/Best_Practices_For_Secure_Variables/VulnerabilitiesTriangle.png",
                     "alt": "*image*",
                     "width": 302,
                     "height": 147,
