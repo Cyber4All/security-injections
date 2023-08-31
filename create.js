@@ -198,7 +198,7 @@ exports.write_3 = function(name, variant, dev) {
 // exports.write_3("Business", "Personal Use Security");
 // exports.write_3("Healthcare Management", "Risk Management");
 exports.write_3("Interdisciplinary", "Intro to Cyber");
-exports.write_3("Interdisciplinary", "Fall 377 Syllabus");
+exports.write_3("Interdisciplinary", "Fall 377 Class Procedures");
 // exports.write_3("Healthcare Management", "HIPPA");
 // exports.write_3("Healthcare Management", "Hipaa");
 // exports.write_3("Mitigating Risk", "Value Modeling");

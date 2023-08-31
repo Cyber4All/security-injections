@@ -1,6 +1,6 @@
 {
     "name": "Interdisciplinary",
-    "variant": "Fall 377 Syllabus",
+    "variant": "Fall 377 Class Procedures",
 	"license": {
 		"name": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License",
 		"link": "http://creativecommons.org/licenses/by-nc-sa/3.0/"
@@ -45,7 +45,6 @@
                     "type": "table",
                     "headers": [
                         "<strong>Title</strong>",
-                        "<strong>Author</strong>",
                         "<strong>ISBN</strong>"
                     ],
                     "cells": [
@@ -278,6 +277,11 @@
                         {
                             "id": "training",
                             "text": "All assignments, quizzes, and group project deliverables can be submitted via email",
+                            "ans": false
+                        },
+                        {
+                            "id": "pinch",
+                            "text": "I grant extensions on assignments if the request is submitted at least 24 hours before it is due",
                             "ans": true
                         }
                     ]

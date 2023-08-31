@@ -71,6 +71,18 @@
                             "ans": true
                         }
                     ]
+                },
+                {
+                    "type": "subheader",
+                    "text": "Citations"
+                },
+                {
+                    "type": "list",
+                    "items": [
+                        "[1] <a href=\"https://cybersecurityventures.com/hackerpocalypse-cybercrime-report-2016/\">https://cybersecurityventures.com/hackerpocalypse-cybercrime-report-2016/</a>",
+                        "[2] <a href=\"https://www.cyberseek.org/heatmap.html\">https://www.cyberseek.org/heatmap.html</a> "
+                    ],
+                    "ordered": false
                 }
     
             ]
@@ -80,157 +92,558 @@
             "units": [
                 {
                     "type": "paragraph",
-                    "text": "The National Initiative for Cybersecurity Education (NICE) was established in 2010 due to the need for the cybersecurity workforce to be defined and assessed. It is broken down into 7 categories which group work roles together. Work roles have unique knowledge, skills, and tasks that are expected to be performed in that work role. Below is a table of Categories and associated Work Role."
+                    "text": "The National Initiative for Cybersecurity Education (NICE) was established in 2010 due to the need for the cybersecurity workforce to be defined and assessed. It is broken down into 7 categories which group work roles together. Work roles have unique knowledge, skills, and tasks that are expected to be performed in that work role. Below is a table of Categories along with their descriptions."
                 },
                 {
                     "type": "table",
                     "headers": [
                         "<strong>Category</strong>",
-                        "<strong>Description</strong>",
-                        "<strong>Number of Work Roles</strong>"
+                        "<strong>Description</strong>"
                     ],
                     "cells": [
                         {
                             "first": "Securely Provision",
-                            "second": "Conceptualizes, designs, procures, and/or builds secure information technology (IT) systems, with responsibility for aspects of system and/or network development.",
-                            "third": "11"
+                            "second": "Conceptualizes, designs, procures, and/or builds secure information technology (IT) systems, with responsibility for aspects of system and/or network development."
                         },
                         {
                             "first": "Operate and Maintain",
-                            "second": "Provides the support, administration, and maintenance necessary to ensure effective and efficient information technology (IT) system performance and security.",
-                            "third": "7"
+                            "second": "Provides the support, administration, and maintenance necessary to ensure effective and efficient information technology (IT) system performance and security."
                         },
                         {
                             "first": "Oversee and Govern",
-                            "second": "Provides leadership, management, direction, or development and advocacy so the organization may effectively conduct cybersecurity work.",
-                            "third": "14"
+                            "second": "Provides leadership, management, direction, or development and advocacy so the organization may effectively conduct cybersecurity work."
                         },
                         {
                             "first": "Protect and Defend",
-                            "second": "Identifies, analyzes, and mitigates threats to internal information technology (IT) systems and/or networks.",
-                            "third": "4"
+                            "second": "Identifies, analyzes, and mitigates threats to internal information technology (IT) systems and/or networks."
                         },
                         {
                             "first": "Investigate",
-                            "second": "Investigates cybersecurity events or crimes related to information technology (IT) systems, networks, and digital evidence.",
-                            "third": "3"
+                            "second": "Investigates cybersecurity events or crimes related to information technology (IT) systems, networks, and digital evidence."
                         },
                         {
                             "first": "Analyze",
-                            "second": "Performs highly-specialized review and evaluation of incoming cybersecurity information to determine its usefulness for intelligence",
-                            "third": "7"
+                            "second": "Performs highly-specialized review and evaluation of incoming cybersecurity information to determine its usefulness for intelligence"
                         },
                         {
                             "first": "Collect and Operate",
-                            "second": "Provides specialized denial and deception operations and collection of cybersecurity information that may be used to develop intelligence.",
-                            "third": "6"
+                            "second": "Provides specialized denial and deception operations and collection of cybersecurity information that may be used to develop intelligence."
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "header": "Securely Provision Work Roles",
-            "units": [
+                },
                 {
-                    "type": "list",
-                    "items": [
-                        "Authorizing Official/Designating Representative",
-                        "Security Control Assessor",
-                        "Secure Software Assessor",
-                        "Software Developer",
-                        "Enterprise Architect",
-                        "Security Architect",
-                        "Information Systems Security Developer",
-                        "Systems Developer",
-                        "Systems Requirements Planner",
-                        "Research & Development Specialist",
-                        "System Testing and Evaluation Specialist"
-                    ],
-                    "ordered": false
-                }
-            ]
-        },
-        {
-            "header": "Operate and Maintain Work Roles",
-            "units": [
+                    "type": "paragraph",
+                    "text": "In the following sections you will learn about the various work roles associated with each category, identify the work roles you are most interested in, and investigate the various knowledge, skills, and tasks associated with those roles."
+                },
                 {
-                    "type": "list",
-                    "items": [
-                        "Technical Support Specialist",
-                        "Data Analyst",
-                        "Database Administrator",
-                        "Knowledge Manager",
-                        "Network Operations Specialist",
-                        "System Administrator",
-                        "Systems Security Analyst"
-                    ],
-                    "ordered": false
-                }
-            ]
-        },
-        {
-            "header": "Oversee and Govern Work Roles",
-            "units": [
-                {
-                    "type": "list",
-                    "items": [
-                        "Communications Security (COMSEC) Manager",
-                        "Information Systems Security Manager",
-                        "Executive Cyber Leadership",
-                        "Cyber Legal Advisor",
-                        "Privacy Officer/Privacy Compliance Manager",
-                        "IT Investment/Portfolio Manager",
-                        "IT Program Auditor",
-                        "IT Project Manager",
-                        "Product Support Manager",
-                        "Program Manager",
-                        "Cyber Policy and Strategy Planner",
-                        "Cyber Workforce Developer and Manager",
-                        "Cyber Instructional Curriculum Developer",
-                        "Cyber Instructor"
-                    ],
-                    "ordered": false
-                }
-            ]
-        },
-        {
-            "header": "Protect and Defend Work Roles",
-            "units": [
-                {
-                    "type": "table",
-                    "headers": [
-                        "<strong>Work Role</strong>",
-                        "<strong>Description</strong>",
-                        "<strong>Link</strong>"
-                    ],
-                    "cells": [
+                    "type": "question",
+                    "id": "highScoring1",
+                    "prompt": "Which category deals with determining data's usefulness for intelligence?",
+                    "ignored": false,
+                    "mode": "radio",
+                    "choices": [
                         {
-                            "first": "Cyber Defense Analyst",
-                            "second": "Uses data collected from a variety of cyber defense tools (e.g., IDS alerts, firewalls, network traffic logs) to analyze events that occur within their environments for the purposes of mitigating threats.",
-                            "third": "https://niccs.cisa.gov/workforce-development/nice-framework/work-roles/cyber-defense-analyst"
+                            "id": "true",
+                            "text": "Collect and Operate"
                         },
                         {
-                            "first": "Cyber Defense Infrastructure Support Specialist",
-                            "second": "Tests, implements, deploys, maintains, and administers the infrastructure hardware and software.",
-                            "third": "https://niccs.cisa.gov/workforce-development/nice-framework/work-roles/cyber-defense-infrastructure-support-specialist"
+                            "id": "false",
+                            "text": "Investigate"
                         },
                         {
-                            "first": "Cyber Defense Incident Responder",
-                            "second": "Investigates, analyzes, and responds to cyber incidents within the network environment or enclave.",
-                            "third": "https://niccs.cisa.gov/workforce-development/nice-framework/work-roles/cyber-defense-incident-responder"
+                            "id": "fruit",
+                            "text": "Securely Provision"
                         },
                         {
-                            "first": "Vulnerability Assessment Analyst",
-                            "second": "Performs assessments of systems and networks within the network environment or enclave and identifies where those systems/networks deviate from acceptable configurations, enclave policy, or local policy. Measures effectiveness of defense-in-depth architecture against known vulnerabilities.",
-                            "third": "https://niccs.cisa.gov/workforce-development/nice-framework/work-roles/vulnerability-assessment-analyst"
+                            "id": "analyze",
+                            "text": "Analyze"
                         }
-                    ]
+                    ],
+                    "answer": "analyze"
+                },
+                {
+                    "type": "question",
+                    "id": "highScoring2",
+                    "prompt": "Which category deals with building secure information technology?",
+                    "ignored": false,
+                    "mode": "radio",
+                    "choices": [
+                        {
+                            "id": "true",
+                            "text": "Collect and Operate"
+                        },
+                        {
+                            "id": "false",
+                            "text": "Investigate"
+                        },
+                        {
+                            "id": "fruit",
+                            "text": "Securely Provision"
+                        },
+                        {
+                            "id": "analyze",
+                            "text": "Analyze"
+                        }
+                    ],
+                    "answer": "fruit"
                 }
             ]
         },
         {
-            "header": "Investigate Work Roles",
+            "header": "Securely Provision",
+            "units": [
+                {
+                    "type": "subheader",
+                    "text": "Authorizing Official/Designating Representative"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Senior official or executive with the authority to formally assume responsibility for operating an information system at an acceptable level of risk to organizational operations (including mission, functions, image, or reputation), organizational assets, individuals, other organizations, and the Nation (CNSSI 4009)."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "<a target=\"_blank\" href=\"https://niccs.cisa.gov/workforce-development/nice-framework/work-roles/authorizing-officialdesignating-representative\">Link to Knowledge, Skills, and Tasks</a>"
+                },
+                {
+                    "type": "subheader",
+                    "text": "Security Control Assessor"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Conducts independent comprehensive assessments of the management, operational, and technical security controls and control enhancements employed within or inherited by an information technology (IT) system to determine the overall effectiveness of the controls (as defined in NIST SP 800-37)."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "<a target=\"_blank\" href=\"https://niccs.cisa.gov/workforce-development/nice-framework/work-roles/security-control-assessor\">Link to Knowledge, Skills, and Tasks</a>"
+                },
+                {
+                    "type": "subheader",
+                    "text": "Secure Software Assessor"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Analyzes the security of new or existing computer applications, software, or specialized utility programs and provides actionable results."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "<a target=\"_blank\" href=\"https://niccs.cisa.gov/workforce-development/nice-framework/work-roles/secure-software-assessor\">Link to Knowledge, Skills, and Tasks</a>"
+                },
+                {
+                    "type": "subheader",
+                    "text": "Software Developer"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Develops, creates, maintains, and writes/codes new (or modifies existing) computer applications, software, or specialized utility programs."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "<a target=\"_blank\" href=\"https://niccs.cisa.gov/workforce-development/nice-framework/work-roles/software-developer\">Link to Knowledge, Skills, and Tasks</a>"
+                },
+                {
+                    "type": "subheader",
+                    "text": "Enterprise Architect"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Develops and maintains business, systems, and information processes to support enterprise mission needs; develops information technology (IT) rules and requirements that describe baseline and target architectures."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "<a target=\"_blank\" href=\"https://niccs.cisa.gov/workforce-development/nice-framework/work-roles/enterprise-architect\">Link to Knowledge, Skills, and Tasks</a>"
+                },
+                {
+                    "type": "subheader",
+                    "text": "Security Architect"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Ensures that the stakeholder security requirements necessary to protect the organization’s mission and business processes are adequately addressed in all aspects of enterprise architecture including reference models, segment and solution architectures, and the resulting systems supporting those missions and business processes."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "<a target=\"_blank\" href=\"https://niccs.cisa.gov/workforce-development/nice-framework/work-roles/security-architect\">Link to Knowledge, Skills, and Tasks</a>"
+                },
+                {
+                    "type": "subheader",
+                    "text": "Information Systems Security Developer"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Designs, develops, tests, and evaluates information system security throughout the systems development life cycle."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "<a target=\"_blank\" href=\"https://niccs.cisa.gov/workforce-development/nice-framework/work-roles/information-systems-security-developer\">Link to Knowledge, Skills, and Tasks</a>"
+                },
+                {
+                    "type": "subheader",
+                    "text": "Systems Developer"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Designs, develops, tests, and evaluates information systems throughout the systems development life cycle."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "<a target=\"_blank\" href=\"https://niccs.cisa.gov/workforce-development/nice-framework/work-roles/systems-developer\">Link to Knowledge, Skills, and Tasks</a>"
+                },
+                {
+                    "type": "subheader",
+                    "text": "Systems Requirements Planner"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Consults with customers to evaluate functional requirements and translate functional requirements into technical solutions."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "<a target=\"_blank\" href=\"https://niccs.cisa.gov/workforce-development/nice-framework/work-roles/systems-requirements-planner\">Link to Knowledge, Skills, and Tasks</a>"
+                },
+                {
+                    "type": "subheader",
+                    "text": "Research & Development Specialist"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Conducts software and systems engineering and software systems research to develop new capabilities, ensuring cybersecurity is fully integrated. Conducts comprehensive technology research to evaluate potential vulnerabilities in cyberspace systems."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "<a target=\"_blank\" href=\"https://niccs.cisa.gov/workforce-development/nice-framework/specialty-areas/technology-rd\">Link to Knowledge, Skills, and Tasks</a>"
+                },
+                {
+                    "type": "subheader",
+                    "text": "System Testing and Evaluation Specialist"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Plans, prepares, and executes tests of systems to evaluate results against specifications and requirements as well as analyze/report test results."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "<a target=\"_blank\" href=\"https://niccs.cisa.gov/workforce-development/nice-framework/work-roles/system-testing-and-evaluation-specialist\">Link to Knowledge, Skills, and Tasks</a>"
+                }
+                
+            ]
+        },
+        {
+            "header": "Operate and Maintain",
+            "units": [
+                {
+                    "type": "subheader",
+                    "text": "Technical Support Specialist"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Provides technical support to customers who need assistance utilizing client-level hardware and software in accordance with established or approved organizational process components (i.e., Master Incident Management Plan, when applicable)."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "<a target=\"_blank\" href=\"https://niccs.cisa.gov/workforce-development/nice-framework/work-roles/technical-support-specialist\">Link to Knowledge, Skills, and Tasks</a>"
+                },
+                {
+                    "type": "subheader",
+                    "text": "Data Analyst"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Examines data from multiple disparate sources with the goal of providing security and privacy insight. Designs and implements custom algorithms, workflow processes, and layouts for complex, enterprise-scale data sets used for modeling, data mining, and research purposes."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "<a target=\"_blank\" href=\"https://niccs.cisa.gov/workforce-development/nice-framework/work-roles/data-analyst\">Link to Knowledge, Skills, and Tasks</a>"
+                },
+                {
+                    "type": "subheader",
+                    "text": "Database Administrator"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Administers databases and/or data management systems that allow for the secure storage, query, protection, and utilization of data."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "<a target=\"_blank\" href=\"https://niccs.cisa.gov/workforce-development/nice-framework/work-roles/database-administrator\">Link to Knowledge, Skills, and Tasks</a>"
+                },
+                {
+                    "type": "subheader",
+                    "text": "Knowledge Manager"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Responsible for the management and administration of processes and tools that enable the organization to identify, document, and access intellectual capital and information content."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "<a target=\"_blank\" href=\"https://niccs.cisa.gov/workforce-development/nice-framework/work-roles/knowledge-manager\">Link to Knowledge, Skills, and Tasks</a>"
+                },
+                {
+                    "type": "subheader",
+                    "text": "Network Operations Specialist"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Plans, implements, and operates network services/systems, to include hardware and virtual environments."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "<a target=\"_blank\" href=\"https://niccs.cisa.gov/workforce-development/nice-framework/work-roles/network-operations-specialist\">Link to Knowledge, Skills, and Tasks</a>"
+                },
+                {
+                    "type": "subheader",
+                    "text": "System Administrator"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Responsible for setting up and maintaining a system or specific components of a system (e.g. for example, installing, configuring, and updating hardware and software; establishing and managing user accounts; overseeing or conducting backup and recovery tasks; implementing operational and technical security controls; and adhering to organizational security policies and procedures)."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "<a target=\"_blank\" href=\"https://niccs.cisa.gov/workforce-development/nice-framework/work-roles/system-administrator\">Link to Knowledge, Skills, and Tasks</a>"
+                },
+                {
+                    "type": "subheader",
+                    "text": "Systems Security Analyst"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Responsible for the analysis and development of the integration, testing, operations, and maintenance of systems security."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "<a target=\"_blank\" href=\"https://niccs.cisa.gov/workforce-development/nice-framework/work-roles/systems-security-analyst\">Link to Knowledge, Skills, and Tasks</a>"
+                }
+            ]
+        },
+        {
+            "header": "Oversee and Govern",
+            "units": [
+                {
+                    "type": "subheader",
+                    "text": "Communications Security (COMSEC) Manager"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Individual who manages the Communications Security (COMSEC) resources of an organization (CNSSI 4009) or key custodian for a Crypto Key Management System (CKMS)."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "<a target=\"_blank\" href=\"https://niccs.cisa.gov/workforce-development/nice-framework/work-roles/communications-security-comsec-manager\">Link to Knowledge, Skills, and Tasks</a>"
+                },
+                {
+                    "type": "subheader",
+                    "text": "Information Systems Security Manager"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Responsible for the cybersecurity of a program, organization, system, or enclave."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "<a target=\"_blank\" href=\"https://niccs.cisa.gov/workforce-development/nice-framework/work-roles/information-systems-security-manager\">Link to Knowledge, Skills, and Tasks</a>"
+                },
+                {
+                    "type": "subheader",
+                    "text": "Executive Cyber Leadership"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Executes decision-making authorities and establishes vision and direction for an organization's cyber and cyber-related resources and/or operations."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "<a target=\"_blank\" href=\"https://niccs.cisa.gov/workforce-development/nice-framework/work-roles/executive-cyber-leadership\">Link to Knowledge, Skills, and Tasks</a>"
+                },
+                {
+                    "type": "subheader",
+                    "text": "Cyber Legal Advisor"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Provides legal advice and recommendations on relevant topics related to cyber law."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "<a target=\"_blank\" href=\"https://niccs.cisa.gov/workforce-development/nice-framework/work-roles/cyber-legal-advisor\">Link to Knowledge, Skills, and Tasks</a>"
+                },
+                {
+                    "type": "subheader",
+                    "text": "Privacy Officer/Privacy Compliance Manager"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Develops and oversees privacy compliance program and privacy program staff, supporting privacy compliance, governance/policy, and incident response needs of privacy and security executives and their teams."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "<a target=\"_blank\" href=\"https://niccs.cisa.gov/workforce-development/nice-framework/work-roles/privacy-officerprivacy-compliance-manager\">Link to Knowledge, Skills, and Tasks</a>"
+                },
+                {
+                    "type": "subheader",
+                    "text": "IT Investment/Portfolio Manager"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Manages a portfolio of IT investments that align with the overall needs of missions and enterprise priorities."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "<a target=\"_blank\" href=\"https://niccs.cisa.gov/workforce-development/nice-framework/specialty-areas/programproject-management-and-acquisition\">Link to Knowledge, Skills, and Tasks</a>"
+                },
+                {
+                    "type": "subheader",
+                    "text": "IT Program Auditor"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Conducts evaluations of an IT program or its individual components to determine compliance with published standards."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "<a target=\"_blank\" href=\"https://niccs.cisa.gov/workforce-development/nice-framework/work-roles/it-program-auditor\">Link to Knowledge, Skills, and Tasks</a>"
+                },
+                {
+                    "type": "subheader",
+                    "text": "IT Project Manager"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Directly manages information technology projects."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "<a target=\"_blank\" href=\"https://niccs.cisa.gov/workforce-development/nice-framework/work-roles/it-project-manager\">Link to Knowledge, Skills, and Tasks</a>"
+                },
+                {
+                    "type": "subheader",
+                    "text": "Product Support Manager"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Manages the package of support functions required to field and maintain the readiness and operational capability of systems and components."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "<a target=\"_blank\" href=\"https://niccs.cisa.gov/workforce-development/nice-framework/work-roles/product-support-manager\">Link to Knowledge, Skills, and Tasks</a>"
+                },
+                {
+                    "type": "subheader",
+                    "text": "Program Manager"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Leads, coordinates, communicates, integrates, and is accountable for the overall success of the program, ensuring alignment with agency or enterprise priorities."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "<a target=\"_blank\" href=\"https://niccs.cisa.gov/workforce-development/nice-framework/work-roles/program-manager\">Link to Knowledge, Skills, and Tasks</a>"
+                },
+                {
+                    "type": "subheader",
+                    "text": "Cyber Policy and Strategy Planner"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Develops and maintains cybersecurity plans, strategy, and policy to support and align with organizational cybersecurity initiatives and regulatory compliance."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "<a target=\"_blank\" href=\"https://niccs.cisa.gov/workforce-development/nice-framework/work-roles/cyber-policy-and-strategy-planner\">Link to Knowledge, Skills, and Tasks</a>"
+                },
+                {
+                    "type": "subheader",
+                    "text": "Cyber Workforce Developer and Manager"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Develops cyberspace workforce plans, strategies, and guidance to support cyberspace workforce manpower, personnel, training and education requirements and to address changes to cyberspace policy, doctrine, materiel, force structure, and education and training requirements."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "<a target=\"_blank\" href=\"https://niccs.cisa.gov/workforce-development/nice-framework/work-roles/cyber-workforce-developer-and-manager\">Link to Knowledge, Skills, and Tasks</a>"
+                },
+                {
+                    "type": "subheader",
+                    "text": "Cyber Instructional Curriculum Developer"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Develops, plans, coordinates, and evaluates cyber training/education courses, methods, and techniques based on instructional needs."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "<a target=\"_blank\" href=\"https://niccs.cisa.gov/workforce-development/nice-framework/work-roles/cyber-instructional-curriculum-developer\">Link to Knowledge, Skills, and Tasks</a>"
+                },
+                {
+                    "type": "subheader",
+                    "text": "Cyber Instructor"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Develops and conducts training or education of personnel within cyber domain."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "<a target=\"_blank\" href=\"https://niccs.cisa.gov/workforce-development/nice-framework/work-roles/cyber-instructor\">Link to Knowledge, Skills, and Tasks</a>"
+                }
+            ]
+        },
+        {
+            "header": "Protect and Defend",
+            "units": [
+                {
+                    "type": "subheader",
+                    "text": "Cyber Defense Analyst"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Uses data collected from a variety of cyber defense tools (e.g., IDS alerts, firewalls, network traffic logs) to analyze events that occur within their environments for the purposes of mitigating threats."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "<a target=\"_blank\" href=\"https://niccs.cisa.gov/workforce-development/nice-framework/work-roles/cyber-defense-analyst\">Link to Knowledge, Skills, and Tasks</a>"
+                },
+                {
+                    "type": "subheader",
+                    "text": "Cyber Defense Infrastructure Support Specialist"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Tests, implements, deploys, maintains, and administers the infrastructure hardware and software."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "<a target=\"_blank\" href=\"https://niccs.cisa.gov/workforce-development/nice-framework/work-roles/cyber-defense-infrastructure-support-specialist\">Link to Knowledge, Skills, and Tasks</a>"
+                },
+                {
+                    "type": "subheader",
+                    "text": "Cyber Defense Incident Responder"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Investigates, analyzes, and responds to cyber incidents within the network environment or enclave."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "<a target=\"_blank\" href=\"https://niccs.cisa.gov/workforce-development/nice-framework/work-roles/cyber-defense-incident-responder\">Link to Knowledge, Skills, and Tasks</a>"
+                },
+                {
+                    "type": "subheader",
+                    "text": "Vulnerability Assessment Analyst"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Performs assessments of systems and networks within the network environment or enclave and identifies where those systems/networks deviate from acceptable configurations, enclave policy, or local policy. Measures effectiveness of defense-in-depth architecture against known vulnerabilities."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "<a target=\"_blank\" href=\"https://niccs.cisa.gov/workforce-development/nice-framework/work-roles/vulnerability-assessment-analyst\">Link to Knowledge, Skills, and Tasks</a>"
+                }
+            ]
+        },
+        {
+            "header": "Investigate",
             "units": [
                 {
                     "type": "paragraph",
@@ -276,7 +689,7 @@
             ]
         },
         {
-            "header": "Analyze Work Roles",
+            "header": "Analyze",
             "units": [
                 {
                     "type": "paragraph",
@@ -369,20 +782,98 @@
             ]
         },
         {
-            "header": "Collect and Operate Work Roles",
+            "header": "Collect and Operate",
             "units": [
                 {
-                    "type": "list",
-                    "items": [
-                        "All Source-Collection Manager",
-                        "All Source-Collection Requirements Manager",
-                        "Cyber Intel Planner",
-                        "Cyber Ops Planner",
-                        "Partner Integration Planner",
-                        "Cyber Operator"
-                    ],
-                    "ordered": false
+                    "type": "subheader",
+                    "text": "All Source-Collection Manager"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Identifies collection authorities and environment; incorporates priority information requirements into collection management; develops concepts to meet leadership's intent. Determines capabilities of available collection assets, identifies new collection capabilities; and constructs and disseminates collection plans. Monitors execution of tasked collection to ensure effective execution of the collection plan."           
+                },
+                {
+                    "type": "paragraph",
+                    "text": "<a target=\"_blank\" href=\"https://niccs.cisa.gov/workforce-development/nice-framework/work-roles/all-source-collection-manager\">Link to Knowledge, Skills, and Tasks</a>"
+                },
+                {
+                    "type": "subheader",
+                    "text": "All Source-Collection Requirements Manager"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Evaluates collection operations and develops effects-based collection requirements strategies using available sources and methods to improve collection. Develops, processes, validates, and coordinates submission of collection requirements. Evaluates performance of collection assets and collection operations."           
+                },
+                {
+                    "type": "paragraph",
+                    "text": "<a target=\"_blank\" href=\"https://niccs.cisa.gov/workforce-development/nice-framework/work-roles/all-source-collection-requirements-manager\">Link to Knowledge, Skills, and Tasks</a>"
+                },
+                {
+                    "type": "subheader",
+                    "text": "Cyber Intel Planner"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Develops detailed intelligence plans to satisfy cyber operations requirements. Collaborates with cyber operations planners to identify, validate, and levy requirements for collection and analysis. Participates in targeting selection, validation, synchronization, and execution of cyber actions. Synchronizes intelligence activities to support organization objectives in cyberspace."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "<a target=\"_blank\" href=\"https://niccs.cisa.gov/workforce-development/nice-framework/work-roles/cyber-intel-planner\">Link to Knowledge, Skills, and Tasks</a>"
+                },
+                {
+                    "type": "subheader",
+                    "text": "Cyber Ops Planner"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Develops detailed plans for the conduct or support of the applicable range of cyber operations through collaboration with other planners, operators and/or analysts. Participates in targeting selection, validation, synchronization, and enables integration during the execution of cyber actions."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "<a target=\"_blank\" href=\"https://niccs.cisa.gov/workforce-development/nice-framework/work-roles/cyber-ops-planner\">Link to Knowledge, Skills, and Tasks</a>"
+                },
+                {
+                    "type": "subheader",
+                    "text": "Partner Integration Planner"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Works to advance cooperation across organizational or national borders between cyber operations partners. Aids the integration of partner cyber teams by providing guidance, resources, and collaboration to develop best practices and facilitate organizational support for achieving objectives in integrated cyber actions."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "<a target=\"_blank\" href=\"https://niccs.cisa.gov/workforce-development/nice-framework/work-roles/partner-integration-planner\">Link to Knowledge, Skills, and Tasks</a>"
+                },
+                {
+                    "type": "subheader",
+                    "text": "Cyber Operator"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Conducts collection, processing, and/or geolocation of systems to exploit, locate, and/or track targets of interest. Performs network navigation, tactical forensic analysis, and, when directed, executes on-net operations."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "<a target=\"_blank\" href=\"https://niccs.cisa.gov/workforce-development/nice-framework/work-roles/cyber-operator\">Link to Knowledge, Skills, and Tasks</a>"
                 }
+            ]
+        },
+        {
+            "header": "Where do you see yourself in Cyber?",
+            "units": [
+                {
+                    "type": "paragraph",
+                    "text": "Now that you know a little bit more about what kinds of work are done in Cybersecurity, <b>identify 2 Work Roles you could see yourself doing and 2 Work Roles you would never want to do even if you were making $1,000,000.</b>"
+                },
+                {
+                    "type": "subheader",
+                    "text": "Submission Instructions"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "In order to get full credit on this preparation you must upload the certificate as well as list the 2 Work Roles you could see yourself doing and the 2 Work Roles you would never want to do."
+                }
+
             ]
         }
 
