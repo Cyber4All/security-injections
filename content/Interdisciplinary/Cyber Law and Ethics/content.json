@@ -1,0 +1,662 @@
+{
+    "name": "Interdisciplinary",
+    "variant": "Cyber Law and Ethics",
+	"license": {
+		"name": "Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)",
+		"link": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+	},
+    "sections": [
+        {
+            "header": "Learning Outcomes",
+            "units": [
+                {
+                    "type": "list",
+                    "items": [
+                        "Distinguish between laws and ethics.",
+                        "Distinguish between laws and policy.",
+                        "Understand the foundations of our broader legal system",
+                        "Recognize the constitutional rights underpinning cybersecurity law.",
+                        "Understand United States Laws related to cybersecurity."
+                    ],
+                    "ordered": false
+                }
+            ]
+        },
+        {
+            "header": "Laws vs. Policy vs. Ethics",
+            "units": [
+                {
+                    "type": "subheader",
+                    "text": "Definitions"
+                },
+                {
+                    "type": "table",
+                    "headers": [
+                        "<strong>Type</strong>",
+                        "<strong>Definition</strong>"
+                    ],
+                    "cells": [
+                        {
+                            "first": "Laws",
+                            "second": "Rules that mandate or prohibit certain behaviors."
+                        },
+                        {
+                            "first": "Ethics",
+                            "second": "Define socially acceptable behaviors."
+                        },
+                        {
+                            "first": "Policy",
+                            "second": "Guidelines that describe acceptable and unacceptable behaviors."
+                        }
+                    ]
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Ethics encompass personal or societal moral principles; they are not enforced by a governing body and are based on cultural mores. Policies are guidelines established by organizations or authorities to regulate specific behaviors, with varying levels of tolerance for ignorance depending on the context. In contrast, laws are formal, legally binding rules created and enforced by a governing body, carrying significant consequences for ignorance, including fines or imprisonment."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "An easy way to remember this is that it is usually excusable on the first offense to not know a policy, such as not wearing the right clothes to work, but it is not excusable to break into someone’s computer because you did not know it was against the law. Laws possess the authority of the government and apply universally within their jurisdiction (i.e., State Law vs. Federal Law). These three concepts collectively shape the behavioral landscape, with ethics being more individual, policies being developed for organizations, and laws representing the highest level of authority from a government."
+                },
+                {
+                    "type": "subheader",
+                    "text": "The Relationship between Ethics and Laws"
+                },
+                {
+                    "type": "image",
+                    "src": "https://cis377.s3.amazonaws.com/assets/ethics_legal_visual.png",
+                    "alt": "Chart describing legal and ethical activities as most legal activities, legal unethical activities and ethical gray area, illegal and ethical as civil disobedience candidates, and illegal and unethical activities and most illegal acts.",
+                    "width": 500,
+                    "height": 250,
+                    "float": null
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Think of some examples of activities that fall under each of these categories. We will discuss during our next class."
+                },
+                {
+                    "type": "subheader",
+                    "text": "Questions"
+                },
+                {
+                    "type": "question",
+                    "id": "measureSS",
+                    "prompt": "A Law:",
+                    "ignored": false,
+                    "mode": "checkbox",
+                    "choices": [
+                        {
+                            "id": "integrity",
+                            "text": "Defines socially acceptable behavior",
+                            "ans": false
+                        },
+                        {
+                            "id": "patch",
+                            "text": "Dictates certain behaviors through rules",
+                            "ans": true
+                        },
+                        {
+                            "id": "training",
+                            "text": "Is something meant to be broken",
+                            "ans": false
+                        },
+                        {
+                            "id": "pinch",
+                            "text": "Carries significant consequences for ignorance",
+                            "ans": true
+                        }
+                    ]
+                },
+                {
+                    "type": "question",
+                    "id": "measureSS1",
+                    "prompt": "Who enforces policies?",
+                    "ignored": false,
+                    "mode": "radio",
+                    "choices": [
+                        {
+                            "id": "integrity",
+                            "text": "Organizations"
+                        },
+                        {
+                            "id": "training",
+                            "text": "Mickey Mouse"
+                        },
+                        {
+                            "id": "pinch",
+                            "text": "Ethics"
+                        },
+                        {
+                            "id": "patch",
+                            "text": "Officers of the Law"
+                        }
+                    ],
+                    "answer": "integrity"
+                },
+                {
+                    "type": "question",
+                    "id": "measureSS2",
+                    "prompt": "Which of the following are examples of policy?",
+                    "ignored": false,
+                    "mode": "checkbox",
+                    "choices": [
+                        {
+                            "id": "integrity",
+                            "text": "Students must submit a negative COVID test result before returning to campus.",
+                            "ans": true
+                        },
+                        {
+                            "id": "training",
+                            "text": "(a) Every person who, with the intent to defraud, knowing that he or she has no authority to do so, signs the name of another person or of a fictitious person to any of the items listed in subdivision (d) is guilty of forgery.",
+                            "ans": false
+                        },
+                        {
+                            "id": "pincher",
+                            "text": "Respect the rights of others",
+                            "ans": false
+                        },
+                        {
+                            "id": "patch45",
+                            "text": "Individuals connecting to public wifi must use a VPN to access work emails.",
+                            "ans": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "United States Legal System",
+            "units": [
+                {
+                    "type": "subheader",
+                    "text": "U.S. Constitution"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "The optional video below gives a brief overview of the U.S. Constitution and the 7 Articles that created our government. It is about 5 minutes long."
+                },
+                {
+                    "type": "video",
+                    "url": "https://www.youtube.com/embed/aWf2ARFoAJU?si=vPyAHsq1ZOTPmOuX"
+                },
+                {
+                    "type": "paragraph",
+                    "text": ""
+                },
+                {
+                    "type": "subheader",
+                    "text": "The Three Branches of the U.S. Government"
+                },
+                {
+                    "type": "table",
+                    "headers": [
+                        "<strong>Branch</strong>",
+                        "<strong>Responsibilities</strong>"
+                    ],
+                    "cells": [
+                        {
+                            "first": "Legislative Branch",
+                            "second": "Creates the laws that are enforced by the Executive branch and interpreted by the judicial branch"
+                        },
+                        {
+                            "first": "Executive Branch",
+                            "second": "Is responsible for enforcing the laws created by the legislative branch and interpreted by the judicial branch"
+                        },
+                        {
+                            "first": "Judicial Branch",
+                            "second": "Responsible for interpreting the laws created by the legislative branch and interpreted by the judicial branch"
+                        }
+                    ]
+                },
+                {
+                    "type": "subheader",
+                    "text": "Rights Protected under the U.S. Constitution"
+                },
+                {
+                    "type": "subheader",
+                    "text": "The Right to Due Process"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "The Fifth Amendment of the Constitution provides for the Right to Due Process at a Federal level. There is identical text in the Fourteenth Amendment that applies the due process requirement at the state level [1]. Due process essentially guarantees that a party, individual or organization, will receive a fundamentally fair, orderly, and just judicial proceeding."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Due Process requires that a person accused of a crime must be provided at a minimum:"
+                },
+                {
+                    "type": "list",
+                    "items": [
+                        "Notice – made aware of the crime and the evidence against oneself.",
+                        "An opportunity to be heard – providing a defense for oneself",
+                        "An impartial tribunal – a fair trial"
+                    ],
+                    "ordered": true
+                },
+                {
+                    "type": "subheader",
+                    "text": "The Right to Privacy"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "The Right to Privacy is not explicitly named in the Constitution but it can be inferred from the Fourth Amendment. The Fourth Amendment originally protected from unreasonable searches and seizures of property by the government.  It protects against arbitrary arrests and is the basis of the law regarding search warrants, stop-and-frisk, safety inspections, and forms of surveillance such as wiretaps, as well as being a central element to privacy law. [2]"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "The Fourth Amendment is among the greatest constitutional limits on the government’s ability to exercise power over individuals. Because the Fourth Amendment was written in 1791, it does not explicitly address the privacy of digital (i.e., intangible) information. Due to the judicial branch having the power to interpret laws, the courts have found that information, even if not written on a physical object like a piece of paper, is protected, and the protections of the Fourth Amendment includes digital information (i.e., data)."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "The judiciary has developed guidelines to determine when and whether the Fourth Amendment applies, the most important of which is the test of a Reasonable Expectation of Privacy [3]. The determination of whether a Reasonable Expectation of Privacy exists is the crucial factor in determining whether a citizen’s rights have been violated by a search and seizure [3]."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Places where the expectation of privacy might be debatable:"
+                },
+                {
+                    "type": "list",
+                    "items": [
+                        "Work email",
+                        "Cell phone calls",
+                        "Cell phone call metadata",
+                        "Cell phone location data",
+                        "Personal email written from work",
+                        "Personal files stored on work computer",
+                        "Web browsing history",
+                        "Posts to social media"
+                    ],
+                    "ordered": "false"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Think about the above scenarios. What is the expectation of privacy for each one? Are there other scenarios that you can think of that could have varying levels of privacy expectations? We will discuss this during our next class."
+                },
+                {
+                    "type": "subheader",
+                    "text": "References"
+                },
+                {
+                    "type": "list",
+                    "items": [
+                        "[1] <a href=\"https://constitutioncenter.org/interactive-constitution/amendments/amendment-xiv/common-interpretation-due-process-clause-of-the-fourteenth-amendment/clause/12\">https://constitutioncenter.org/interactive-constitution/amendments/amendment-xiv/common-interpretation-due-process-clause-of-the-fourteenth-amendment/clause/12</a>",
+                        "[2] <a href=\"https://www.law.cornell.edu/constitution/fourth_amendment\">https://www.law.cornell.edu/constitution/fourth_amendment</a>",
+                        "[3] <a href=\"https://www.wiley.com/en-us/Cybersecurity+Law,+3rd+Edition-p-9781119822165\">https://www.wiley.com/en-us/Cybersecurity+Law,+3rd+Edition-p-9781119822165</a>"
+                    ]
+                },
+                {
+                    "type": "subheader",
+                    "text": "Questions"
+                },
+                {
+                    "type": "question",
+                    "id": "correctStatement",
+                    "prompt": "Which of the following is correct?",
+                    "ignored": false,
+                    "mode": "radio",
+                    "choices": [
+                        {
+                            "id": "1",
+                            "text": "The executive branch is responsible for enforcing the laws and the judicial branch makes the laws."
+                        },
+                        {
+                            "id": "2",
+                            "text": "The judicial branch enforces the laws and the legislative branch makes the laws."
+                        },
+                        {
+                            "id": "3",
+                            "text": "The legislative branch makes the laws and the judicial branch interprets the laws."
+                        },
+                        {
+                            "id": "4",
+                            "text": "The executive branch enforces the laws and the elite squad of the Special Victims Unit makes the laws."
+                        }
+                    ],
+                    "answer": "3"
+                },
+                {
+                    "type": "question",
+                    "id": "dueProcess",
+                    "prompt": "Due Process is protected under which Amendment?",
+                    "ignored": false,
+                    "mode": "radio",
+                    "choices": [
+                        {
+                            "id": "1",
+                            "text": "Fourteenth"
+                        },
+                        {
+                            "id": "2",
+                            "text": "Fifth"
+                        },
+                        {
+                            "id": "3",
+                            "text": "Fourth"
+                        },
+                        {
+                            "id": "4",
+                            "text": "Fifteenth"
+                        }
+                    ],
+                    "answer": "2"
+                },
+                {
+                    "type": "question",
+                    "id": "dataWritten",
+                    "prompt": "Data written on digital devices is protected under the Fourth Amendment.",
+                    "ignored": false,
+                    "mode": "radio",
+                    "choices": [
+                        {
+                            "id": "1",
+                            "text": "True"
+                        },
+                        {
+                            "id": "2",
+                            "text": "False"
+                        }
+                    ],
+                    "answer": "1"
+                }
+            ]
+        },
+        {
+            "header": "United States Cybersecurity Law and Policy",
+            "units": [
+                {
+                    "type": "subheader",
+                    "text": "U.S. Statutory Laws"
+                },
+                {
+                    "type": "list",
+                    "items": [
+                        "Title 18 USC 1030 (Computer Fraud and Abuse Act) *",
+                        "Title 18 USC 2510 Electronic Communications Privacy Act",
+                        "Title 18 USC 2701-22 Stored Communications Privacy Act",
+                        "Title 18 USC 2701-12 Stored Communications Act *",
+                        "Title 18 USC 1831-32 Economic Espionage Acts *",
+                        "Title 10 - Armed Forces",
+                        "Title 50 - War and National Defense"
+                    ],
+                    "ordered": "false"
+                },
+                {
+                    "type": "paragraph",
+                    "text": ""
+                },
+                {
+                    "type": "subheader",
+                    "text": "Title 18 Cyber-Related Crimes"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Even if a person does something that seems like it should be illegal, without reference to a law “on the books” no criminal prosecution can occur. Crimes involving computer technology have necessitated the creation of new laws."
+                },
+                {
+                    "type": "paragraph",
+                    "text": ""
+                },
+                {
+                    "type": "paragraph",
+                    "text": "<b>Title 18, Section 1030: The Computer Fraud and Abuse Act (CFAA)</b>"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Originally passed in 1986, the CFAA is the umbrella \"anti-hacking\" law. It is written very broadly and is used by prosecutors on a wide variety of cases. Convictions can be as minor as a misdemeanor, which can be a fine, to as major as a felony which can result in 5 or more years in prison. This law can also be used in civil action, where one private party sues another party for causing harm in connection with violating the CFAA."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "The CFAA [1] has 7 different parts:"
+                },
+                {
+                    "type": "list",
+                    "items": [
+                        "Hacking to commit espionage",
+                        "Hacking to obtain information",
+                        "Hacking a federal government computer",
+                        "Hacking to commit fraud",
+                        "Hacking to commit damage",
+                        "Trafficking in passwords",
+                        "Threats of hacking"
+                    ],
+                    "ordered": true
+                },
+                {
+                    "type": "paragraph",
+                    "text": "The most cited is part 2 which makes it punishable to intentionally access a computer without authorization or exceeds their authorization level to obtain information from a protected computer. A protected computer is a computer used for financial or government uses. See the official legal definition in [2]. Protected computer as well as several other terms in the CFAA are often disputed in court battles. We will talk about this during our next class."
+                },
+                {
+                    "type": "paragraph",
+                    "text": ""
+                },
+                {
+                    "type": "paragraph",
+                    "text": "<b>Title 18, Section 2701-12 Stored Communications Act (SFA)</b>"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "The Stored Communications Act (SFA) protects consumer's privacy when dealing with 3rd parties. Stored communications include email and files stored on a 3rd party's computer, server, or cloud environment. It contains 3 general categories:"
+                },
+                {
+                    "type": "list",
+                    "items": [
+                        "Access to stored communications",
+                        "Voluntary disclosure of stored communications by service providers",
+                        "Law enforcement's attempts to compel service providers to disclose stored communications"
+                    ],
+                    "ordered": true
+                },
+                {
+                    "type": "paragraph",
+                    "text": "The SFA complements the CFAA in many ways because criminal charges against hackers will include sections of the SFA when communications like email are involved. Civil lawsuits are also permissable under the SFA similar to how they are allowed under the CFAA. Criminal penalities includes fines and up to 10 years in prison."
+                },
+                {
+                    "type": "list",
+                    "items": [
+                        "[1]<a href=\"https://www.law.cornell.edu/uscode/text/18/1030\">https://www.law.cornell.edu/uscode/text/18/1030</a>",
+                        "[2]<a href=\"https://www.law.cornell.edu/definitions/uscode.php?width=840&height=800&iframe=true&def_id=18-USC-695191731-692694672&term_occur=13&term_src=\">https://www.law.cornell.edu/definitions/uscode.php?width=840&height=800&iframe=true&def_id=18-USC-695191731-692694672&term_occur=13&term_src=</a>"
+                    ],
+                    "ordered": false
+                },
+                {
+                    "type": "paragraph",
+                    "text": ""
+                },
+                {
+                    "type": "paragraph",
+                    "text": "<b>Title 18, Section 1831-32 Economic Espionage Acts</b>"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "The Economic Espionage Acts was passed in 1996 in response to the increased number of companies integrating the Internet into their business and the need to protect trade secrets from theft (i.e. corporate espionage). The Economic Espionage Acts prohibits the theft of U.S. companies' trade secrets by anyone that could economically benefit anyone but the owner. Trade secrets are confidential corporate data that is not protected by copyright or patent laws and that the company has taken measures to protect due to having economic value. An example is the recipe for Coca-Cola, they have not filed a patent because that would require the recipe to be made public which could result in a competitor creating a duplicate."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Section 1831 prohibits economic espionage for a foreign government (i.e. stealing something and giving it to another nation). The punishment for providing information to a foreign government is up to 15 years in prison and a $5,000,000 fine for an individual or up to $10,000,000 for an organization. It also prohibits theft of trade secrets that harms one company and benefits another (i.e. finding out the launch date for the next iPhone before it was announced and scheduling an equally as large launch on the same day). The punishment for providing trade secrets to another company for their benefit is up to 10 years in prison for an individual and a $5,000,000 fine for an organization."
+                },
+                {
+                    "type": "paragraph",
+                    "text": ""
+                },
+                {
+                    "type": "subheader",
+                    "text": "Questions"
+                },
+                {
+                    "type": "question",
+                    "id": "measureSS1",
+                    "prompt": "The CFAA covers which of the following:",
+                    "ignored": false,
+                    "mode": "checkbox",
+                    "choices": [
+                        {
+                            "id": "pinch",
+                            "text": "Hacking to commit espionage",
+                            "ans": true
+                        },
+                        {
+                            "id": "pinch3",
+                            "text": "Hacking a federal government computer",
+                            "ans": true
+                        },
+                        {
+                            "id": "pinch4",
+                            "text": "Hacking to commit fraud",
+                            "ans": true
+                        },
+                        {
+                            "id": "pinch2",
+                            "text": "Threats of hacking",
+                            "ans": true
+                        }
+                    ]
+                },
+                {
+                    "type": "question",
+                    "id": "sfa",
+                    "prompt": "The Stored Communications Act (SFA) protects emails and files stored on a 3rd party's computer, server, or cloud environment",
+                    "ignored": false,
+                    "mode": "radio",
+                    "choices": [
+                        {
+                            "id": "1",
+                            "text": "True"
+                        },
+                        {
+                            "id": "2",
+                            "text": "False"
+                        }
+                    ],
+                    "answer": "1"
+                }
+            ]
+        },
+        {
+            "header": "Other U.S. Laws",
+            "units": [
+                {
+                    "type": "list",
+                    "items": [
+                        "Health Insurance Portability and Accountability Act of 1996 (HIPAA)",
+                        "Family Educational Rights and Privacy Act (FERPA)",
+                        "Financial Reporting - Sarbanes-Oxley Act of 2002 (SOX)",
+                        "Gramm-Leach-Bliley Act (GBLA)",
+                        "Federal Information Security Management Act of 2002 (FISMA)",
+                        "Freedom of Information Act of 1966 (FOIA)",
+                        "Privacy Act of 1974"
+                    ],
+                    "ordered": true
+                },
+                {
+                    "type": "paragraph",
+                    "text": "HIPAA protects the confidentiality and security of health care data by establishing and enforcing standards and by standardizing electronic data interchange. It requires any company or organization that works with protected health information (PHI) to implement security measures in order to protect patient privacy. It also establishes civil and criminal penalties for violations of patient privacy."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "FERPA protects the privacy of student records, educational data and health data. The law applies to all schools that receive any funding from US Department of Education, Educational Agencies, Associated Financial agencies, and any educational institution. It provides rights to parents of students under the age of 18 and protects student data once the student has turned 18."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "SOX or the “Public Company Accounting Reform and Investor protection Act” affects executive management of publicly traded corporations and public accounting firms. It is designed to hold executives and board members personally responsible for financial data and imposes criminal penalties for noncompliance. The goal is to reduce fraud by increasing reliability and accuracy of financial reporting and increase the accountability of corporate governance."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "GBLA or the Financial Services Modernization Act of 1999 makes it mandatory that financial institutions have a policies to protect the information from foreseeable threats in security and data integrity. Financial institutions include mortgage lenders, financial advisors, tax preparers, debt collectors as well as colleges and universities. It requires \"financial institutions\" to disclose their information collection and sharing practices to their customers and have a security program that includes designating a coordinator for their security program, conducting a risk assessment, and developing a System Security Plan."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "FISMA was enacted in 2002 as Title III of the E-Government Act of 2002 and requires each federal agency to develop, document, and implement an agency-wide program to provide information security."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "FOIA allows for the full or partial disclosure of previously unreleased information and documents controlled by the United States government not determined to be a matter of national security. Information must be requested in writing and it does exclude trade secrets, personal and medical files, geographical data, and inter-agency or intra-agency memoranda/letters."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "The Privacy Act of 1974 regulates how federal agencies collect, maintain, use, and disclose an individual’s information. It requires federal agencies to publish System of Records Notices (SORN), which make the public aware of what personal information is being maintained, and how it will be used. The Privacy Act applies to U.S. citizens and lawfully admitted permanent resident aliens.  "
+                },
+                {
+                    "type": "subheader",
+                    "text": "Questions"
+                },
+                {
+                    "type": "question",
+                    "id": "measureSS1",
+                    "prompt": " ____________ allows individuals to make a written request for information and documents controlled by the United States government.",
+                    "ignored": false,
+                    "mode": "radio",
+                    "choices": [
+                        {
+                            "id": "1",
+                            "text": "Economic Espionage Acts"
+                        },
+                        {
+                            "id": "2",
+                            "text": "FOIA"
+                        },
+                        {
+                            "id": "3",
+                            "text": "SOX"
+                        },
+                        {
+                            "id": 4,
+                            "text": "FERPA"
+                        }
+                    ],
+                    "answer": "2"
+                },
+                {
+                    "type": "question",
+                    "id": "education",
+                    "prompt": "Which of the following protects educational information?",
+                    "ignored": false,
+                    "mode": "radio",
+                    "choices": [
+                        {
+                            "id": "1",
+                            "text": "Economic Espionage Acts"
+                        },
+                        {
+                            "id": "2",
+                            "text": "FOIA"
+                        },
+                        {
+                            "id": "3",
+                            "text": "SOX"
+                        },
+                        {
+                            "id": 4,
+                            "text": "FERPA"
+                        }
+                    ],
+                    "answer": "4"
+                },
+                {
+                    "type": "question",
+                    "id": "xos",
+                    "prompt": "Which of the following affects executive management of publicly traded corporations and public accounting firms?",
+                    "ignored": false,
+                    "mode": "radio",
+                    "choices": [
+                        {
+                            "id": "1",
+                            "text": "CFAA"
+                        },
+                        {
+                            "id": "2",
+                            "text": "FOIA"
+                        },
+                        {
+                            "id": "3",
+                            "text": "SOX"
+                        },
+                        {
+                            "id": 4,
+                            "text": "FERPA"
+                        }
+                    ],
+                    "answer": "3"
+                }
+            ]
+        }
+    ]
+}

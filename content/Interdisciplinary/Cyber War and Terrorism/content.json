@@ -1,0 +1,318 @@
+{
+    "name": "Interdisciplinary",
+    "variant": "Cyber War and Terrorism",
+	"license": {
+		"name": "Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)",
+		"link": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+	},
+    "sections": [
+        {
+            "header": "Learning Outcomes",
+            "units": [
+                {
+                    "type": "list",
+                    "items": [
+                        "Understand the basics of information warfare.",
+                        "Understand cyber warfare and cyber terrorism.",
+                        "Identify the US’s four primary Nation State cyber adversaries.",
+                        "Describe the significant cyber warfare issues relevant today.",
+                        "Understand cyber terrorism and where it has been used.",
+                        "Recognize the dangers posed by cyber terrorism."
+                    ],
+                    "ordered": false
+                }
+            ]
+        },
+        {
+            "header": "Introduction",
+            "units": [
+                {
+                    "type": "subheader",
+                    "text": "Cyber and Information Warfare"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Cyber Warfare evolved from communications interception that was a key element in almost every war ever fought. It is defined as the use of digital attacks by one country to disrupt the vital computer systems of another, with the aim of creating damage, death and destruction. Often called the \"5th Dimension of War\" or \"5th Battlespace\" it is far less expensive, can impose tremendous damage to critical infrastructure, and can be done anonymously."
+                },
+                {
+                    "type": "subheader",
+                    "text": "Cyber Terrorism"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Cyber terrorism is similar to cyber warfare in many ways including the low cost, anonymous nature, and weapons employed. According to the FBI, cyber terrorism is the premeditated, politically motivated attack against information, computer systems, computer programs, and data that results in violence against noncombatent targets by subnational groups or clandestine agents. Simply put, it is the use of computers and the Internet to launch terrorist attacks. These attacks can come from foreign or domestic organizations and result in economic damage, communication disruptions, supply chain issues, and the loss of critical infrastructure components."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "The main difference between the two is that cyber warfare, as well as information warfare which we will go over in future sections, has certain targets and is usually launched by nation-states while the goal of cyber terrorism is to cause fear for anyone in the target vicinity and can be done by anyone."
+                },
+                {
+                    "type": "subheader",
+                    "text": "Questions"
+                },
+                {
+                    "type": "question",
+                    "id": "measureSS1",
+                    "prompt": "Anonymity is a benefit of both cyber warfare and cyber terrorism.",
+                    "ignored": false,
+                    "mode": "radio",
+                    "choices": [
+                        {
+                            "id": "1",
+                            "text": "True"
+                        },
+                        {
+                            "id": "2",
+                            "text": "False"
+                        }
+                    ],
+                    "answer": "1"
+                },
+                {
+                    "type": "question",
+                    "id": "terrorism",
+                    "prompt": "The goal of both cyber warfare and cyber terrorism is to cause fear.",
+                    "ignored": false,
+                    "mode": "radio",
+                    "choices": [
+                        {
+                            "id": 3,
+                            "text": "True"
+                        },
+                        {
+                            "id": 4,
+                            "text": "False"
+                        }
+                    ],
+                    "answer": 4
+                }
+            ]
+        },
+        {
+            "header": "Information Warfare",
+            "units": [
+                {
+                    "type": "paragraph",
+                    "text": "Information warfares attempts to manipulate information in pursuit of a military or political goal. It allows a threat actor to control the information available on a topic. Since World War II this has been a major part in military and political conflicts in the form of information control, propaganda, misinformation, and disinformation."
+                },
+                {
+                    "type": "subheader",
+                    "text": "Information Control"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Information control is regulating, managing, or manipulating the flow of information on a particular topic in order to achieve a specific goal."
+                },
+                {
+                    "type": "subheader",
+                    "text": "Propaganda"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Propaganda is information, ideas, opinions, or images, often only giving one part of an argument, which are spread with the intention of influencing people's opinions. It can be used to by governments to influence their own citizens or to influence citizens of other nations. Below is a poster for \"Rosie the Riveter\" that was aimed at boosting morale among workers in factories producing war materiel during World War II. We will go through some more examples during our next class."
+                },
+                {
+                    "type": "image",
+                    "src": "https://cis377.s3.amazonaws.com/rosie.png",
+                    "alt": "Rosie the Riveter propaganda poster.",
+                    "width": 200,
+                    "height": 150,
+                    "float": null
+                },
+                {
+                    "type": "subheader",
+                    "text": "Misinformation and Disinformation"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Misinformation is inaccurate information which is shared with the intent to deliberately deceive another party. An example of this might be sharing an inflated number of fighter jets in a particular area. Disinformation differs slightly because this information is typically planted on secure systems to appear genuine."
+                },
+                {
+                    "type": "subheader",
+                    "text": "Questions"
+                },
+                {
+                    "type": "question",
+                    "id": "terrorism",
+                    "prompt": "Information warfare includes: ",
+                    "ignored": false,
+                    "mode": "checkbox",
+                    "choices": [
+                        {
+                            "id": "integrity",
+                            "text": "Propaganda",
+                            "ans": true
+                        },
+                        {
+                            "id": "patch",
+                            "text": "Disinformation",
+                            "ans": true
+                        },
+                        {
+                            "id": "training",
+                            "text": "Malware",
+                            "ans": false
+                        },
+                        {
+                            "id": "trainin2g",
+                            "text": "Misinformation",
+                            "ans": true
+                        },
+                        {
+                            "id": "trainin2g",
+                            "text": "Information Control",
+                            "ans": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "header": "United States Adversaries",
+            "units": [
+                {
+                    "type": "subheader",
+                    "text": "Who is the enemy?"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "In cyber warfare there are foreign enemies of the United States that are actively attempting to do harm. In information warfare and cyber terrorism there are domestic and foreign enemies."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "<b>Nation-State Cyber Actors</b>"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Nation states are foreign countries that are actively attempting to infiltrate U.S. industry and military for nefarious reasons. The major threat actors can be found below, however, these are not the only nation states that engage in cyber warfare against U.S. assets. "
+                },
+                {
+                    "type": "list",
+                    "items": [
+                        "Russia",
+                        "China",
+                        "Iran",
+                        "North Korea"
+                    ],
+                    "ordered": false
+                },
+                {
+                    "type": "paragraph",
+                    "text": "<b>Other Nefarious Cyber Actors</b>"
+                },
+                {
+                    "type": "list",
+                    "items": [
+                        "Individual Hackers",
+                        "Hacktivist Groups",
+                        "Criminal Organizations",
+                        "Corrupt Businesses",
+                        "Terrorist Groups"
+                    ],
+                    "ordered": false
+                },
+                {
+                    "type": "subheader",
+                    "text": "Questions"
+                },
+                {
+                    "type": "question",
+                    "id": "ns",
+                    "prompt": "Nation states are considered foreign enemies.",
+                    "ignored": false,
+                    "mode": "radio",
+                    "choices": [
+                        {
+                            "id": 3,
+                            "text": "True"
+                        },
+                        {
+                            "id": 4,
+                            "text": "False"
+                        }
+                    ],
+                    "answer": 3
+                },
+                {
+                    "type": "question",
+                    "id": "cs",
+                    "prompt": "Cyber terrorism is only carried out by domestic enemies.",
+                    "ignored": false,
+                    "mode": "radio",
+                    "choices": [
+                        {
+                            "id": 3,
+                            "text": "True"
+                        },
+                        {
+                            "id": 4,
+                            "text": "False"
+                        }
+                    ],
+                    "answer": 4
+                }
+            ]
+        },
+        {
+            "header": "Cyber Warfare Issues",
+            "units": [
+                {
+                    "type": "subheader",
+                    "text": "Weapons of Cyber Warfare"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "The primary weapon for cyber warfare and cyber terrorism is malware. We will learn about the various forms of malware in later modules, but I will highlight some well-known malware below. Social engineering is also a common weapon employed against governments as well as organizations associated with critical infrastructure. It is used to gain information or \"intelligence\" on targets to discover weaknesses or to plant malware to exploit vulnerabilities in systems."
+                },
+                {
+                    "type": "subheader",
+                    "text": "Stuxnet"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Stuxnet was a virus that was designed to search for a connection to a specific type of programmable logic controller (PLC) that was used in the centrifuge controllers used by Iran for uranium enrichment. It was spread via infected USB drives being plugged into a machine and then spread via the networks that the machine connected to."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Watch the following video for an overview of how Stuxnet was deployed: <a target=\"_blank\" href=\"https://youtu.be/7r6bZKirOfw?si=-XYksqPueB27bOE5\">Video</a>"
+                },
+                {
+                    "type": "subheader",
+                    "text": "Flame"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Flame was first discovered in 2012 and was targeting Windows operating systems. This particular virus, a type of malware, was specifically designed for espionage and could monitor network traffic, keyboard activity, as well as take screen shots of an infected system. The virus was unique because of a kill function that was built into it so that the person controlling it and receiving information could send a signal for the virus to delete itself. However, because we are aware of its existence this can be viewed as a failure."
+                },
+                {
+                    "type": "subheader", 
+                    "text": "Questions"
+                },
+                {
+                    "type": "question",
+                    "id": "cyberwar",
+                    "prompt": "Which of the following could be done through social engineering?",
+                    "ignored": false,
+                    "mode": "checkbox",
+                    "choices": [
+                        {
+                            "id": "integrity",
+                            "text": "Plant malware to exploit vulnerabilities",
+                            "ans": true
+                        },
+                        {
+                            "id": "patch",
+                            "text": "Discover weaknesses in a target",
+                            "ans": true
+                        },
+                        {
+                            "id": "training",
+                            "text": "Gain intelligence on a target",
+                            "ans": true
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
