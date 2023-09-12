@@ -203,6 +203,7 @@ exports.write_3("Interdisciplinary", "Intro to Cyber");
 exports.write_3("Interdisciplinary", "Fall 377 Class Procedures");
 exports.write_3("Interdisciplinary", "Cyber Law and Ethics");
 exports.write_3("Interdisciplinary", "Cyber War and Terrorism");
+exports.write_3("Interdisciplinary", "Networking 000");
 
 // exports.write_3("Healthcare Management", "HIPPA");
 // exports.write_3("Healthcare Management", "Hipaa");

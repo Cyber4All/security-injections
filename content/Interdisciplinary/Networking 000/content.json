@@ -1,0 +1,552 @@
+{
+    "name": "Interdisciplinary",
+    "variant": "Networking 000",
+	"license": {
+		"name": "Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)",
+		"link": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+	},
+    "sections": [
+        {
+            "header": "Learning Outcomes",
+            "units": [
+                {
+                    "type": "list",
+                    "items": [
+                        "Define what a network is.",
+                        "Explain how computing devices work together in a network.",
+                        "Describe the OSI model of network communication.",
+                        "Understand how data is transmitted over a network.",
+                        "Identify networking hardware.",
+                        "Identify each of the major protocols used in network communication and what they are used for.",
+                        "Explain how the Internet works and the use of IP addresses and URLs."
+                    ],
+                    "ordered": false
+                }
+            ]
+        },
+        {
+            "header": "Network Basics",
+            "units": [
+                {
+                    "type": "paragraph",
+                    "text": "<b>Networking</b> is the practice of connecting computers and other hardware devices together to enable the exchange of data. A <b>network</b> can vary in size ranging from small private networks to the Internet. Networks can be wired, wireless, or a mix of both."
+                },
+                {
+                    "type": "subheader",
+                    "text": "Network Communication"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "The basic building blocks of a network are nodes and links. A node is a hardware device (i.e computers, modems, routers, printers) that can send/receive data and a link is any medium (i.e. cables, air) used to move data from one node to another. Each node has unique identifiers that allow then to send and receive data over links using rules called protocols. We will cover some important protocols in a future section."
+                },
+                {
+                    "type": "image",
+                    "src": "https://cis377.s3.amazonaws.com/assets/Link_node.jpg",
+                    "alt": "Nodes and links",
+                    "width": 429,
+                    "height": 474,
+                    "float": null
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Image source: https://www.freetimelearning.com/software-interview-questions-and-answers.php?What-are-nodes-and-links?&id=5743"
+                },
+                {
+                    "type": "subheader",
+                    "text": "Common uses of Networks"
+                },
+                {
+                    "type": "list",
+                    "items": [
+                        "Networks are used to transfer information in many forms. Sending emails, Snapchats, posting on Instagram, and getting answers from AI Language Models are all done through transferring data through a network.",
+                        "Sharing resources is an important use of networks. Being able to transfer a document on your machine to a printer to then be printed, sending an HTML file to a server to be hosted, or logging into a Minecraft server hosted by a friend are all examples of sharing resources.",
+                        "We can distribute workload amongst multiple nodes on a network. How can Blackboard handle all of the Towson Students accessing their application at 9:30AM on Tuesday morning? They have networks in place that allow for workload distribution across multiple servers in order to not overload any single node on their network."
+                    ],
+                    "ordered": false
+                },
+                {
+                    "type": "subheader",
+                    "text": "Questions"
+                },
+                {
+                    "type": "question",
+                    "id": "Question1",
+                    "prompt": "A network node can be: ",
+                    "ignored": false,
+                    "mode": "radio",
+                    "choices": [
+                        {
+                            "id": "symmetric4",
+                            "text": "A printer"
+                        },
+                        {
+                            "id": "asymmetric4",
+                            "text": "A computer"
+                        },
+                        {
+                            "id": "all4",
+                            "text": "Both of the above"
+                        },
+                        {
+                            "id": "all4no",
+                            "text": "None of the above"
+                        }
+                    ],
+                    "answer": "all4"
+                },
+                {
+                    "type": "question",
+                    "id": "Question2",
+                    "prompt": "Which is not a use case of a network?",
+                    "ignored": false,
+                    "mode": "radio",
+                    "choices": [
+                        {
+                            "id": "symmetric4",
+                            "text": "Loading a Wikipedia webpage."
+                        },
+                        {
+                            "id": "asymmetric4",
+                            "text": "Uploading a file to a Blackboard submission."
+                        },
+                        {
+                            "id": "all4",
+                            "text": "Saving images to a Google Drive."
+                        },
+                        {
+                            "id": "all4no",
+                            "text": "None of the above"
+                        }
+                    ],
+                    "answer": "all4no"
+                }
+            ]
+        },
+        {
+            "header": "The OSI Model",
+            "units": [
+                {
+                    "type": "paragraph",
+                    "text": "The OSI (Open Systems Interconnection) model is a common basis for coordination of standards in networking and is based on a hierarchical model pictured below. We will go over what the responsibilities are of each layer in detail below."
+                },
+                {
+                    "type": "image",
+                    "src": "https://cis377.s3.amazonaws.com/assets/osi-model.png",
+                    "alt": "Nodes and links",
+                    "width": 429,
+                    "height": 474,
+                    "float": null
+                },
+                {
+                    "type": "subheader",
+                    "text": "Physical Layer"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "The physical layer allows for the transmission of bits across a link. Transmission can be done via radio signals, electrical signals over cable, or even light through fiber."
+                },
+                {
+                    "type": "subheader",
+                    "text": "Data Link Layer"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "At the data link layer, frames, which are units of data, are transmitted over a single communication link. This layer strives to provide reliability, flow control, and error control."
+                },
+                {
+                    "type": "subheader",
+                    "text": "Network Layer"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "The network layer is responsible for communicating between two hosts across a communication network. Routers operate at this level and play the crucial role of routing packets, the unit of data at this layer, through a network. The Internet Protocol (IP) operates here."
+                },
+                {
+                    "type": "subheader",
+                    "text": "Transport Layer"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "The transport layer provides end-to-end communication between two hosts across a communication network. The two protocols that operate at this level are the Transmission Control Protocol (TCP) and the User Datagram Protocol (UDP) which we will look at in the an upcoming section."
+                },
+                {
+                    "type": "subheader",
+                    "text": "Session Layer"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "The session layer maintains connections and is responsible for maintaining ports and sessions."
+                },
+                {
+                    "type": "subheader",
+                    "text": "Presentation Layer"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "This layer formats or translates data for the application layer."
+                },
+                {
+                    "type": "subheader",
+                    "text": "Application Layer"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "The application layer is the home to the applications that produce and display data for lower layers."
+                },
+                {
+                    "type": "subheader",
+                    "text": "Note"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "We will be covering security concerns and implications at each layer in future materials. The big thing to get out of this Security Injection is the responsibility of each layer."
+                },
+                {
+                    "type": "subheader",
+                    "text": "Questions"
+                },
+                {
+                    "type": "question",
+                    "id": "Question7",
+                    "prompt": "Which layer is responsible for end-to-end communication between two hosts? ",
+                    "ignored": false,
+                    "mode": "radio",
+                    "choices": [
+                        {
+                            "id": "symmetric4",
+                            "text": "Session"
+                        },
+                        {
+                            "id": "asymmetric4",
+                            "text": "Network"
+                        },
+                        {
+                            "id": "all4",
+                            "text": "Transport"
+                        },
+                        {
+                            "id": "all4no",
+                            "text": "Application"
+                        }
+                    ],
+                    "answer": "all4"
+                },
+                {
+                    "type": "question",
+                    "id": "Question7",
+                    "prompt": "Which layer transmits frames over a link?",
+                    "ignored": false,
+                    "mode": "radio",
+                    "choices": [
+                        {
+                            "id": "symmetric4",
+                            "text": "Physical"
+                        },
+                        {
+                            "id": "asymmetric4",
+                            "text": "Transport"
+                        },
+                        {
+                            "id": "all4",
+                            "text": "Network"
+                        },
+                        {
+                            "id": "all4no",
+                            "text": "Data Link"
+                        }
+                    ],
+                    "answer": "all4no"
+                },
+                {
+                    "type": "question",
+                    "id": "Question7",
+                    "prompt": "Which layer routes packets through a network?",
+                    "ignored": false,
+                    "mode": "radio",
+                    "choices": [
+                        {
+                            "id": "symmetric4",
+                            "text": "Application"
+                        },
+                        {
+                            "id": "asymmetric4",
+                            "text": "Session"
+                        },
+                        {
+                            "id": "all4",
+                            "text": "Physical"
+                        },
+                        {
+                            "id": "all4no",
+                            "text": "Network"
+                        }
+                    ],
+                    "answer": "all4no"
+                }
+            ]
+        },
+        {
+            "header": "Network Hardware",
+            "units": [
+                {
+                    "type": "paragraph",
+                    "text": "A lesson on networking is not complete without a description of the hardware devices that are used as nodes in a network. This is not meant to be a comprehensive overview of all hardware used in networking so I have included a few links in the references if you would like to learn about other networking hardware not described in this section."
+                },
+                {
+                    "type": "subheader",
+                    "text": "Routers and Switches"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "A router directs traffic by charting a path through a network in order to facilitate the transfer of packets to their destination. They maintain routing tables that contain information on all of the devices connected to it so it can efficiently forward requests."
+                },
+                {
+                    "type": "image",
+                    "src": "https://cis377.s3.amazonaws.com/assets/router-157597_640.webp",
+                    "alt": "Image of a router with antennas",
+                    "width": 429,
+                    "height": 474,
+                    "float": null
+                },
+                {
+                    "type": "paragraph",
+                    "text": "A switch operates similarly to a router but maintains very limited information about the devices connected to it. Switches read the hardware address or Media Access Address (MAC) of and incoming packet and sends them to the correct destination."
+                },
+                {
+                    "type": "image",
+                    "src": "https://cis377.s3.amazonaws.com/assets/IMG_5913.JPG",
+                    "alt": "Image of a switch",
+                    "width": 429,
+                    "height": 474,
+                    "float": null
+                },
+                {
+                    "type": "subheader",
+                    "text": "Modem"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "A modulator-demodulator or modem converts digital signals into analog signals to send to another modem that converts the analog signal to a digital one for a device connected to it. This device is often a router that will then transfer the data to the correct destination. Modems allow you to get internet to your home or business and a router allows you to have many devices connected to the internet. Without a router you would only be able to connect a single device through a cable or hardwired connection to the internet at a time."
+                },
+                {
+                    "type": "subheader",
+                    "text": "Network Interface Card (NICs)"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "A network interface card (NIC) is what connects a device to the internet. Each NIC is assigned a 48 bit long MAC address when it is manufactured and it serves as the unique identifier for each device. There are two different types of NICs: Ethernet which has an ethernet port and Wi-fi which allows for connection to wireless networks."
+                },
+                {
+                    "type": "image",
+                    "src": "https://cis377.s3.amazonaws.com/assets/ethernetNIC.jpeg",
+                    "alt": "Image of an ethernet NIC",
+                    "width": 429,
+                    "height": 474,
+                    "float": null
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Image of an Ethernet NIC"
+                },
+                {
+                    "type": "image",
+                    "src": "https://cis377.s3.amazonaws.com/assets/wirelessNIC.jpeg",
+                    "alt": "Image of an wireless NIC",
+                    "width": 429,
+                    "height": 474,
+                    "float": null
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Image of an wireless NIC"
+                },
+                {
+                    "type": "subheader",
+                    "text": "Wireless Access Points (WAPs)"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Wireless Access Points allow for connection to the internet through wireless signals. They are connected to the network through Ethernet and transfer wired signals into wireless signals and vice versa."
+                },
+                {
+                    "type": "image",
+                    "src": "https://cis377.s3.amazonaws.com/assets/waps.jpeg",
+                    "alt": "Image of an WAP",
+                    "width": 429,
+                    "height": 474,
+                    "float": null
+                },
+                {
+                    "type": "subheader",
+                    "text": "Other Hardware"
+                },
+                {
+                    "type": "list",
+                    "items": [
+                        "<a href=\"https://blog.netwrix.com/2019/01/08/network-devices-explained/#Bridges\">Bridges</a>",
+                        "<a href=\"https://blog.netwrix.com/2019/01/08/network-devices-explained/#Repeaters\">Repeaters</a>",
+                        "<a href=\"https://blog.netwrix.com/2019/01/08/network-devices-explained/#Gateways\">Gateways</a>",
+                        "<a href=\"https://blog.netwrix.com/2019/01/08/network-devices-explained/#Hubs\">Hubs</a>"
+                    ],
+                    "ordered": false
+                },
+                {
+                    "type": "subheader",
+                    "text": "Questions"
+                },
+                {
+                    "type": "question",
+                    "id": "Question3",
+                    "prompt": "Directs traffic through a network.",
+                    "ignored": false,
+                    "mode": "radio",
+                    "choices": [
+                        {
+                            "id": "symmetric4",
+                            "text": "Modem"
+                        },
+                        {
+                            "id": "asymmetric4",
+                            "text": "Switch"
+                        },
+                        {
+                            "id": "all4",
+                            "text": "Router"
+                        },
+                        {
+                            "id": "all4no",
+                            "text": "WAP"
+                        }
+                    ],
+                    "answer": "all4"
+                },
+                {
+                    "type": "question",
+                    "id": "Question3",
+                    "prompt": "A network interface card can be wired (Ethernet) or wireless.",
+                    "ignored": false,
+                    "mode": "radio",
+                    "choices": [
+                        {
+                            "id": "true",
+                            "text": "True"
+                        },
+                        {
+                            "id": "false",
+                            "text": "False"
+                        }
+                    ],
+                    "answer": "true"
+                },
+                {
+                    "type": "question",
+                    "id": "Question3",
+                    "prompt": "Converts digital signals into analog signals",
+                    "ignored": false,
+                    "mode": "radio",
+                    "choices": [
+                        {
+                            "id": "true",
+                            "text": "Router"
+                        },
+                        {
+                            "id": "false",
+                            "text": "Modem"
+                        },
+                        {
+                            "id": "frue",
+                            "text": "Switch"
+                        },
+                        {
+                            "id": "talse",
+                            "text": "WAP"
+                        }
+                    ],
+                    "answer": "false"
+                }
+
+            ]
+        },
+        {
+            "header": "Protocols",
+            "units": [
+                {
+                    "type": "subheader",
+                    "text": "Protocols"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "A network protocol is a set of rules that determine how data is transmitted between different devices in the same network [1]. These allow for a common language to be built into a devices' hardware and software so that they can easily communication with each other. Protocols are defined and published by networking and information technology organizations such as The Institute of Electrical and Electronics Engineers (IEEE), The Internet Engineering Task Force (IETF), and The World Wide Web Consortium (W3C) to name a few. This section will introduce you to some networking protocols."
+                },
+                {
+                    "type": "subheader",
+                    "text": "List of Protocols"
+                },
+                {
+                    "type": "table",
+						"headers":[
+							"<strong>Protocol</strong>",
+							"<strong>Definition</strong>"
+						],
+						"cells":[
+                            {
+                                "first": "Address Resolution Protocol (ARP)",
+                                "second": "Operates at the Link Layer. Maps an IP address to its corresponding physical MAC address on a local network."
+                            },
+                            {
+                                "first": "Simple Mail Transfer Protocol (SMTP)",
+                                "second": "Operates at the Application Layer. Is used for sending and routing email messages between servers and clients, facilitating the delivery of electronic mail."
+                            },
+                            {
+                                "first": "Hypertext Transfer Protocol (HTTP)",
+                                "second": "Operates at the Application Layer. Is the fundamental protocol of the World Wide Web, responsible for enabling the retrieval and display of web pages and resources in web browsers."
+                            },
+                            {
+                                "first": "File Transfer Protocol (FTP)",
+                                "second": "Operates at the Application Layer. Facilitates the transfer of files between a client and a server on a computer network, allowing users to upload and download files."
+                            },
+                            {
+                                "first": "Transmission Control Protocol (TCP)",
+                                "second": "As mentioned before, operates at the Transport Layer. It is a core communication protocol in the Internet Protocol Suite (TCP/IP) that ensures reliable, ordered, and error-checked delivery of data between devices over a network."
+                            },
+                            {
+                                "first": "User Datagram Protocol (UDP)",
+                                "second": "Operates at the Transport Layer and is the connectionless network protocol that provides low-overhead, fast data transmission without guaranteed delivery or error checking, making it suitable for real-time and low-latency applications such as video conferencing."
+                            },
+                            {
+                                "first": "Internet Protocol (IP)",
+                                "second": "Operates at the Network Layer. This protocol enables the routing and addressing of data packets for the purpose of communication between devices on a network."
+                            },
+                            {
+                                "first": "Internet Control Message Protocol (ICMP)",
+                                "second": "Operates at the Network Layer. It is used for sending error messages and operational information about network conditions, primarily used for diagnosing network issues."
+                            },
+                            {
+                                "first": "Secure Shell (SSH)",
+                                "second": "Operates at the Application Layer. It is a cryptographic network protocol that provides secure and encrypted communication, enabling secure remote access and secure file transfers over an unsecured network."
+                            }
+                        ]
+                },
+                {
+                    "type": "subheader",
+                    "text": "Notes"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "These are not all of the protocols available."
+                },
+                {
+                    "type": "subheader",
+                    "text": "References"
+                },
+                {
+                    "type": "list",
+                    "items": [
+                        "[1]<a href=\"https://www.comptia.org/content/guides/what-is-a-network-protocol\">https://www.comptia.org/content/guides/what-is-a-network-protocol</a>"
+                    ],
+                    "ordered": false
+                }
+            ]
+        }
+    ]
+}
