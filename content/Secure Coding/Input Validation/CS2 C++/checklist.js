@@ -57,10 +57,13 @@ $(document).ready(function() {
 		// focus on next question
 		$("#"+next+"-label").addClass("si-checklist-active");
 		// remove hidden class from progress bar when user clicks correct answer
-		$("#" + next + "-progress-label").removeClass("progress-hidden");
-		// add the progress bar fill
-		$("#" + next + "-progress-label").addClass("progress");
-
+		
+		if(next != name+"-vuln-length"){
+			$("#" + next + "-progress-label").removeClass("progress-hidden");
+			// add the progress bar fill
+			$("#" + next + "-progress-label").addClass("progress");
+		}
+		
 		// track which spans are needed for next question
 		if(next === name+"-var-input"){
 			waitingOn = []; // gather spans remaining to be clicked

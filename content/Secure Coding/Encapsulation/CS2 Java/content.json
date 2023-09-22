@@ -65,7 +65,7 @@
                 },
                 {
                     "type": "image",
-                    "src": "https://cisserv1.towson.edu/~cssecinj/wp-content/uploads//encapsulation.JPG",
+                    "src": "https://s3.amazonaws.com/security-injections.clark.center/assets/Encapsulation/encapsulation.jpeg",
                     "alt": "wheel",
                     "width": 554,
                     "height": 343,

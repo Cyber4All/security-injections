@@ -48,7 +48,7 @@
                 },
                 {
                     "type": "image",
-                    "src": "https://cisserv1.towson.edu/~cyber4all/wp-content/uploads/2017/08/marylandmap.png",
+                    "src": "https://s3.amazonaws.com/security-injections.clark.center/assets/Mitigating_Risk_Value_Modeling/marylandmap.png",
                     "alt": " ",
                     "width": "858",
                     "height": "416",
@@ -165,7 +165,7 @@
                         },
                         {
                             "type": "image",
-                            "src": "https://cisserv1.towson.edu/~cyber4all/wp-content/uploads/2017/08/scsHeirarchy.png",
+                            "src": "https://s3.amazonaws.com/security-injections.clark.center/assets/Mitigating_Risk_Value_Modeling/scsHeirarchy.png",
                             "alt": " ",
                             "width": "910",
                             "height": "525",
@@ -234,7 +234,7 @@
                         },
                         {
                             "type": "image",
-                            "src": "https://cisserv1.towson.edu/~cyber4all/wp-content/uploads/2017/08/math1.png",
+                            "src": "https://s3.amazonaws.com/security-injections.clark.center/assets/Mitigating_Risk_Value_Modeling/math1.png",
                             "alt": " ",
                             "width": "125",
                             "height": "65",
@@ -246,7 +246,7 @@
                         },
                         {
                             "type": "image",
-                            "src": "https://cisserv1.towson.edu/~cyber4all/wp-content/uploads/2017/08/math2.png",
+                            "src": "https://s3.amazonaws.com/security-injections.clark.center/assets/Mitigating_Risk_Value_Modeling/math2.png",
                             "alt": " ",
                             "width": "144",
                             "height": "70",

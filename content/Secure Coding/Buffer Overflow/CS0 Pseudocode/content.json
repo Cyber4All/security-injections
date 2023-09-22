@@ -48,7 +48,7 @@
                 },
                 {
                     "type": "paragraph",
-                    "text": "Buffer overflow vulnerabilities were exploited by the first major attack on the Internet. Known as the Morris worm, this attack infected more than 60,000 machines and shut down much of the Internet for several days in 1988.<br><small><small><small>Carolyn Duffy Marsan Morris Worm Turns 20: Look what it's Done Network World, October 30, 2008  <a href = http://www.networkworld.com/news/2008/103008-morris-worm.html?page=1 > http://www.networkworld.com/news/2008/103008-morris-worm.html?page=1</a></small></small></small>"
+                    "text": "Buffer overflow vulnerabilities were exploited by the first major attack on the Internet. Known as the Morris worm, this attack infected more than 60,000 machines and shut down much of the Internet for several days in 1988.<br><small><small><small>Carolyn Duffy Marsan Morris Worm Turns 20: Look what it's Done Network World, October 30, 2008  <a href = https://www.networkworld.com/article/2268919/morris-worm-turns-20-look-what-it-s-done.html > https://www.networkworld.com/article/2268919/morris-worm-turns-20-look-what-it-s-done.html</a></small></small></small>"
                 },
                 {
                     "type": "subheader",

@@ -52,7 +52,7 @@
                 },
                 {
                     "type": "image",
-                    "src": "https://cisserv1.towson.edu/~cssecinj/wp-content/uploads/cs2/buffer-overflow.jpg",
+                    "src": "https://s3.amazonaws.com/security-injections.clark.center/assets/Buffer_Overflow/buffer_overflow.png",
                     "alt": "buffer overflow",
                     "width": 471,
                     "height": 376,

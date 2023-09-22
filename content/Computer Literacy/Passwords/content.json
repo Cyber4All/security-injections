@@ -614,7 +614,7 @@
 				{
 					"type": "list",
 					"items" : [
-						"Use the Password Meter to verify whether your passwords are strong enough. The Password Meter is a free tool and is available at: <a href = http://www.passwordmeter.com> www.passwordmeter.com </a>",
+						"Use Password Monster to verify whether your passwords are strong enough. The Password Monster is a free tool and is available at: <a href = https://www.passwordmonster.com/> https://www.passwordmonster.com/ </a>",
 					  "Click the link to watch a video on <a href = 'https://www.usatoday.com/videos/tech/2016/02/07/79939088'>how to make your passwords less hackable</a>."
 					]
 				}
