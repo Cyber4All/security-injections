@@ -1,0 +1,73 @@
+{
+    "name": "Interdisciplinary",
+    "variant": "Risk Management",
+	"license": {
+		"name": "Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)",
+		"link": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+	},
+    "sections": [
+        {
+            "header": "Learning Outcomes",
+            "units": [
+                {
+                    "type": "list",
+                    "items": [
+                        "Define risk management, risk identification, and risk control.",
+                        "Identify the steps of the Risk Management process.",
+                        "Understand how risk is identified, assessed, and controlled."
+                    ],
+                    "ordered": false
+                }
+            ]
+        },
+        {
+            "header": "Risk Management",
+            "units": [
+                {
+                    "type": "paragraph",
+                    "text": "Risk management is the process of identifying and controlling risks facing an organization. This is a continual process that requires ongoing monitoring in order to mitigate any risks. In general there are two key parts of risk management: "
+                },
+                {
+                    "type": "list",
+                    "items": [
+                        "Risk identification",
+                        "Risk control"
+                    ],
+                    "ordered": false
+                },
+                {
+                    "type": "subheader",
+                    "text": "Risk Identification"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "This is the process of examining an organization's current assets and what the current security mechanisms are in place to protect them. For example, an organization might have a top secret recipe or design that they store on an air-gapped server. The risks that might exist to this asset are:"
+                },
+                {
+                    "type": "list",
+                    "items": [
+                        "An unauthorized individual gains physical access to the server and steals/modifies the data.",
+                        "A hurricane floods the data center.",
+                        "A tornado destroys the data center.",
+                        "The software on the server corrupts the file.",
+                        "There is an electrical surge that damages the server.",
+                        "The ceiling falls in and destroys the server."
+                    ],
+                    "ordered": false
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Some of these risks are very small and depend greatly on the physical location of the server including what weather events could affect the server. Let's say that the server in the previous example is not air gapped and is connected to a network. How does this change the risks present?"
+                },
+                {
+                    "type": "subheader",
+                    "text": "Risk Control"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "This is the process of applying controls to reduce risk. "
+                }
+            ]
+        }
+    ]
+}
