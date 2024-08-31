@@ -137,7 +137,7 @@ navigator.sayswho = (function () {
 
 	// initialize all non-function fields
 	function initialize() {
-		$scope.repo = "https://cisserv1.towson.edu/~cyber4all/modules/content/";		// IP address of our production server TODO: change as needed
+		$scope.repo = "https://security-injections.towson.edu";		// IP address of our production server TODO: change as needed
 		$scope.sectionscompleted = 0;				// start from the first section
 		$scope.loadContent();						// initialize module object and contentError boolean
 		loadCoverPage();
