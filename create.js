@@ -20,7 +20,7 @@ exports.write_3 = function(name, variant, dev) {
 	if(typeof(dev)==='undefined') dev = false;		// default value for dev
 
 	// CONSTANTS
-	var contentDir = "content/";	// TODO: Change this variable to generate different modules in different folders
+	var contentDir = "content/Interdisciplinary/";	// TODO: Change this variable to generate different modules in different folders
 
 	var resourceDir = "resources/";
 	var publicDir = "public/";
@@ -190,22 +190,22 @@ exports.write_3 = function(name, variant, dev) {
 
 // 'Interdisciplinary' Folder ---------------
 
-// exports.write_3("Business", "Risk Assessment");
-// exports.write_3("Business", "CAT");
-// exports.write_3("Business", "Business Use Security");
-// exports.write_3("Business", "Government Use Security");
-// exports.write_3("Business", "Personal Use Security");
-// exports.write_3("Healthcare Management", "Risk Management");
-// exports.write_3("Healthcare Management", "HIPPA");
-// exports.write_3("Healthcare Management", "Hipaa");
-// exports.write_3("Mitigating Risk", "Value Modeling");
-// exports.write_3("Security Training for Election Judges", "Ensuring Pollbook Security");
-// exports.write_3("Security Training for Election Judges", "Ensuring Provisional Voting Security");
-// exports.write_3("Security Training for Election Judges", "Operating the Scanning Unit");
-// exports.write_3("Security Training for Election Judges", "Ensuring Pollbook Security Anne Arundel");
-// exports.write_3("Security Training for Election Judges", "Ensuring Provisional Voting Security Anne Arundel");
-// exports.write_3("Security Training for Election Judges", "Operating the Scanning Unit Anne Arundel");
-// exports.write_3("Security Training for Election Judges", "Chief Judge Security Anne Arundel");
-// exports.write_3("Security Training for Election Judges", "Ensuring Ballot-Marking Devices Security Anne Arundel");
-// exports.write_3("Security Training for Election Judges", "Ensuring Voting Booth Security Anne Arundel");
-// exports.write_3("Security Training for Election Judges", "Same Day Registration");
+exports.write_3("Business", "Risk Assessment");
+exports.write_3("Business", "CAT");
+exports.write_3("Business", "Business Use Security");
+exports.write_3("Business", "Government Use Security");
+exports.write_3("Business", "Personal Use Security");
+exports.write_3("Healthcare Management", "Risk Management");
+exports.write_3("Healthcare Management", "HIPPA");
+exports.write_3("Healthcare Management", "Hipaa");
+exports.write_3("Mitigating Risk", "Value Modeling");
+exports.write_3("Security Training for Election Judges", "Ensuring Pollbook Security");
+exports.write_3("Security Training for Election Judges", "Ensuring Provisional Voting Security");
+exports.write_3("Security Training for Election Judges", "Operating the Scanning Unit");
+exports.write_3("Security Training for Election Judges", "Ensuring Pollbook Security Anne Arundel");
+exports.write_3("Security Training for Election Judges", "Ensuring Provisional Voting Security Anne Arundel");
+exports.write_3("Security Training for Election Judges", "Operating the Scanning Unit Anne Arundel");
+exports.write_3("Security Training for Election Judges", "Chief Judge Security Anne Arundel");
+exports.write_3("Security Training for Election Judges", "Ensuring Ballot-Marking Devices Security Anne Arundel");
+exports.write_3("Security Training for Election Judges", "Ensuring Voting Booth Security Anne Arundel");
+exports.write_3("Security Training for Election Judges", "Same Day Registration");

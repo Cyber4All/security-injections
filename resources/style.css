@@ -297,16 +297,17 @@ textarea {
 
 .feedback{
 position:fixed;
-max-width: 38.46px;
-max-height: 125px;
+max-width: 125px;
+max-height: 200px;
 min-width: 1px;
 min-height: 1px;
 width:100%;
 height: auto;
-right:-5px;
+right:0px;
 top:40%;
 padding:0px 5px 5px 0px;
 z-index: 1;
+transform: rotate(90deg);
 }
 
 .feedback img{width:100%;height:auto;}​
