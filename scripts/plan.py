@@ -1,12 +1,11 @@
 from github import Github 
-
 from github import Auth
+import json
+import os
 
 auth = Auth.Token("")
 
 g = Github(auth=auth)
-
-# g = Github(auth=auth, base_url="http://{host}/api/v3")
 
 #user = g.get_user()
 #print("User login: ", user.login)
@@ -26,37 +25,41 @@ repo = g.get_repo("Cyber4All/Security-Injections")
 print(repo)
 
 
-# lists contents of a directory, helped find the name of the file paths
-def list_directory_contents(path=""):
-    contents = repo.get_contents(path)
-    for content in contents:
-        if content.type == "dir":
-            print(f"Directory: {content.path}")
-            # Recursively list contents of the directory
-            list_directory_contents(content.path)
-        else:
-            print(f"File: {content.path}")
-
-# list_directory_contents()
+def getFilename(filepath):
+    startIndex = len(filepath) - 1
+    for i in range(startIndex, -1, -1):
+        if filepath[i] == '/':
+            return filepath[i:startIndex + 1]  # Create substring from last index to '/'
+    return None
 
 # Get the latest commit
 latest_commit = repo.get_commits()[0]
 print(f"Latest Commit: {latest_commit.sha}, made {latest_commit.commit.committer.date} by {latest_commit.commit.committer.name}")
 
-changedModulePaths = []
+absoluteFilePaths = []
 
 # Print the changed files in the latest commit
 for file in latest_commit.files:
     print(f" - {file.filename} (status: {file.status})")
+    absoluteFilePaths.append(os.path.abspath(file.filename))
 
-for file in latest_commit.files:
-    if "content/Secure Coding/" not in file.filename:
+output = open("scripts/moduleOutput.txt", "w")
+# output.write("Content deleted!")
+# output.close()    
+
+# example of what a real path would look like for content changes -
+# /Users/username/Documents/clark/security_injections/security-injections/content/Interdisciplinary/Business/CAT/content.json
+for path in absoluteFilePaths:
+    if "content/" not in path:
+    # if "resources/" not in file:
         print("No changes to modules")
     else:
-        changedModulePaths.append(file.filename)
-        print("added")
+        pathParts = path.split(os.path.sep)
+        # would return ['', 'Users', 'username', 'Documents', 'clark', 'security_injections', 'security-injections', 'content', 'Interdisciplinary', 'Business', 'CAT', 'content.json']
+        parentFolder = pathParts[-2] # would return "CAT"
+        grandParentFolder = pathParts[-3] # would return "Business"
+        output.write("Parent: " + parentFolder + ", Grandparent: " + grandParentFolder + "\n")
 
-for path in changedModulePaths:
-    print(path)
+output.close()
 
 g.close()
