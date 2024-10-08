@@ -4,7 +4,10 @@ import json
 import os
 import sys
 
-auth = Auth.Token("")
+pull_request_id = os.getenv("CIRCLE_PULL_REQUEST").split("/")[-1]
+commit_hash = os.getenv("CIRCLE_SHA1")
+token = os.getenv("GITHUB_TOKEN")
+auth = Auth.Token(token)
 
 g = Github(auth=auth)
 
@@ -15,17 +18,18 @@ repo = g.get_repo("Cyber4All/Security-Injections")
 print(repo)
 
 pullrequests = repo.get_pulls(state='open', sort='updated', base='main')
+pull_request = repo.get_pull(pull_request_id)
 latest_pr = ''
-commits = []
+commits = pull_request.get_commits()
 
-if pullrequests.totalCount > 0:
-    # Get the most recent PR
-    latest_pr = pullrequests[0]
-    commits = latest_pr.get_commits()
-    print(f"Latest PR: {latest_pr.title} (#{latest_pr.number})")
-else:
-    print("No open pull requests found.")
-    sys.exit()
+# if pullrequests.totalCount > 0:
+#     # Get the most recent PR
+#     latest_pr = pullrequests[0]
+#     commits = latest_pr.get_commits()
+#     print(f"Latest PR: {latest_pr.title} (#{latest_pr.number})")
+# else:
+#     print("No open pull requests found.")
+#     sys.exit()
 
 absoluteFilePaths = []
 comment = "Modules: "
@@ -61,6 +65,6 @@ output.close()
 
 # PR Comment ---
 comment = comment[:-2] + " have been updated! -PyGithub"
-latest_pr.create_issue_comment(comment)
+pull_request.create_issue_comment(comment)
 
 g.close()
