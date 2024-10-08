@@ -17,13 +17,13 @@ jobs:
             ls scripts
       - persist_to_workspace:
           root: .
-          path: ./scripts/output.txt
+          path: ./scripts/moduleOutput.txt
   
   build:
   # TODO Implement
     executor: node/default
     steps:
-     - run: node create.js workspace/output.txt
+     - run: node create.js workspace/moduleOutput.txt
       
 
 workflows:
