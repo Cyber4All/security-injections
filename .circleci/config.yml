@@ -14,7 +14,7 @@ jobs:
           command: | 
             ls
             pwd
-            python3 plan.py
+            python3 scripts/plan.py
       - persist_to_workspace:
           root: workspace # check this to see if you need this
           path: output.txt
