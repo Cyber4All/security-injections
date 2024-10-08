@@ -11,7 +11,10 @@ jobs:
       - checkout
       - run: 
           name: Plan Module Updates
-          command: python3 plan.py
+          command: | 
+            ls
+            pwd
+            python3 plan.py
       - persist_to_workspace:
           root: workspace # check this to see if you need this
           path: output.txt
