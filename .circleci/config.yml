@@ -13,10 +13,8 @@ jobs:
           name: Plan Module Updates
           command: | 
             pip install PyGithub
-            ls
-            pwd
             python3 scripts/plan.py
-            ls
+            ls scripts
       - persist_to_workspace:
           root: .
           path: ./scripts/output.txt
