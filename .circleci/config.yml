@@ -16,6 +16,7 @@ jobs:
             ls
             pwd
             python3 scripts/plan.py
+            ls
       - persist_to_workspace:
           root: .
           path: ./scripts/output.txt
