@@ -16,7 +16,7 @@ jobs:
             python3 scripts/plan.py
             ls scripts
       - persist_to_workspace:
-          root: .
+          root: ./
           path: ./scripts/moduleOutput.txt
   
   build:
