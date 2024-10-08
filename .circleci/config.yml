@@ -12,6 +12,7 @@ jobs:
       - run: 
           name: Plan Module Updates
           command: | 
+            pip install PyGithub
             ls
             pwd
             python3 scripts/plan.py
