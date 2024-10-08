@@ -47,7 +47,7 @@ if not absoluteFilePaths: # if no commits have changes to modules, exit
     print("No changes to modules")
     sys.exit()
 
-output = open("moduleOutput.txt", "w")
+output = open("scripts/moduleOutput.txt", "w")
 
 # example of what a real path would look like for content changes -
 # /Users/username/Documents/clark/security_injections/security-injections/content/Interdisciplinary/Business/CAT/content.json
