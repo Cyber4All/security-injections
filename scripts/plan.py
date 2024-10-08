@@ -4,7 +4,7 @@ import json
 import os
 import sys
 
-pull_request_id = os.getenv("CIRCLE_PULL_REQUEST").split("/")[-1]
+pull_request_id = int(os.getenv("CIRCLE_PULL_REQUEST").split("/")[-1])
 commit_hash = os.getenv("CIRCLE_SHA1")
 token = os.getenv("GITHUB_TOKEN")
 auth = Auth.Token(token)
