@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function() { // comment added for automation testing!
 	
 	var name = "Pgm1CL";
 	// track id of the current checklist task (initialized later)
