@@ -14,6 +14,7 @@ var fs = require('fs');
 var UglifyJS = require("uglify-js");
 var UglifyCSS = require('uglifycss');
 var Validate = require("./validate.js");
+const readline = require('readline');
 
 
 exports.write_3 = function(name, variant, dev) {
@@ -190,22 +191,56 @@ exports.write_3 = function(name, variant, dev) {
 
 // 'Interdisciplinary' Folder ---------------
 
-exports.write_3("Business", "Risk Assessment");
-exports.write_3("Business", "CAT");
-exports.write_3("Business", "Business Use Security");
-exports.write_3("Business", "Government Use Security");
-exports.write_3("Business", "Personal Use Security");
-exports.write_3("Healthcare Management", "Risk Management");
-exports.write_3("Healthcare Management", "HIPPA");
-exports.write_3("Healthcare Management", "Hipaa");
-exports.write_3("Mitigating Risk", "Value Modeling");
-exports.write_3("Security Training for Election Judges", "Ensuring Pollbook Security");
-exports.write_3("Security Training for Election Judges", "Ensuring Provisional Voting Security");
-exports.write_3("Security Training for Election Judges", "Operating the Scanning Unit");
-exports.write_3("Security Training for Election Judges", "Ensuring Pollbook Security Anne Arundel");
-exports.write_3("Security Training for Election Judges", "Ensuring Provisional Voting Security Anne Arundel");
-exports.write_3("Security Training for Election Judges", "Operating the Scanning Unit Anne Arundel");
-exports.write_3("Security Training for Election Judges", "Chief Judge Security Anne Arundel");
-exports.write_3("Security Training for Election Judges", "Ensuring Ballot-Marking Devices Security Anne Arundel");
-exports.write_3("Security Training for Election Judges", "Ensuring Voting Booth Security Anne Arundel");
-exports.write_3("Security Training for Election Judges", "Same Day Registration");
+// exports.write_3("Business", "Risk Assessment");
+// exports.write_3("Business", "CAT");
+// exports.write_3("Business", "Business Use Security");
+// exports.write_3("Business", "Government Use Security");
+// exports.write_3("Business", "Personal Use Security");
+// exports.write_3("Healthcare Management", "Risk Management");
+// exports.write_3("Healthcare Management", "HIPPA");
+// exports.write_3("Healthcare Management", "Hipaa");
+// exports.write_3("Mitigating Risk", "Value Modeling");
+// exports.write_3("Security Training for Election Judges", "Ensuring Pollbook Security");
+// exports.write_3("Security Training for Election Judges", "Ensuring Provisional Voting Security");
+// exports.write_3("Security Training for Election Judges", "Operating the Scanning Unit");
+// exports.write_3("Security Training for Election Judges", "Ensuring Pollbook Security Anne Arundel");
+// exports.write_3("Security Training for Election Judges", "Ensuring Provisional Voting Security Anne Arundel");
+// exports.write_3("Security Training for Election Judges", "Operating the Scanning Unit Anne Arundel");
+// exports.write_3("Security Training for Election Judges", "Chief Judge Security Anne Arundel");
+// exports.write_3("Security Training for Election Judges", "Ensuring Ballot-Marking Devices Security Anne Arundel");
+// exports.write_3("Security Training for Election Judges", "Ensuring Voting Booth Security Anne Arundel");
+// exports.write_3("Security Training for Election Judges", "Same Day Registration");
+
+const inputFile = process.argv[2]
+
+if(!inputFile){
+	console.log('No file provided as argument');
+	process.exit(1);
+}
+
+const fileStream = fs.createReadStream(inputFile, 'utf8');
+
+const rl = readline.createInterface({
+	input: fileStream,
+	output: process.stdout,
+	terminal: false
+  });
+  
+  // Read the file line by line
+rl.on('line', (line) => {
+	console.log(`Line: ${line}`);
+  //   console.log(typeof(line));
+	var words = line.split(',');
+  //   console.log(words);
+	var parent = words[0];
+	var grandparent = words[1];
+	parent = parent.split(':')[1].trim();
+	grandparent = grandparent.split(':')[1].trim();
+	console.log("PARENT: '" + parent + "', GRANDPARENT: '" + grandparent + "'");
+	exports.write_3(grandparent, parent);
+  });
+  
+  // Handle end of file
+  rl.on('close', () => {
+	console.log('Finished reading the file.');
+  });
