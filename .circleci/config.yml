@@ -30,7 +30,8 @@ jobs:
 workflows:
   continuous-integration:
     jobs:
-    - plan
+    - plan:
+        context: [Github]
     - build:
         requires: [plan]
     # - deploy:
