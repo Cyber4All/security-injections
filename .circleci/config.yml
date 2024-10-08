@@ -18,7 +18,7 @@ jobs:
             ls scripts
       - persist_to_workspace:
           root: ./
-          path: ./scripts/moduleOutput.txt
+          path: /scripts/moduleOutput.txt
   
   build:
   # TODO Implement
