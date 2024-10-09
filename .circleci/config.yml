@@ -28,7 +28,7 @@ jobs:
      - run: 
         command: |
           ls
-          node create.js workspace/moduleOutput.txt
+          node create.js scripts/moduleOutput.txt
       
 
 workflows:
