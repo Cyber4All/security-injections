@@ -17,7 +17,7 @@ jobs:
             ls
             ls scripts
       - persist_to_workspace:
-          root: ~/project/scripts
+          root: ~/project/scripts/
           path: moduleOutput.txt
   
   build:
