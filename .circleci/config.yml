@@ -25,6 +25,7 @@ jobs:
   # TODO Implement
     executor: node/default
     steps:
+     - checkout
      - run: 
         command: |
           ls
