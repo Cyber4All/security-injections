@@ -25,7 +25,10 @@ jobs:
   # TODO Implement
     executor: node/default
     steps:
-     - run: node create.js workspace/moduleOutput.txt
+     - run: 
+        command: |
+          ls
+          node create.js workspace/moduleOutput.txt
       
 
 workflows:
