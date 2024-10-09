@@ -29,6 +29,7 @@ jobs:
      - run: 
         command: |
           ls
+          npm install uglify-js -g
           node create.js scripts/moduleOutput.txt
       
 
