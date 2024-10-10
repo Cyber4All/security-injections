@@ -1,0 +1,56 @@
+version: 2.1
+
+orbs:
+  node: circleci/node@6.1.0
+  python: circleci/python@2.1.1
+
+jobs:
+  plan:
+    executor: python/default
+    steps:
+      - checkout
+      - run: 
+          name: Plan Module Updates
+          command: | 
+            pip install PyGithub
+            python3 scripts/plan.py
+            ls
+            ls scripts
+      - persist_to_workspace:
+          # root: ~/project
+          root: .
+          paths: 
+            - scripts/*.txt
+  
+  build:
+  # TODO Implement
+    executor: node/default
+    steps:
+     - checkout
+     - attach_workspace:
+        at: /workspace
+     - node/install-packages:
+        pkg-manager: npm
+     - run: 
+        command: |
+          ls
+          ls scripts
+          sudo npm install uglify-js -g
+          cat /workspace/scripts/output.txt
+          # node create.js scripts/moduleOutput.txt
+      
+
+workflows:
+  continuous-integration:
+    jobs:
+    - plan:
+        context: [Github]
+    - build:
+        requires: [plan]
+    # - deploy:
+    #   requires:
+    #   - build
+    #   filters:
+    #     branches:
+    #       only:
+    #       - /main/ 
