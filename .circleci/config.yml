@@ -17,7 +17,8 @@ jobs:
             ls
             ls scripts
       - persist_to_workspace:
-          root: ~/project
+          # root: ~/project
+          root: .
           paths: 
             - scripts/*.txt
   
