@@ -27,7 +27,7 @@ jobs:
     steps:
      - checkout
      - attach_workspace:
-        at: /tmp/workspace
+        at: /workspace
      - node/install-packages:
         pkg-manager: npm
      - run: 
@@ -35,7 +35,8 @@ jobs:
           ls
           ls scripts
           sudo npm install uglify-js -g
-          node create.js scripts/moduleOutput.txt
+          cat /workspace/scripts/output.txt
+          # node create.js scripts/moduleOutput.txt
       
 
 workflows:
