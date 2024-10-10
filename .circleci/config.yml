@@ -26,6 +26,8 @@ jobs:
     executor: node/default
     steps:
      - checkout
+     - attach_workspace:
+        at: /tmp/workspace
      - node/install-packages:
         pkg-manager: npm
      - run: 
