@@ -20,8 +20,8 @@ jobs:
             ls
             ls scripts
       - persist_to_workspace:
-          # root: ~/project
-          root: .
+          root: ~/project
+          # root: .
           paths: 
             - scripts/*.txt
   
@@ -39,7 +39,7 @@ jobs:
           ls
           ls scripts
           sudo npm install uglify-js -g
-          cat /workspace/scripts/output.txt
+          cat /workspace/scripts/moduleOutput.txt
           # node create.js scripts/moduleOutput.txt
       
 
