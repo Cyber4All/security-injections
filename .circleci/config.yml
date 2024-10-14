@@ -31,7 +31,7 @@ jobs:
     steps:
      - checkout
      - attach_workspace:
-        at: tmp/workspace
+        at: .
      - node/install-packages:
         pkg-manager: npm
      - run: 
