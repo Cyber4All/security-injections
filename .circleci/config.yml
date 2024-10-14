@@ -39,8 +39,8 @@ jobs:
           ls
           ls scripts
           sudo npm install uglify-js -g
-          cat /workspace/scripts/moduleOutput.txt
-          # node create.js scripts/moduleOutput.txt
+          # cat /workspace/scripts/moduleOutput.txt
+          node create.js scripts/moduleOutput.txt
       
 
 workflows:
