@@ -13,6 +13,8 @@ jobs:
           name: Plan Module Updates
           command: | 
             pip install PyGithub
+            ls 
+            echo "Now running py script"
             python3 scripts/plan.py
             ls
             ls scripts
