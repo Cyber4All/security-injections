@@ -20,7 +20,6 @@ jobs:
             - scripts/*.txt
   
   build:
-  # TODO Implement
     executor: node/default
     steps:
      - checkout
