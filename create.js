@@ -37,9 +37,22 @@ exports.write_3 = function(name, variant, dev) {
 	}
 
 	//Make folder for blank JSON
+	// var newFolderDir = "public/"+name;
+	// if (!fs.existsSync(newFolderDir)){
+	//     fs.mkdirSync(newFolderDir);
+	// }
+
+	// The name you use for the folder creation
 	var newFolderDir = "public/"+name;
+
+	// Ensure the parent directory exists
+	if (!fs.existsSync('public')) {
+		fs.mkdirSync('public');
+	}
+
+	// Now create the new folder
 	if (!fs.existsSync(newFolderDir)){
-	    fs.mkdirSync(newFolderDir);
+		fs.mkdirSync(newFolderDir);
 	}
 
 	// STEP 1 - load all content files and parse/validate/minify into single JSON string
