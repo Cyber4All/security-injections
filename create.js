@@ -125,7 +125,8 @@ exports.write_3 = function(grandp, name, variant, dev) {
 
 	// STEP 4 - write string to output file
 	fs.writeFileSync(publicDir+contentLoc.slice(0,-1)+".json", content);
-	fs.writeFileSync(moduleDir+moduleFile, html);
+	// fs.writeFileSync(moduleDir+moduleFile, html);
+	fs.writeFileSync(contentDir+moduleFile, html);
 }
 
 // Phase 2: also create a 1.0 write function
