@@ -14,9 +14,6 @@ jobs:
           command: | 
             pip install PyGithub
             python3 scripts/plan.py
-            ls
-            ls scripts
-            cat scripts/moduleOutput.txt
       - persist_to_workspace:
           root: ~/project
           # root: .
