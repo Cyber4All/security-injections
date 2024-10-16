@@ -17,11 +17,11 @@ var Validate = require("./validate.js");
 const readline = require('readline');
 
 
-exports.write_3 = function(name, variant, dev) {
+exports.write_3 = function(grandp, name, variant, dev) {
 	if(typeof(dev)==='undefined') dev = false;		// default value for dev
 
 	// CONSTANTS
-	var contentDir = "content/Interdisciplinary/";	// TODO: Change this variable to generate different modules in different folders
+	var contentDir = "content/" + grandp + "/";	// TODO: Change this variable to generate different modules in different folders
 
 	var resourceDir = "resources/";
 	var publicDir = "public/";
@@ -247,10 +247,12 @@ rl.on('line', (line) => {
   //   console.log(words);
 	var parent = words[0];
 	var grandparent = words[1];
+	var greatgrandparent = words[2];
 	parent = parent.split(':')[1].trim();
 	grandparent = grandparent.split(':')[1].trim();
+	greatgrandparent = greatgrandparent.split(':')[1].trim();
 	console.log("PARENT: '" + parent + "', GRANDPARENT: '" + grandparent + "'");
-	exports.write_3(grandparent, parent);
+	exports.write_3(greatgrandparent, grandparent, parent);
   });
   
   // Handle end of file

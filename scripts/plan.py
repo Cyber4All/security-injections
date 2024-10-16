@@ -57,7 +57,7 @@ for path in absoluteFilePaths:
     parentFolder = pathParts[-2] # would return "CAT"
     comment = comment + parentFolder + ", "
     grandParentFolder = pathParts[-3] # would return "Business"
-    output.write("Parent: " + parentFolder + ", Grandparent: " + grandParentFolder + "\n")
+    output.write("Parent: " + parentFolder + ", Grandparent: " + grandParentFolder + ", Great-Grandparent: " + pathParts[-4] + "\n")
     # output.txt would look like:
     # Parent : CAT, Grandparent: Business
 
