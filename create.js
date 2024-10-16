@@ -251,7 +251,7 @@ rl.on('line', (line) => {
 	parent = parent.split(':')[1].trim();
 	grandparent = grandparent.split(':')[1].trim();
 	greatgrandparent = greatgrandparent.split(':')[1].trim();
-	console.log("PARENT: '" + parent + "', GRANDPARENT: '" + grandparent + "'");
+	console.log("PARENT: '" + parent + "', GRANDPARENT: '" + grandparent + "', GREAT GRAND PARENT: '" + greatgrandparent + "'");
 	exports.write_3(greatgrandparent, grandparent, parent);
   });
   
