@@ -32,7 +32,7 @@ jobs:
         command: |
           node create.js scripts/moduleOutput.txt
           ls public
-          ls public/'Integer error'
+          cat public/'Integer error'
 
   # deploy:
   #   docker:
