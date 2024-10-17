@@ -8,6 +8,9 @@ jobs:
   plan:
     executor: python/default
     steps:
+      - run:
+          command:
+            ls
       - checkout
       - python/install-packages: 
           # pip-dependency-file: ""
