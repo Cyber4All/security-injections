@@ -52,8 +52,8 @@ workflows:
         context: [Github]
     - build:
         requires: [plan]
-    - deploy:
-        requires: [build]
+    # - deploy:
+    #     requires: [build]
     #   - build
     #   filters:
     #     branches:
