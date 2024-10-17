@@ -30,8 +30,19 @@ jobs:
         pkg-manager: npm
      - run: 
         command: |
-          # sudo npm install uglify-js -g
           node create.js scripts/moduleOutput.txt
+          ls
+
+  # deploy:
+  #   docker:
+  #    - image: test/test
+  #   steps: 
+  #    - checkout 
+  #    - asw-s3/sync:
+  #       from: bucket
+  #       to: 'test'
+  #       arguments: |
+
       
 
 workflows:
@@ -41,8 +52,8 @@ workflows:
         context: [Github]
     - build:
         requires: [plan]
-    # - deploy:
-    #   requires:
+    - deploy:
+        requires: [build]
     #   - build
     #   filters:
     #     branches:

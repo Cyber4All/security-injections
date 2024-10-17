@@ -36,12 +36,6 @@ exports.write_3 = function(grandp, name, variant, dev) {
 		moduleFile = 'DEV-'+moduleFile;
 	}
 
-	//Make folder for blank JSON
-	// var newFolderDir = "public/"+name;
-	// if (!fs.existsSync(newFolderDir)){
-	//     fs.mkdirSync(newFolderDir);
-	// }
-
 	// The name you use for the folder creation
 	var newFolderDir = "public/"+name;
 
