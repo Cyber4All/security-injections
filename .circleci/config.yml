@@ -8,17 +8,12 @@ jobs:
   plan:
     executor: python/default
     steps:
-      - run:
-          command:
-            ls
       - checkout
       - python/install-packages: 
-          # pip-dependency-file: ""
           pkg-manager: pip
       - run: 
           name: Plan Module Updates
           command: | 
-            # pip install PyGithub
             python3 scripts/plan.py
       - persist_to_workspace:
           root: ~/project
