@@ -9,10 +9,12 @@ jobs:
     executor: python/default
     steps:
       - checkout
+      # - python/install-packages:
+      #     pkg-manager: pip
       - run: 
           name: Plan Module Updates
           command: | 
-            pip install PyGithub
+            # pip install PyGithub
             python3 scripts/plan.py
       - persist_to_workspace:
           root: ~/project
