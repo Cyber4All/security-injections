@@ -33,6 +33,7 @@ jobs:
           node create.js scripts/moduleOutput.txt
           ls public
           ls "public/Integer Error"
+          cat "public/Integer Error/CS0 Java.json"
 
   # deploy:
   #   docker:
