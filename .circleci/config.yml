@@ -32,13 +32,12 @@ jobs:
         command: |
           node create.js scripts/moduleOutput.txt
           ls public
-          cat "public/Integer error"
+          ls "public/Integer Error"
 
   # deploy:
   #   docker:
   #    - image: test/test
-  #   steps: 
-  #    - checkout 
+  #   steps:  
   #    - asw-s3/sync:
   #       from: bucket
   #       to: 'test'
