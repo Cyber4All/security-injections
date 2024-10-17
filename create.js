@@ -14,13 +14,14 @@ var fs = require('fs');
 var UglifyJS = require("uglify-js");
 var UglifyCSS = require('uglifycss');
 var Validate = require("./validate.js");
+const readline = require('readline');
 
 
-exports.write_3 = function(name, variant, dev) {
+exports.write_3 = function(grandp, name, variant, dev) {
 	if(typeof(dev)==='undefined') dev = false;		// default value for dev
 
 	// CONSTANTS
-	var contentDir = "content/Interdisciplinary/";	// TODO: Change this variable to generate different modules in different folders
+	var contentDir = "content/" + grandp + "/";	// TODO: Change this variable to generate different modules in different folders
 
 	var resourceDir = "resources/";
 	var publicDir = "public/";
@@ -35,10 +36,17 @@ exports.write_3 = function(name, variant, dev) {
 		moduleFile = 'DEV-'+moduleFile;
 	}
 
-	//Make folder for blank JSON
+	// The name you use for the folder creation
 	var newFolderDir = "public/"+name;
+
+	// Ensure the parent directory exists
+	if (!fs.existsSync('public')) {
+		fs.mkdirSync('public');
+	}
+
+	// Now create the new folder
 	if (!fs.existsSync(newFolderDir)){
-	    fs.mkdirSync(newFolderDir);
+		fs.mkdirSync(newFolderDir);
 	}
 
 	// STEP 1 - load all content files and parse/validate/minify into single JSON string
@@ -111,7 +119,8 @@ exports.write_3 = function(name, variant, dev) {
 
 	// STEP 4 - write string to output file
 	fs.writeFileSync(publicDir+contentLoc.slice(0,-1)+".json", content);
-	fs.writeFileSync(moduleDir+moduleFile, html);
+	// fs.writeFileSync(moduleDir+moduleFile, html); commented
+	fs.writeFileSync(contentDir+moduleFile, html);
 }
 
 // Phase 2: also create a 1.0 write function
@@ -190,22 +199,58 @@ exports.write_3 = function(name, variant, dev) {
 
 // 'Interdisciplinary' Folder ---------------
 
-exports.write_3("Business", "Risk Assessment");
-exports.write_3("Business", "CAT");
-exports.write_3("Business", "Business Use Security");
-exports.write_3("Business", "Government Use Security");
-exports.write_3("Business", "Personal Use Security");
-exports.write_3("Healthcare Management", "Risk Management");
-exports.write_3("Healthcare Management", "HIPPA");
-exports.write_3("Healthcare Management", "Hipaa");
-exports.write_3("Mitigating Risk", "Value Modeling");
-exports.write_3("Security Training for Election Judges", "Ensuring Pollbook Security");
-exports.write_3("Security Training for Election Judges", "Ensuring Provisional Voting Security");
-exports.write_3("Security Training for Election Judges", "Operating the Scanning Unit");
-exports.write_3("Security Training for Election Judges", "Ensuring Pollbook Security Anne Arundel");
-exports.write_3("Security Training for Election Judges", "Ensuring Provisional Voting Security Anne Arundel");
-exports.write_3("Security Training for Election Judges", "Operating the Scanning Unit Anne Arundel");
-exports.write_3("Security Training for Election Judges", "Chief Judge Security Anne Arundel");
-exports.write_3("Security Training for Election Judges", "Ensuring Ballot-Marking Devices Security Anne Arundel");
-exports.write_3("Security Training for Election Judges", "Ensuring Voting Booth Security Anne Arundel");
-exports.write_3("Security Training for Election Judges", "Same Day Registration");
+// exports.write_3("Business", "Risk Assessment");
+// exports.write_3("Business", "CAT");
+// exports.write_3("Business", "Business Use Security");
+// exports.write_3("Business", "Government Use Security");
+// exports.write_3("Business", "Personal Use Security");
+// exports.write_3("Healthcare Management", "Risk Management");
+// exports.write_3("Healthcare Management", "HIPPA");
+// exports.write_3("Healthcare Management", "Hipaa");
+// exports.write_3("Mitigating Risk", "Value Modeling");
+// exports.write_3("Security Training for Election Judges", "Ensuring Pollbook Security");
+// exports.write_3("Security Training for Election Judges", "Ensuring Provisional Voting Security");
+// exports.write_3("Security Training for Election Judges", "Operating the Scanning Unit");
+// exports.write_3("Security Training for Election Judges", "Ensuring Pollbook Security Anne Arundel");
+// exports.write_3("Security Training for Election Judges", "Ensuring Provisional Voting Security Anne Arundel");
+// exports.write_3("Security Training for Election Judges", "Operating the Scanning Unit Anne Arundel");
+// exports.write_3("Security Training for Election Judges", "Chief Judge Security Anne Arundel");
+// exports.write_3("Security Training for Election Judges", "Ensuring Ballot-Marking Devices Security Anne Arundel");
+// exports.write_3("Security Training for Election Judges", "Ensuring Voting Booth Security Anne Arundel");
+// exports.write_3("Security Training for Election Judges", "Same Day Registration");
+
+const inputFile = process.argv[2]
+
+if(!inputFile){
+	console.log('No file provided as argument');
+	process.exit(1);
+}
+
+const fileStream = fs.createReadStream(inputFile, 'utf8');
+
+const rl = readline.createInterface({
+	input: fileStream,
+	output: process.stdout,
+	terminal: false
+  });
+  
+  // Read the file line by line
+rl.on('line', (line) => {
+	console.log(`Line: ${line}`);
+  //   console.log(typeof(line));
+	var words = line.split(',');
+  //   console.log(words);
+	var parent = words[0];
+	var grandparent = words[1];
+	var greatgrandparent = words[2];
+	parent = parent.split(':')[1].trim();
+	grandparent = grandparent.split(':')[1].trim();
+	greatgrandparent = greatgrandparent.split(':')[1].trim();
+	console.log("PARENT: '" + parent + "', GRANDPARENT: '" + grandparent + "', GREAT GRAND PARENT: '" + greatgrandparent + "'");
+	exports.write_3(greatgrandparent, grandparent, parent);
+  });
+  
+  // Handle end of file
+  rl.on('close', () => {
+	console.log('Finished reading the file.');
+  });

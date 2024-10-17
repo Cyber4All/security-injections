@@ -1,0 +1,62 @@
+version: 2.1
+
+orbs:
+  node: circleci/node@6.1.0
+  python: circleci/python@2.1.1
+
+jobs:
+  plan:
+    executor: python/default
+    steps:
+      - checkout
+      - python/install-packages: 
+          pkg-manager: pip
+      - run: 
+          name: Plan Module Updates
+          command: | 
+            python3 scripts/plan.py
+      - persist_to_workspace:
+          root: ~/project
+          paths: 
+            - scripts/*.txt
+  
+  build:
+    executor: node/default
+    steps:
+     - checkout
+     - attach_workspace:
+        at: .
+     - node/install-packages:
+        pkg-manager: npm
+     - run: 
+        command: |
+          node create.js scripts/moduleOutput.txt
+          ls public
+          ls "public/Integer Error"
+          cat "public/Integer Error/CS0 Java.json"
+
+  # deploy:
+  #   docker:
+  #    - image: test/test
+  #   steps:  
+  #    - asw-s3/sync:
+  #       from: bucket
+  #       to: 'test'
+  #       arguments: |
+
+      
+
+workflows:
+  continuous-integration:
+    jobs:
+    - plan:
+        context: [Github]
+    - build:
+        requires: [plan]
+    # - deploy:
+    #     requires: [build]
+    #   - build
+    #   filters:
+    #     branches:
+    #       only:
+    #       - /main/ 
