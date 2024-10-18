@@ -1,0 +1,83 @@
+version: 2.1
+
+orbs:
+  node: circleci/node@6.1.0
+  python: circleci/python@2.1.1
+  aws-cli: circleci/aws-cli@5.1
+  aws-s3: circleci/aws-s3@4.0
+
+jobs:
+  plan:
+    executor: python/default
+    steps:
+      - checkout
+      - python/install-packages: 
+          pkg-manager: pip
+      - run: 
+          name: Plan Module Updates
+          command: | 
+            python3 scripts/plan.py
+      - persist_to_workspace:
+          root: ~/project
+          paths: 
+            - scripts/*.txt
+  
+  build:
+    executor: node/default
+    steps:
+      - checkout
+      - attach_workspace:
+          at: .
+      - node/install-packages:
+          pkg-manager: npm
+      - run: 
+          command: |
+            node create.js scripts/moduleOutput.txt
+            ls outputDir
+            ls "outputDir/Integer Error"
+            # cat "outputDir/Integer Error/CS0 Java.json"
+      - persist_to_workspace:
+          root: ~/project
+          paths:
+            - outputDir/*
+
+  deploy:
+    executor: aws-s3/default
+    # docker:
+    #   - image: cimg/python:3.8
+    steps:  
+      - checkout
+      # - aws-cli/setup:
+      #     profile_name: ""
+      #     role_arn: ""
+      - attach_workspace:
+          at: .
+      - run: 
+          command: |
+            ls
+            ls outputDir
+      # - aws-s3/sync:
+      #     auth: 
+      #       - aws-cli/setup:
+      #     from: bucket
+      #     to: "test"
+          # role_arn: ""
+          # overwrite: true
+          # arguments: |
+
+      
+
+workflows:
+  continuous-integration:
+    jobs:
+    - plan:
+        context: [Github]
+    - build:
+        requires: [plan]
+    - deploy:
+        requires: [build]
+    #   - build
+    #   filters:
+    #     branches:
+    #       only:
+    #       - /main/ 
