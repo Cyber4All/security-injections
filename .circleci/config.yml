@@ -39,7 +39,7 @@ jobs:
       - persist_to_workspace:
           root: ~/project
           paths:
-            - public/*
+            - outputDir/*
 
   deploy:
     executor: aws-s3/default
