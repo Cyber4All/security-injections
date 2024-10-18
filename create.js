@@ -24,8 +24,8 @@ exports.write_3 = function(grandp, name, variant, dev) {
 	var contentDir = "content/" + grandp + "/";	// TODO: Change this variable to generate different modules in different folders
 
 	var resourceDir = "resources/";
-	var publicDir = "public/";
-	var moduleDir = publicDir+"securityinjections/";
+	var outputDir = "outputDir/";
+	var moduleDir = outputDir+"securityinjections/";
 	// MORE CONSTANTS
 	var contentLoc = name+"/"+variant+"/";
 	var templateFile = resourceDir+"template.html";
@@ -118,7 +118,7 @@ exports.write_3 = function(grandp, name, variant, dev) {
 	moduleFile = moduleFile.split(' ').join('_');
 
 	// STEP 4 - write string to output file
-	fs.writeFileSync(publicDir+contentLoc.slice(0,-1)+".json", content);
+	fs.writeFileSync(outputDir+contentLoc.slice(0,-1)+".json", content);
 	// fs.writeFileSync(moduleDir+moduleFile, html); commented
 	fs.writeFileSync(contentDir+moduleFile, html);
 }
