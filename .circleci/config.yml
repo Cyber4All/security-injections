@@ -47,20 +47,20 @@ jobs:
     #   - image: cimg/python:3.8
     steps:  
       - checkout
-      - aws-cli/setup:
-          profile_name: ""
-          role_arn: ""
+      # - aws-cli/setup:
+      #     profile_name: ""
+      #     role_arn: ""
       - attach_workspace:
           at: .
       - run: 
           command: |
             ls
             ls outputDir
-      - aws-s3/sync:
-          auth: 
-            - aws-cli/setup:
-          from: bucket
-          to: "test"
+      # - aws-s3/sync:
+      #     auth: 
+      #       - aws-cli/setup:
+      #     from: bucket
+      #     to: "test"
           # role_arn: ""
           # overwrite: true
           # arguments: |
