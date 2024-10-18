@@ -3,6 +3,8 @@ version: 2.1
 orbs:
   node: circleci/node@6.1.0
   python: circleci/python@2.1.1
+  aws-cli: circleci/aws-cli@5.1
+  aws-s3: circleci/aws-s3@4.0
 
 jobs:
   plan:
@@ -23,26 +25,45 @@ jobs:
   build:
     executor: node/default
     steps:
-     - checkout
-     - attach_workspace:
-        at: .
-     - node/install-packages:
-        pkg-manager: npm
-     - run: 
-        command: |
-          node create.js scripts/moduleOutput.txt
-          ls public
-          ls "public/Integer Error"
-          cat "public/Integer Error/CS0 Java.json"
+      - checkout
+      - attach_workspace:
+          at: .
+      - node/install-packages:
+          pkg-manager: npm
+      - run: 
+          command: |
+            node create.js scripts/moduleOutput.txt
+            ls outputDir
+            ls "outputDir/Integer Error"
+            at "outputDir/Integer Error/CS0 Java.json"
+      - persist_to_workspace:
+          root: ~/project
+          paths:
+            - public/*
 
-  # deploy:
-  #   docker:
-  #    - image: test/test
-  #   steps:  
-  #    - asw-s3/sync:
-  #       from: bucket
-  #       to: 'test'
-  #       arguments: |
+  deploy:
+    executor: aws-s3/default
+    # docker:
+    #   - image: cimg/python:3.8
+    steps:  
+      - checkout
+      - aws-cli/setup:
+          profile_name: ""
+          role_arn: ""
+      - attach_workspace:
+          at: .
+      - run: 
+          command: |
+            ls
+            ls outputDir
+      - aws-s3/sync:
+          auth: 
+            - aws-cli/setup:
+          from: bucket
+          to: "test"
+          # role_arn: ""
+          # overwrite: true
+          # arguments: |
 
       
 
@@ -53,8 +74,8 @@ workflows:
         context: [Github]
     - build:
         requires: [plan]
-    # - deploy:
-    #     requires: [build]
+    - deploy:
+        requires: [build]
     #   - build
     #   filters:
     #     branches:

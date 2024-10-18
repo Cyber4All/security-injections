@@ -37,11 +37,11 @@ exports.write_3 = function(grandp, name, variant, dev) {
 	}
 
 	// The name you use for the folder creation
-	var newFolderDir = "public/"+name;
+	var newFolderDir = "outputDir/"+name;
 
 	// Ensure the parent directory exists
-	if (!fs.existsSync('public')) {
-		fs.mkdirSync('public');
+	if (!fs.existsSync('outputDir')) {
+		fs.mkdirSync('outputDir');
 	}
 
 	// Now create the new folder
