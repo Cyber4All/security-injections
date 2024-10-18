@@ -35,7 +35,7 @@ jobs:
             node create.js scripts/moduleOutput.txt
             ls outputDir
             ls "outputDir/Integer Error"
-            at "outputDir/Integer Error/CS0 Java.json"
+            # cat "outputDir/Integer Error/CS0 Java.json"
       - persist_to_workspace:
           root: ~/project
           paths:
