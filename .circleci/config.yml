@@ -51,8 +51,6 @@ jobs:
       - attach_workspace:
           at: .
       - aws-s3/sync:
-          auth: 
-            - aws-cli/setup:
           from: "outputDir/*"
           to: "s3//security-injections.yeetbot.click"
 

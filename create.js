@@ -110,7 +110,7 @@ exports.write_3 = function(grandp, name, variant, dev) {
 	// Make the URL more readable, avoiding %20 for space characters
 	moduleFile = moduleFile.split(' ').join('_');
 
-	// STEP 4 - write string to output file
+	// STEP 4 - write string to output file 
 	fs.writeFileSync(outputDir+moduleFile, html);
 }
 
