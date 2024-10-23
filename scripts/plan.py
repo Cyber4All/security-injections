@@ -40,8 +40,7 @@ Below is a table listing the impacted modules and their corresponding locations 
 The table includes the parent, grandparent, and great-grandparent directories to provide better context about where these modules are located.
 
 | Module Name              | Parent Folder            | Grandparent Folder       | Great-Grandparent Folder |
-| ------------------------ | ------------------------ | ------------------------ | ------------------------ |
-"""
+| ------------------------ | ------------------------ | ------------------------ | ------------------------ |"""
 
 logger.info("Viewing Pull Request " + str(pull_request_id) + " commit history..")
 
@@ -76,7 +75,7 @@ output.close()
 logger.info("All modules written to output file.")
 
 # PR Comment ---
-comment = comment + "\nPlease review the modules listed to ensure all necessary changes are accounted for before merging."
+comment = comment + "\n\nPlease review the modules listed to ensure all necessary changes are accounted for before merging."
 pull_request.create_issue_comment(comment)
 logger.info("Comment finalized and created on Pull Request " + str(pull_request_id))
 
