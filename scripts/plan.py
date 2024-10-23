@@ -43,7 +43,7 @@ The table includes the parent, grandparent, and great-grandparent directories to
 | ------------------------ | ------------------------ | ------------------------ | ------------------------ |
 """
 
-logger.info("Viewing Pull Request " + pull_request_id + " commit history..")
+logger.info("Viewing Pull Request " + str(pull_request_id) + " commit history..")
 
 for c in commits:
     files = c.files
@@ -78,6 +78,6 @@ logger.info("All modules written to output file.")
 # PR Comment ---
 comment = comment + "\nPlease review the modules listed to ensure all necessary changes are accounted for before merging."
 pull_request.create_issue_comment(comment)
-logger.info("Comment finalized and created on Pull Request " + pull_request_id)
+logger.info("Comment finalized and created on Pull Request " + str(pull_request_id))
 
 g.close()
