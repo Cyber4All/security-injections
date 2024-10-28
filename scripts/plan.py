@@ -27,9 +27,9 @@ try:
     pull_request = repo.get_pull(pull_request_id)
     commits = pull_request.get_commits()
     logger.info("Authorization complete, Repository and Pull Request retrieved.")
-except:
-    logger.error("Error in GitHub authorization.")
-    sys.exit()
+except Exception as e:
+    logger.error("Error in GitHub authorization: " + e)
+    exit(1)
 
 
 absoluteFilePaths = []
@@ -42,11 +42,10 @@ The table includes the parent, grandparent, and great-grandparent directories to
 | Module Name              | Parent Folder            | Grandparent Folder       | Great-Grandparent Folder |
 | ------------------------ | ------------------------ | ------------------------ | ------------------------ |"""
 
-logger.info("Viewing Pull Request " + str(pull_request_id) + " commit history..")
+logger.info(f"Viewing Pull Request {pull_request_id} commit history..")
 
 for c in commits:
-    files = c.files
-    for f in files:
+    for f in c.files:
         path = os.path.abspath(f.filename)
         if "content/" in path and path not in absoluteFilePaths:
             logger.info("File: " + path + ", added to list of changed modules.")
@@ -54,7 +53,7 @@ for c in commits:
 
 if not absoluteFilePaths: # if no commits have changes to modules, exit
     logger.info("Commits contain no changes to content modules, exiting process.")
-    sys.exit()
+    exit(1)
 
 output = open("scripts/moduleOutput.txt", "w") # creates new text file
 

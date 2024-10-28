@@ -134,7 +134,6 @@ rl.on('line', (line) => {  // Read the file line by line
 	var parent = words[0]; // parent folder is the first element
 	var grandparent = words[1]; // grandparent folder is the second element
 	var greatgrandparent = words[2]; // great  grandparent folder is the third element
-	// console.log("PARENT: '" + parent + "', GRANDPARENT: '" + grandparent + "', GREAT GRAND PARENT: '" + greatgrandparent + "'");
 	exports.write_3(greatgrandparent, grandparent, parent);
   });
   

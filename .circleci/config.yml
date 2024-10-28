@@ -41,10 +41,7 @@ jobs:
 
   deploy:
     executor: aws-cli/default
-    # docker:
-    #   - image: cimg/python:3.8
     steps:  
-      # - checkout
       - aws-cli/setup:
           region: us-east-1
           role_arn: $S3_OIDC_ROLE
@@ -53,7 +50,6 @@ jobs:
       - aws-s3/sync:
           from: "outputDir/*"
           to: "s3//security-injections.yeetbot.click"
-
       - run:
           name: Invalidate Cloudfront
           command: aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --paths "./*"
