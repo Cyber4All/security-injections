@@ -42,7 +42,7 @@ try:
     commits = pull_request.get_commits()
     logger.info("Authorization complete, Repository and Pull Request retrieved.")
 except Exception as e:
-    logger.error("Error in GitHub authorization: " + e)
+    logger.error("Error in GitHub authorization: " + str(e))
     exit(1)
 
 
