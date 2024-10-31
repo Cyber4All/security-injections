@@ -105,22 +105,23 @@ if __name__ == "__main__":
 
     ORG_NAME = "Cyber4All"
 
-    try:
-        g = Github(auth=Auth.Token(GITHUB_TOKEN))
-        repo = g.get_repo(f"{ORG_NAME}/Security-Injections")
-        pull_request_id = (
-            get_pull_request_id()
-            if not CIRCLE_PULL_REQUEST
-            else int(CIRCLE_PULL_REQUEST.split("/")[-1])
-        )
+    # try:
+    g = Github(auth=Auth.Token(GITHUB_TOKEN))
+    repo = g.get_repo(f"{ORG_NAME}/Security-Injections")
+    pull_request_id = (
+        get_pull_request_id()
+        if not CIRCLE_PULL_REQUEST
+        else int(CIRCLE_PULL_REQUEST.split("/")[-1])
+    )
 
-        pull_request = repo.get_pull(pull_request_id)
-        commits = pull_request.get_commits()
-        logger.info("Authorization complete, Repository and Pull Request retrieved.")
-    except Exception as e:
-        logger.error(e)
-        logger.error("Error in GitHub authorization: " + str(e))
-        exit(1)
+    pull_request = repo.get_pull(pull_request_id)
+    commits = pull_request.get_commits()
+    logger.info("Authorization complete, Repository and Pull Request retrieved.")
+    # except Exception as e:
+    #     print(e)
+    #     logger.error(e)
+    #     logger.error("Error in GitHub authorization: " + str(e))
+    #     exit(1)
 
     changes = get_plan()
 
