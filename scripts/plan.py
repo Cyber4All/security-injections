@@ -50,10 +50,11 @@ def get_plan():
 
     # example of what a real path would look like for content changes -
     # content/Interdisciplinary/Business/CAT/content.json
-    with open("scripts/moduleOutput.txt", "w") as output:  # creates new text file
-        for change in changes:
-            # output.txt would look like: CAT,Business,Interdisciplinary,
-            output.write(change[1] + "," + change[2] + "," + change[3] + "\n")
+    output = open("scripts/moduleOutput.txt", "w")
+    for change in changes:
+        # output.txt would look like: CAT,Business,Interdisciplinary,
+        output.write(change[1] + "," + change[2] + "," + change[3] + "\n")
+    output.close()
 
     return changes
 
