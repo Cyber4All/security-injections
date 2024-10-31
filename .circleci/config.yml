@@ -53,6 +53,12 @@ jobs:
           role_arn: $S3_OIDC_ROLE
       - attach_workspace:
           at: .
+      - run:
+          name: Check for Files to Deploy
+          command: |
+            if [ ! -f ~/project/outputDir/* ]; then
+              circleci-agent step halt
+            fi
       - aws-s3/sync:
           from: "outputDir/*"
           to: "s3//security-injections.yeetbot.click"
