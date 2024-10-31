@@ -60,13 +60,14 @@ def get_plan():
 def make_comment(changes):
     """Returns a comment for the pull request with the modules that have been changed."""
     comment = """
-    # Modules to be Updated Upon Merging
-    This pull request affects several modules that will be updated upon merging. 
-    Below is a table listing the impacted modules and their corresponding locations in the repository. 
-    The table includes the parent, grandparent, and great-grandparent directories to provide better context about where these modules are located.
+# Modules to be Updated Upon Merging
+This pull request affects several modules that will be updated upon merging. 
+Below is a table listing the impacted modules and their corresponding locations in the repository. 
+The table includes the parent, grandparent, and great-grandparent directories to provide better context about where these modules are located.
 
-    | Module Name              | Parent Folder            | Grandparent Folder       | Great-Grandparent Folder |
-    | ------------------------ | ------------------------ | ------------------------ | ------------------------ |"""
+| Module Name              | Parent Folder            | Grandparent Folder       | Great-Grandparent Folder |
+| ------------------------ | ------------------------ | ------------------------ | ------------------------ |"""
+
     for change in changes:
         # would return ['', 'Users', 'username', 'Documents', 'clark', 'security_injections', 'security-injections', 'content', 'Interdisciplinary', 'Business', 'CAT', 'content.json']
         module = change[0]
