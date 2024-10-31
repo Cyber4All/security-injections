@@ -15,6 +15,7 @@ logging.basicConfig(
 def get_pull_request_id():
     pull_requests = repo.get_pulls(state="closed")
     for pr in pull_requests:
+        print(pr.title, pr.head.sha, pr)
         if pr.head.sha == CIRCLE_SHA1:
             return pr.number
 
