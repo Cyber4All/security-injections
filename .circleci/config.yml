@@ -60,7 +60,7 @@ jobs:
               circleci-agent step halt
             fi
       - aws-s3/sync:
-          from: "outputDir/*"
+          from: ./outputDir
           to: "s3//security-injections.yeetbot.click"
       - run:
           name: Invalidate Cloudfront
