@@ -32,9 +32,7 @@ def get_plan():
                 logger.info("File: " + path + ", added to list of changed modules.")
                 absoluteFilePaths.append(path)
 
-    if not absoluteFilePaths:  # if no commits have changes to modules, exit
-        logger.info("Commits contain no changes to content modules, exiting process.")
-        exit()
+    logger.info(f"Commits contain {len(absoluteFilePaths)} changes to content modules.")
 
     changes = []
     for path in absoluteFilePaths:
@@ -122,7 +120,7 @@ if __name__ == "__main__":
 
     changes = get_plan()
 
-    if CIRCLE_PULL_REQUEST:
+    if CIRCLE_PULL_REQUEST and len(changes) > 0:
         comment = make_comment(changes)
         pull_request.create_issue_comment(comment)
         logger.info(
