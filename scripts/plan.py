@@ -67,7 +67,7 @@ for c in commits:
 
 if not absoluteFilePaths:  # if no commits have changes to modules, exit
     logger.info("Commits contain no changes to content modules, exiting process.")
-    exit(1)
+    exit()
 
 output = open("scripts/moduleOutput.txt", "w")  # creates new text file
 
