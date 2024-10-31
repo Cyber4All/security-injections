@@ -61,7 +61,7 @@ jobs:
             fi
       - aws-s3/sync:
           from: ./outputDir
-          to: "s3//security-injections.yeetbot.click"
+          to: "s3://security-injections.yeetbot.click"
       - run:
           name: Invalidate Cloudfront
           command: aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --paths "./*"
