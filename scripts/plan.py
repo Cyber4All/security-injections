@@ -33,7 +33,7 @@ try:
     repo = g.get_repo("Cyber4All/Security-Injections")
 
     pull_request_id = (
-        get_pull_request_id
+        get_pull_request_id()
         if not CIRCLE_PULL_REQUEST
         else int(CIRCLE_PULL_REQUEST.split("/")[-1])
     )
