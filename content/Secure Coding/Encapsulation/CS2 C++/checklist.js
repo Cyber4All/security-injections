@@ -1,5 +1,4 @@
 $(document).ready(function() {
-	
 	var name = "Pgm1CL";
 	// track id of the current checklist task (initialized later)
 	var current;
