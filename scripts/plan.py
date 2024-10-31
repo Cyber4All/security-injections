@@ -94,6 +94,8 @@ def make_comment(changes):
             + "\n\nPlease review the modules listed to ensure all necessary changes are accounted for before merging."
         )
 
+        return comment
+
 
 if __name__ == "__main__":
     CIRCLE_PULL_REQUEST = os.getenv("CIRCLE_PULL_REQUEST")
