@@ -108,6 +108,10 @@ if __name__ == "__main__":
     # try:
     g = Github(auth=Auth.Token(GITHUB_TOKEN))
     repo = g.get_repo(f"{ORG_NAME}/Security-Injections")
+
+    print(CIRCLE_PULL_REQUEST)
+    print(get_pull_request_id())
+
     pull_request_id = (
         get_pull_request_id()
         if not CIRCLE_PULL_REQUEST
