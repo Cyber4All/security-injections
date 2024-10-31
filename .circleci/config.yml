@@ -47,6 +47,13 @@ jobs:
 
   deploy:
     executor: aws-cli/default
+    parameters: 
+      bucket_name: 
+        type: string
+      distribution_id:
+        description: |
+          The CloudFront distribution ID to invalidate.
+        type: env_var_name
     steps:  
       - aws-cli/setup:
           region: us-east-1
@@ -61,10 +68,10 @@ jobs:
             fi
       - aws-s3/sync:
           from: ./outputDir
-          to: "s3://security-injections.yeetbot.click"
+          to: "s3://<<parameters.bucket_name>>"
       - run:
           name: Invalidate Cloudfront
-          command: aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --paths /*
+          command: aws cloudfront create-invalidation --distribution-id $<<parameters.distribution_id>> --paths /*
       - slack/notify:
           event: fail
           template: basic_fail_1
@@ -84,7 +91,18 @@ workflows:
     - deploy:
         requires: [build]
         context: [ aws_staging, Slack ]
+        bucket_name: security-injections.yeetbot.click
+        distribution_id: DISTRIBUTION_ID
         filters:
           branches:
             only:
             - /main/ 
+    - deploy:
+        requires: [build]
+        context: [ AWS, Slack ]
+        bucket_name: security-injections.clark.center
+        distribution_id: PROD_DISTRIBUTION_ID
+        filters:
+          branches:
+            only:
+            - /releases/ 
