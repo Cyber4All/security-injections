@@ -17,11 +17,9 @@ def get_pull_request_id():
     return max([pr.number for pr in pull_requests])
 
 
-def get_plan():
+def get_plan(commits):
     """Returns a tuple of the modules that have been changed in the pull request."""
-
     logger.info(f"Viewing Pull Request {pull_request_id} commit history..")
-
     absoluteFilePaths = []
     for c in commits:
         for f in c.files:
@@ -103,35 +101,21 @@ if __name__ == "__main__":
 
     ORG_NAME = "Cyber4All"
 
-    # try:
     g = Github(auth=Auth.Token(GITHUB_TOKEN))
     repo = g.get_repo(f"{ORG_NAME}/Security-Injections")
-
-    print(CIRCLE_PULL_REQUEST)
-    print(get_pull_request_id())
-
     pull_request_id = (
         get_pull_request_id()
         if not CIRCLE_PULL_REQUEST
         else int(CIRCLE_PULL_REQUEST.split("/")[-1])
     )
-
     pull_request = repo.get_pull(pull_request_id)
-    commits = pull_request.get_commits()
-    logger.info("Authorization complete, Repository and Pull Request retrieved.")
-    # except Exception as e:
-    #     print(e)
-    #     logger.error(e)
-    #     logger.error("Error in GitHub authorization: " + str(e))
-    #     exit(1)
+    logger.info(f"Pull Request {pull_request.title} retrieved.")
 
-    changes = get_plan()
+    changes = get_plan(pull_request.get_commits())
 
     if CIRCLE_PULL_REQUEST and len(changes) > 0:
         comment = make_comment(changes)
         pull_request.create_issue_comment(comment)
-        logger.info(
-            "Comment finalized and created on Pull Request " + str(pull_request_id)
-        )
+        logger.info(f"Comment finalized and created on Pull Request {pull_request_id}")
 
     g.close()
