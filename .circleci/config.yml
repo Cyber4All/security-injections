@@ -34,6 +34,12 @@ jobs:
       - run: 
           command: |
             node create.js scripts/moduleOutput.txt
+      - run:
+          name: Check for Output
+          command: |
+            if [ ! -f ~/project/outputDir/* ]; then
+              circleci-agent step halt
+            fi
       - persist_to_workspace:
           root: ~/project
           paths:
