@@ -56,7 +56,7 @@
                 },
                 {
                     "type": "subheader",
-                    "text": "Example of Occurence: Scenarios"
+                    "text": "Example of occurrence: Scenarios"
                 },
                 {
                     "type": "paragraph",
@@ -205,7 +205,7 @@
                         },
                         {
                             "id": "r1d",
-                            "text": "The bank may only communicate documents through secure upload and download from the website, or use US Mail in a secure way."
+                            "text": "The bank may only communicate documents through secure upload and download from the website, or use U.S. Mail in a secure way."
                         }
                     ],
                     "answer": "r1d"
@@ -293,7 +293,7 @@
                 {
                     "type": "question",
                     "id": "dq2",
-                    "prompt": "It is not legal for any business operating in the US to penetrate cyber defenses of any other business. There is no law protecting the US business from cyber attack from another country. It is difficult for FBI to go after international rogues. It is believed that NSA has more knowledge and capability in cyber security than any other organization. Would it be ethical for NSA to help US businesses in cybersecurity? <i>[Note: Would they want to? It might expose them.]</i>",
+                    "prompt": "It is not legal for any business operating in the US to penetrate cyber defenses of any other business. There is no law protecting the US business from cyber attack from another country. It is difficult for the FBI to go after international rogues. It is believed that NSA has more knowledge and capability in cyber security than any other organization. Would it be ethical for NSA to help US businesses in cybersecurity? <i>[Note: Would they want to? It might expose them.]</i>",
                     "ignored": true,
                     "mode": "textarea",
                     "pattern": "null"
