@@ -1,7 +1,7 @@
 {
     "name": "Computer Literacy",
     "variant": "Phishing",
-    "grant": "The Security Injections@Towson, SPLASH@Towson, and Cyber4All projects are supported by the National Science Foundation under grants NSF DUE-1241738, NSF DUE -0817267, NSF DGE-1516113, NSF DGE-1516113, NSF DGE-1241649, the GenCyber program, and the Intel Corporation.",
+    "grant": "The Security Injections@Towson, SPLASH@Towson, and Cyber4All projects are supported by the National Science Foundation under grants NSF DUE-1241738, NSF DUE -0817267, NSF DGE-1516113, NSF DGE-1241649, the GenCyber program, and the Intel Corporation.",
     "license": {
         "name": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License",
         "link": "http://creativecommons.org/licenses/by-nc-sa/3.0/"
@@ -36,7 +36,7 @@
                 },
                 {
                     "type": "subheader",
-                    "text": "Example of occurence:"
+                    "text": "Example of occurrence:"
                 },
                 {
                     "type": "paragraph",
@@ -53,7 +53,7 @@
                 {
                     "type": "image",
                     "src": "https://s3.amazonaws.com/security-injections.clark.center/assets/Computer_Literacy-Phishing/phishing-email.jpeg",
-                    "alt": "Amazon phising example",
+                    "alt": "Amazon Phishing example",
                     "width": 581,
                     "height": 292,
                     "float": null
@@ -118,7 +118,7 @@
                 {
                     "type": "image",
                     "src": "https://s3.amazonaws.com/security-injections.clark.center/assets/Computer_Literacy-Phishing/phishing-comic.jpeg",
-                    "alt": "Phising comic",
+                    "alt": "Phishing comic",
                     "width": 992,
                     "height": 603,
                     "float": null
@@ -134,7 +134,7 @@
                 {
                     "type": "image",
                     "src": "https://s3.amazonaws.com/security-injections.clark.center/assets/Computer_Literacy-Phishing/phish-game1.jpeg",
-                    "alt": "Anti-Phising",
+                    "alt": "Anti-Phishing",
                     "width": 552,
                     "height": 414,
                     "float": null
@@ -286,7 +286,7 @@
                                 },
                                 {
                                     "id": "q7",
-                                    "text": "7. Does the email ask you for personal information such as passwords and social security number?",
+                                    "text": "7. Does the email ask you for personal information such as passwords and Social Security number?",
                                     "ans": false,
                                     "js": false
                                 }
