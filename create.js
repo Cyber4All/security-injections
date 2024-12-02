@@ -134,7 +134,12 @@ rl.on('line', (line) => {  // Read the file line by line
 	var parent = words[0]; // parent folder is the first element
 	var grandparent = words[1]; // grandparent folder is the second element
 	var greatgrandparent = words[2]; // great  grandparent folder is the third element
-	exports.write_3(greatgrandparent, grandparent, parent);
+	try {
+		exports.write_3(greatgrandparent, grandparent, parent);
+	} catch (e) {
+		console.log('Welp ', e);
+	}
+
   });
   
   // Handle end of file
