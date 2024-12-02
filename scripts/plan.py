@@ -115,7 +115,7 @@ if __name__ == "__main__":
 
     g = Github(auth=Auth.Token(GITHUB_TOKEN))
     repo = g.get_repo(f"{ORG_NAME}/Security-Injections")
-    pull_request_id = get_pull_request_id()
+    pull_request_id = get_pull_request_id(CIRCLE_BRANCH)
     pull_request = repo.get_pull(pull_request_id)
     logger.info(f"Pull Request {pull_request.title} retrieved.")
 
