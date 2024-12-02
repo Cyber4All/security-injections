@@ -38,9 +38,9 @@ exports.parse = function(content, prereqs) {
 	}
 	
 	// // check if module and variant fields match
-	// if(prereqs.name != module.name || prereqs.variant != module.variant) {
-	// 	throw "Module name and variant must match file location and name";
-	// }
+	if(prereqs.name != module.name || prereqs.variant != module.variant) {
+		throw "Module name and variant must match file location and name";
+	}
 	
 	// deep search: replace all values matching "./<file>" with the file contents
 	var re = /^\.\/(.+)$/;
