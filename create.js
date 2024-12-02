@@ -21,7 +21,7 @@ exports.write_3 = function(grandp, name, variant, dev) {
 	if(typeof(dev)==='undefined') dev = false;		// default value for dev
 
 	// CONSTANTS
-	var contentDir = "content/" + grandp + "/";
+	var contentDir = grandp + "/";
 
 	var resourceDir = "resources/";
 	var outputDir = "outputDir/";
