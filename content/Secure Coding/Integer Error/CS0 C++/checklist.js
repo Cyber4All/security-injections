@@ -10,6 +10,7 @@ $(document).ready(function() {
 	// helps reset prog bar for each question
 	var previousWaitingOnCount = 0;
 
+	
 	/**
 	 * returns the id of the next question, and rearranges class indicators
 	 * if question is not provided, initialize the first question

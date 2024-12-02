@@ -12,8 +12,20 @@ logging.basicConfig(
 )
 
 
-def get_pull_request_id():
-    pull_requests = repo.get_pulls(state="closed")
+def get_pull_request_id(branch):
+    """Gets the Pull Request ID to generate the plan for.
+
+    Args:
+        branch (str): the CIRCLE_BRANCH environment variable from CircleCI
+
+    Returns:
+        int: the Pull Request ID
+    """
+    pull_requests = (
+        repo.get_pulls(state="closed")
+        if branch in ["main", "releases"]
+        else repo.get_pulls(state="open", head=branch)
+    )
     return max([pr.number for pr in pull_requests])
 
 
@@ -95,7 +107,7 @@ The table includes the parent, grandparent, and great-grandparent directories to
 
 
 if __name__ == "__main__":
-    CIRCLE_PULL_REQUEST = os.getenv("CIRCLE_PULL_REQUEST")
+    CIRCLE_BRANCH = os.getenv("CIRCLE_BRANCH")
     CIRCLE_SHA1 = os.getenv("CIRCLE_SHA1")
     GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
 
@@ -103,17 +115,13 @@ if __name__ == "__main__":
 
     g = Github(auth=Auth.Token(GITHUB_TOKEN))
     repo = g.get_repo(f"{ORG_NAME}/Security-Injections")
-    pull_request_id = (
-        get_pull_request_id()
-        if not CIRCLE_PULL_REQUEST
-        else int(CIRCLE_PULL_REQUEST.split("/")[-1])
-    )
+    pull_request_id = get_pull_request_id(CIRCLE_BRANCH)
     pull_request = repo.get_pull(pull_request_id)
     logger.info(f"Pull Request {pull_request.title} retrieved.")
 
     changes = get_plan(pull_request.get_commits())
 
-    if CIRCLE_PULL_REQUEST and len(changes) > 0:
+    if CIRCLE_BRANCH not in ["main", "releases"] and len(changes) > 0:
         comment = make_comment(changes)
         pull_request.create_issue_comment(comment)
         logger.info(f"Comment finalized and created on Pull Request {pull_request_id}")
