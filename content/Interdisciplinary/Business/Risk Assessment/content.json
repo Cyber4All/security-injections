@@ -1,7 +1,7 @@
 {
     "name": "Business",
     "variant": "Risk Assessment",
-    "grant": "The Security Injections@Towson, SPLASH@Towson, and Cyber4All projects are supported by the National Science Foundation under grants NSF DUE-1241738, NSF DUE -0817267, NSF DGE-1516113, NSF DGE-1516113, NSF DGE-1241649, the GenCyber program, and the Intel Corporation.",
+    "grant": "The Security Injections@Towson, SPLASH@Towson, and Cyber4All projects are supported by the National Science Foundation under grants NSF DUE-1241738, NSF DUE -0817267, NSF DGE-1516113, NSF DGE-1241649, the GenCyber program, and the Intel Corporation.",
 	"license": {
 		"name": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License",
 		"link": "http://creativecommons.org/licenses/by-nc-sa/3.0/"
@@ -16,7 +16,7 @@
                 },
                 {
                     "type": "paragraph",
-                    "text": "A key aspect of cybersecurity is risk management. The risk management process is a full lifecycle activity that includes identifying, synthesizing, ranking, and keeping track of risks throughout the use of an information system within a organization."
+                    "text": "A key aspect of cybersecurity is risk management. The risk management process is a full lifecycle activity that includes identifying, synthesizing, ranking, and keeping track of risks throughout the use of an information system within an organization."
                 },
                 {
                     "type": "subheader",
@@ -53,7 +53,7 @@
                         "<i>Categorize</i> what sorts of risks your information system is vulnerable to.",
                         "<i>Select</i> what security measures to implement.",
                         "<i>Implement</i> security measures you selected.",
-                        "<i>Assess</i> whether or not they your security measures are correctly implemented.",
+                        "<i>Assess</i> whether or not your security measures are correctly implemented.",
                         "<i>Authorize</i> your business to start using your secured information system.",
                         "<i>Monitor</i> your information system and determine if it effectively handles all security concerns."
                     ],
@@ -82,7 +82,7 @@
             "units": [
                 {
                     "type": "paragraph",
-                    "text": "In this section, we provide a structured technique to complete the first two steps (<i>Categorize</i> and <i>Select</i>) of the RMF. Microsoft's version of this process is called threat modeling (Howard, 2003; Meier et al, 2003; Swiderski & Snyder, 2004):"
+                    "text": "In this section, we provide a structured technique to complete the first two steps (<i>Categorize</i> and <i>Select</i>) of the RMF. Microsoft's version of this process is called threat modeling (Howard, 2003; Meier et al., 2003; Swiderski & Snyder, 2004):"
                 },
                 {
                     "type": "list",
@@ -107,7 +107,7 @@
                 },
                 {
                     "type": "paragraph",
-                    "text": "1. Identify three of your company’s Assets (could be tangible or intangible).<br>Examples: customer database, organization reputation, building, web server, intellectual property, funds"
+                    "text": "1. Identify three of your company’s Assets (could be tangible or intangible).<br>Examples: customer database, organizational reputation, building, web server, intellectual property, funds"
                 },
                 {
                     "type": "paragraph",
