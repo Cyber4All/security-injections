@@ -48,7 +48,7 @@
                 },
                 {
                     "type": "paragraph",
-                    "text": "Buffer overflow vulnerabilities were exploited by the first major attack on the Internet. Known as the Morris worm, this attack infected more than 60,000 machines and shut down much of the Internet for several days in 1988.<br><small><small><small>Carolyn Duffy Marsan Morris Worm Turns 20: Look what it's Done Network World, October 30, 2008  <a href = http://www.networkworld.com/news/2008/103008-morris-worm.html?page=1 > http://www.networkworld.com/news/2008/103008-morris-worm.html?page=1</a></small></small></small>"
+                    "text": "Buffer overflow vulnerabilities were exploited by the first major attack on the Internet. Known as the Morris worm, this attack infected more than 60,000 machines and shut down much of the Internet for several days in 1988.<br><small><small><small>Carolyn Duffy Marsan Morris Worm Turns 20: Look what it's Done Network World, October 30, 2008  <a href = https://www.networkworld.com/article/2268919/morris-worm-turns-20-look-what-it-s-done.html > https://www.networkworld.com/article/2268919/morris-worm-turns-20-look-what-it-s-done.html</a></small></small></small>"
                 },
                 {
                     "type": "subheader",
@@ -56,7 +56,7 @@
                 },
                 {
                     "type": "image",
-                    "src": "http://cis1.towson.edu/~cssecinj/wp-content/uploads/BufferOverFlowProgramCS0ExampleInCode.png",
+                    "src": "https://s3.amazonaws.com/security-injections.clark.center/assets/Buffer_Overflow/BufferOverFlowProgramCS0ExampleInCode.png",
                     "alt": "code",
                     "width": 603,
                     "height": 299,
@@ -206,7 +206,7 @@
             "units": [
                 {
                     "type": "paragraph",
-                    "text": "<strong>STEP 1:</strong> Type (do not copy and paste) the example in code into a program and compile. Run the program."
+                    "text": "<strong>STEP 1:</strong> Type the example in code into a program and compile. Run the program."
                 },
                 {
                     "type": "subheader",
@@ -214,7 +214,7 @@
                 },
                 {
                     "type": "image",
-                    "src": "http://cis1.towson.edu/~cssecinj/wp-content/uploads/BufferOverFlowProgramCS0ExampleInCode.png",
+                    "src": "https://s3.amazonaws.com/security-injections.clark.center/assets/Buffer_Overflow/BufferOverFlowProgramCS0ExampleInCode.png",
                     "alt": "example in code",
                     "width": 603,
                     "height": 299,
@@ -248,7 +248,7 @@
                 },
                 {
                     "type": "paragraph",
-                    "text": "<strong>STEP 3:</strong> Type (do not copy and paste) Program 1 into a new program and compile. Run the program."
+                    "text": "<strong>STEP 3:</strong> Type Program 1 into a new program and compile. Run the program."
                 },
                 {
                     "type": "subheader",
@@ -256,7 +256,7 @@
                 },
                 {
                     "type": "image",
-                    "src": "http://cis1.towson.edu/~cssecinj/wp-content/uploads/BufferOverFlowProgramCS0LabAssignment.png",
+                    "src": "https://s3.amazonaws.com/security-injections.clark.center/assets/Buffer_Overflow/BufferOverFlowProgramCS0LabAssignment.png",
                     "alt": "Program 1",
                     "width": 510,
                     "height": 346,
@@ -275,7 +275,7 @@
                         },
                         {
                             "id": "greater",
-                            "text": "The vulnerability occurs because we do not verify that numElems is less than 10. We can prevent this by making sure that numElems is never greater than or equal to 10."
+                            "text": "The vulnerability occurs because we do not verify that <code>numElems</code> is less than 10. We can prevent this by making sure that <code>numElems</code> is never greater than or equal to 10."
                         },
                         {
                             "id": "double",
@@ -307,13 +307,13 @@
       							"items": [
       								{
       									"id": "dec",
-      									"text": "Click each array declaration in the above code",
+      									"text": "Click the array declaration in the above code",
       									"ans": true,
       									"js": true
       								},
                       {
       									"id": "ref",
-      									"text": "For each array, click all subsequent references",
+      									"text": "Click any array references",
       									"ans": true,
       									"js": true
       								}
@@ -325,25 +325,25 @@
       							"items": [
       								{
       									"id": "range",
-      									"text": "For each array access that uses a variable as an index, write the legal index range next to it",
+      									"text": "Find the array that uses a variable as an index and write the legal index range",
       									"ans": true,
       									"js": true
       								},
       								{
       									"id": "occur",
-      									"text": "For each index marked in the previous step, click all occurrences of that variable",
+      									"text": "Click all occurrences of the index variable from the previous step",
       									"ans": true,
       									"js": true
       								},
       								{
       									"id": "modify",
-      									"text": "Click any assignments, inputs or operations that may modify these index variables",
+      									"text": "Click any assignments, inputs or operations that may modify the index variable",
       									"ans": true,
       									"js": true
       								},
                       {
       									"id": "array",
-      									"text": "Click any array that is indexed by a highlighted index variable",
+      									"text": "Click the array that is indexed by a variable",
       									"ans": true,
       									"js": true
       								}

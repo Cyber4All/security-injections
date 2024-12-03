@@ -48,7 +48,7 @@
                 },
                 {
                     "type": "paragraph",
-                    "text": "A buffer overflow in a 2004 version of AOL's AIM instant-messaging software exposed users to buffer overflow vulnerabilities. If a user posted a URL in their \"I'm away\" message, any of his or her friends who clicked on that link might be vulnerable to attack. AOL's response was to suggest that users update to a new version that would fix the bug.<br><small><small><small>Paul Roberts “AOL IM 'Away' message flaw deemed critical”, Infoworld, August 9, 2004<a href = http://www.infoworld.com/article/04/08/09/HNaolimflaw_1.html > http://www.infoworld.com/article/04/08/09/HNaolimflaw_1.html</a></small></small></small>"
+                    "text": "A buffer overflow in a 2004 version of AOL's AIM instant-messaging software exposed users to buffer overflow vulnerabilities. If a user posted a URL in their \"I'm away\" message, any of his or her friends who clicked on that link might be vulnerable to attack. AOL's response was to suggest that users update to a new version that would fix the bug.<br><small><small><small>Paul Roberts “AOL IM 'Away' message flaw deemed critical”, Infoworld, August 9, 2004<a href = https://www.infoworld.com/article/2666052/aol-im--away--message-flaw-deemed-critical.html > https://www.infoworld.com/article/2666052/aol-im--away--message-flaw-deemed-critical.html</a></small></small></small>"
                 },
                 {
                     "type": "subheader",
@@ -306,13 +306,13 @@
                             "items": [
                                 {
                                     "id": "dec",
-                                    "text": "Click each array declaration in the above code",
+                                    "text": "Click the array declaration in the above code",
                                     "ans": true,
                                     "js": true
                                 },
                                 {
                                     "id": "ref",
-                                    "text": "For each array, click all subsequent references",
+                                    "text": "Click any subsequent array references",
                                     "ans": true,
                                     "js": true
                                 }
@@ -324,25 +324,25 @@
                             "items": [
                                 {
                                     "id": "range",
-                                    "text": "For each array access that uses a variable as an index, write the legal index range next to it",
+                                    "text": "Write the legal index range of the array that uses a variable as an index",
                                     "ans": true,
                                     "js": true
                                 },
                                 {
                                     "id": "occur",
-                                    "text": "For each index marked in the previous step, click all occurrences of that variable",
+                                    "text": "Click all occurrences of the index variable from the previous step",
                                     "ans": true,
                                     "js": true
                                 },
                                 {
                                     "id": "modify",
-                                    "text": "Click any assignments, inputs or operations that may modify these index variables",
+                                    "text": "Click any assignments, inputs or operations that may modify the index variable",
                                     "ans": true,
                                     "js": true
                                 },
                                 {
                                     "id": "array",
-                                    "text": "Click any array that is indexed by a highlighted index variable",
+                                    "text": "Click the array reference that gets indexed by the variable",
                                     "ans": true,
                                     "js": true
                                 }
@@ -354,13 +354,13 @@
                             "items": [
                                 {
                                     "id": "limit",
-                                    "text": "Find loops that modify variables used to index arrays. For any index that occurs as part of a loop conditional, click the loop limit",
+                                    "text": "Find the loop that modifies the array index variable and click the loop limit",
                                     "ans": true,
                                     "js": true
                                 },
                                 {
                                     "id": "range",
-                                    "text": "Fill in the legal range of the array index next to the loop limit. Note if the loop limit could exceed the legal range of the array index.",
+                                    "text": "Fill in the legal range of the array index. Note if the loop limit could exceed the legal range of the array index.",
                                     "ans": true,
                                     "js": true
                                 }

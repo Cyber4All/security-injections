@@ -30,8 +30,8 @@ string getString()
 
 void copyVals(<span class="span-Pgm1CL Pgm1CL-function-loop-Pgm1CL">string s</span>, <span class="span-Pgm1CL Pgm1CL-array-dec-Pgm1CL">char vals[]</span>)  <span class = "span-Pgm1CL Pgm1CL-function-range-Pgm1CL"></span>
 {
-  for (<span class="span-Pgm1CL Pgm1CL-var-occur-Pgm1CL">size_t i</span> = 0; <span class="span-Pgm1CL Pgm1CL-var-occur-Pgm1CL">i</span> <<span class="span-Pgm1CL Pgm1CL-loop-limit-Pgm1CL"> s.length()</span>; <span class="span-Pgm1CL Pgm1CL-var-occur-Pgm1CL"><span class="span-Pgm1CL Pgm1CL-var-modify-Pgm1CL">i++</span></span>)  <span class = "span-Pgm1CL Pgm1CL-loop-range-Pgm1CL"></span>
-    <span class="span-Pgm1CL Pgm1CL-array-ref-Pgm1CL"><span class="span-Pgm1CL Pgm1CL-var-array-Pgm1CL">vals[<span class="span-Pgm1CL Pgm1CL-var-occur-Pgm1CL">i</span>]</span></span> = s.at(<span class="span-Pgm1CL Pgm1CL-var-occur-Pgm1CL">i</span>); <span class = "span-Pgm1CL Pgm1CL-var-range-Pgm1CL"></span>
+  for (<span class="span-Pgm1CL Pgm1CL-var-occur-Pgm1CL">size_t i</span> = 0;<span class="span-Pgm1CL Pgm1CL-var-occur-Pgm1CL"> i </span><<span class="span-Pgm1CL Pgm1CL-loop-limit-Pgm1CL"> s.length()</span>; <span class="span-Pgm1CL Pgm1CL-var-occur-Pgm1CL"><span class="span-Pgm1CL Pgm1CL-var-modify-Pgm1CL">i++</span></span>)  <span class = "span-Pgm1CL Pgm1CL-loop-range-Pgm1CL"></span>
+    <span class="span-Pgm1CL Pgm1CL-array-ref-Pgm1CL"><span class="span-Pgm1CL Pgm1CL-var-array-Pgm1CL">vals<span class="span-Pgm1CL Pgm1CL-var-occur-Pgm1CL">[i]</span></span></span> = s.at<span class="span-Pgm1CL Pgm1CL-var-occur-Pgm1CL">(i)</span>; <span class = "span-Pgm1CL Pgm1CL-var-range-Pgm1CL"></span>
   <span class="span-Pgm1CL Pgm1CL-array-ref-Pgm1CL">vals[s.length() - 1]</span> = '\0';
 }
 
@@ -52,7 +52,7 @@ void getChars(<span class="span-Pgm1CL Pgm1CL-function-index-Pgm1CL">size_t star
 {
   size_t sz = (end - start) + 1;
   // must do only sz-1 characters, to leave room for terminator
-  for (<span class="span-Pgm1CL Pgm1CL-var-occur-Pgm1CL">size_t i</span> = 0; <span class="span-Pgm1CL Pgm1CL-var-occur-Pgm1CL">i</span> < <span class="span-Pgm1CL Pgm1CL-loop-limit-Pgm1CL">(sz - 1)</span>; <span class="span-Pgm1CL Pgm1CL-var-occur-Pgm1CL"><span class="span-Pgm1CL Pgm1CL-var-modify-Pgm1CL">i++</span></span>)  <span class = "span-Pgm1CL Pgm1CL-loop-range-Pgm1CL"></span>
-    <span class="span-Pgm1CL Pgm1CL-array-ref-Pgm1CL"><span class="span-Pgm1CL Pgm1CL-var-array-Pgm1CL">newChars[<span class="span-Pgm1CL Pgm1CL-var-occur-Pgm1CL">i</span>]</span></span> = <span class="span-Pgm1CL Pgm1CL-array-ref-Pgm1CL"><span class="span-Pgm1CL Pgm1CL-array-ref-Pgm1CL"><span class="span-Pgm1CL Pgm1CL-var-modify-Pgm1CL">vals[start + <span class="span-Pgm1CL Pgm1CL-var-occur-Pgm1CL">i</span>];</span></span></span> <span class = "span-Pgm1CL Pgm1CL-var-range-Pgm1CL"></span>
+  for (<span class="span-Pgm1CL Pgm1CL-var-occur-Pgm1CL">size_t i</span> = 0;<span class="span-Pgm1CL Pgm1CL-var-occur-Pgm1CL"> i </span>< <span class="span-Pgm1CL Pgm1CL-loop-limit-Pgm1CL">(sz - 1)</span>; <span class="span-Pgm1CL Pgm1CL-var-occur-Pgm1CL"><span class="span-Pgm1CL Pgm1CL-var-modify-Pgm1CL">i++</span></span>)  <span class = "span-Pgm1CL Pgm1CL-loop-range-Pgm1CL"></span>
+    <span class="span-Pgm1CL Pgm1CL-array-ref-Pgm1CL"><span class="span-Pgm1CL Pgm1CL-var-array-Pgm1CL">newChars<span class="span-Pgm1CL Pgm1CL-var-occur-Pgm1CL">[i]</span></span></span> = <span class="span-Pgm1CL Pgm1CL-array-ref-Pgm1CL"><span class="span-Pgm1CL Pgm1CL-array-ref-Pgm1CL"><span class="span-Pgm1CL Pgm1CL-var-modify-Pgm1CL">vals<span class="span-Pgm1CL Pgm1CL-var-occur-Pgm1CL">[start + i]</span>;</span></span></span> <span class = "span-Pgm1CL Pgm1CL-var-range-Pgm1CL"></span>
   <span class="span-Pgm1CL Pgm1CL-array-ref-Pgm1CL">newChars[sz - 1]</span> = '\0';
 }

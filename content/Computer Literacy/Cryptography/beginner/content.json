@@ -2,17 +2,34 @@
     "name": "Computer Literacy",
     "variant": "Cryptography",
     "grant": "The Security Injections@Towson, SPLASH@Towson, and Cyber4All projects are supported by the National Science Foundation under grants NSF DUE-1241738, NSF DUE -0817267, NSF DGE-1516113, NSF DGE-1516113, NSF DGE-1241649, the GenCyber program, and the Intel Corporation.",
-	"license": {
-		"name": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License",
-		"link": "http://creativecommons.org/licenses/by-nc-sa/3.0/"
-	},
+    "license": {
+        "name": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License",
+        "link": "http://creativecommons.org/licenses/by-nc-sa/3.0/"
+    },
+    
     "sections": [
         {
             "header": "Background",
             "units": [
                 {
                     "type": "paragraph",
-                    "text": "The objective of <strong>cryptography</strong> is to scramble a message (also called <strong>plaintext</strong>) so that only the intended recipient is able to recover the original plaintext. As illustrated in the figure, Bob (the sender) wishes to send a secret message to Alice (the recipient). He <strong>encrypts</strong> the plaintext using an encryption algorithm. The encryption process scrambles the plaintext to produce what is known as <strong>ciphertext</strong>. Alice recovers the plaintext using the process of <strong>decryption</strong>. The encryption/decryption algorithm is usually not secret. What makes the ciphertext difficult to decipher is the use of one or more <strong>keys</strong> in the encryption/decryption process. In <strong>secret key</strong> (or <strong>symmetric</strong>) <strong>encryption</strong>, <i>one key</i> is used and is known only to Bob and Alice. In <strong>public key</strong> (or <strong>asymmetric</strong>) <strong>encryption</strong> both Bob and Alice own a <i>pair of unique keys</i>. Each pair consists of a <strong>private key</strong> and a <strong>public key</strong>. The public key is known by the public, but only Bob and Alice know their respective private keys."
+                    "text": "The objective of <strong>cryptography</strong> is to scramble a message (also called <strong>plaintext</strong>) so that only the intended recipient is able to recover the original plaintext. As illustrated in the figure, Bob (the sender) wishes to send a secret message to Alice (the recipient). He <strong>encrypts</strong> the plaintext using an encryption algorithm. The encryption process scrambles the plaintext to produce what is known as <strong>ciphertext</strong>."
+                },
+                {
+                    "type": "image",
+                    "src": "https://s3.amazonaws.com/security-injections.clark.center/assets/Computer_Literacy-Cryptography/BobandAlice.png",
+                    "alt": "Bob and Alice cryptography",
+                    "width": 600,
+                    "height": 200,
+                    "float": "left"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "<small><small><small>\"Symmetric Encryption\" by Yesem Kurt-Peker, licensed under <a href = https://creativecommons.org/licenses/by/4.0/>CC BY 4.0</a></small></small></small>"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Alice recovers the plaintext using the process of <strong>decryption</strong>. The encryption/decryption algorithm is usually not secret. What makes the ciphertext difficult to decipher is the use of one or more <strong>keys</strong> in the encryption/decryption process. In <strong>secret key encryption</strong> (also called <strong>symmetric encryption</strong>), <i>one</i> key is used and is known only to Bob and Alice. In <strong>public key encryption</strong> (or <strong>asymmetric encryption</strong>), both Bob and Alice own a <i>unique pair</i> of keys. Each pair consists of a <strong>private key</strong> and a <strong>public key</strong>. The public key is known by the public, but only Bob and Alice know their respective private keys."
                 },
                 {
                     "type": "subheader",
@@ -20,7 +37,7 @@
                 },
                 {
                     "type": "paragraph",
-                    "text": "The word cryptography is derived from the Greek words, krypto, meaning hidden, and graphein, meaning to write. Thus, cryptography is the process of making and using codes (or ciphertext) to secure transmission of information. The codes are obtained by converting plaintext (words, or phrases) into encrypted data."
+                    "text": "The word cryptography is derived from the Greek words: <strong><i>krypto</i></strong>, meaning \"hidden\", and <strong><i>graphein</i></strong>, meaning \"to write\". Thus, cryptography is the process of making and using <strong>ciphertext</strong> to secure transmission of information. The ciphertext is obtained by converting <strong>plaintext</strong> into encrypted data."
                 },
                 {
                     "type": "subheader",
@@ -52,7 +69,7 @@
                 },
                 {
                     "type": "paragraph",
-                    "text": "An unspecified portion of the stolen credit and debit card numbers were then sold online, and some were used to make unauthorized purchases and withdrawals from banks, according to the indictment, which was filed in United States District Court in Newark…"
+                    "text": "An unspecified portion of the stolen credit and debit card numbers were then sold online, and some were used to make unauthorized purchases and withdrawals from banks, according to the indictment, which was filed in United States District Court in Newark."
                 },
                 {
                     "type": "paragraph",
@@ -228,43 +245,43 @@
                 },
                 {
                     "type": "paragraph",
-                    "text": "Example 1: You can encrypt a file in MS Word 2013 using the steps shown in the figure below."
+                    "text": "Example 1: You can encrypt a file in Microsoft Word using the steps shown in the figure below. Note: The following steps are demonstrated on two operating systems - Mac and Windows."
                 },
                 {
                     "type": "subheader",
                     "text": "Step 1"
                 },
                 {
-                    "type": "image",
-                    "src": "http://cis1.towson.edu/~cssecinj/wp-content/uploads/ency_images//image_1.PNG",
-                    "alt": "Step 1",
-                    "width": 429,
-                    "height": 474,
-                    "float": null
+                    "type": "paragraph",
+                    "text": "Navigate to <strong>Review</strong> and click <strong>Protect</strong>."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "<img src='https://s3.amazonaws.com/security-injections.clark.center/assets/Computer_Literacy-Cryptography/step1_img.png' alt= 'Step 1 - Protect - Mac' style='width:300px; height:100px;' class='col-xs-5'>&nbsp;<img src='https://s3.amazonaws.com/security-injections.clark.center/assets/Computer_Literacy-Cryptography/FileEnc1.jpg' alt= 'Step 2 - Password - Mac' style='width:300px; height:100px;' class='col-xs-5'><br>"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Next, you will be prompted to set your opening and modifying passwords."
                 },
                 {
                     "type": "subheader",
                     "text": "Step 2"
                 },
                 {
-                    "type": "image",
-                    "src": "http://cis1.towson.edu/~cssecinj/wp-content/uploads/ency_images//image_2new.PNG",
-                    "alt": "Step 2",
-                    "width": 300,
-                    "height": 320,
-                    "float": null
+                    "type": "paragraph",
+                    "text": "<img src='https://s3.amazonaws.com/security-injections.clark.center/assets/Computer_Literacy-Cryptography/step2_img.png' alt= 'Step 2 - Password - Mac' style='width:300px; height:100px;' class='col-xs-5'>&nbsp;<img src='https://s3.amazonaws.com/security-injections.clark.center/assets/Computer_Literacy-Cryptography/FileEnc2.jpg' alt= 'Step 2 - Password - MS' style='width:300px; height:100px;' class='col-xs-5'><br>"
                 },
                 {
                     "type": "subheader",
                     "text": "Step 3"
                 },
                 {
-                    "type": "image",
-                    "src": "http://cis1.towson.edu/~cssecinj/wp-content/uploads/ency_images//image_3.PNG",
-                    "alt": "Step 3",
-                    "width": 300,
-                    "height": 400,
-                    "float": null
+                    "type": "paragraph",
+                    "text": "<img src='https://s3.amazonaws.com/security-injections.clark.center/assets/Computer_Literacy-Cryptography/step3_img.png' alt= 'Step 3 - Confirm - Mac' style='width:300px; height:100px;' class='col-xs-5'>&nbsp;<img src='https://s3.amazonaws.com/security-injections.clark.center/assets/Computer_Literacy-Cryptography/FileEnc3.jpg' alt= 'Step 3 - Confirm - MS' style='width:300px; height:100px;' class='col-xs-5'><br>"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Your file is now encrypted."
                 },
                 {
                     "type": "paragraph",
@@ -276,7 +293,7 @@
                         "<strong>How to use it:</strong> To encrypt a file using EFS, right click on the file or folder, select properties and follow the directions in figure below.",
                         "<strong>Encryption:</strong> EFS automatically creates a public key pair (this is done only once. It is not repeated for encryption of future files). However, a unique key called the file encryption key (FEK) is automatically generated every time the user needs to encrypt a file. After encrypting a file, EFS uses the user’s public key to encrypt the FEK. It also encrypts the FEK using the recovery agent’s public key.",
                         "<strong>Decryption:</strong> When you log into your account and try to open an encrypted file, Windows retrieves your private key, decrypts the FEK, and uses it to decrypt the contents of the file as it is read from the hard disk.",
-                        "EFS is a feature of the NTFS file system. Files encrypted with EFS remain encrypted only while they reside on the NTFS volume. Vista Home Basic, Home Premium (and Starter Edition) do not support it.",
+                        "Note: this process is performed on Mac during setup if you opt into \"FileVault,\" which is an option that can be toggled in <strong>System Preferences > Security & Privacy</strong>",
                         "Only the original owner and the computer’s designated recovery agent can access encrypted files."
                     ],
                     "ordered": false
@@ -287,10 +304,10 @@
                 },
                 {
                     "type": "image",
-                    "src": "http://cis1.towson.edu/~cssecinj/wp-content/uploads/ency_images//image_5.PNG",
-                    "alt": "Step 1",
-                    "width": 400,
-                    "height": 364,
+                    "src": "https://s3.amazonaws.com/security-injections.clark.center/assets/Computer_Literacy-Cryptography/EFS1.png",
+                    "alt": "Step 1 - EFS MS",
+                    "width": 500,
+                    "height": 500,
                     "float": null
                 },
                 {
@@ -299,10 +316,10 @@
                 },
                 {
                     "type": "image",
-                    "src": "http://cis1.towson.edu/~cssecinj/wp-content/uploads/ency_images//image_6.PNG",
-                    "alt": "Step 2",
-                    "width": 270,
-                    "height": 364,
+                    "src": "https://s3.amazonaws.com/security-injections.clark.center/assets/Computer_Literacy-Cryptography/EFS2.png",
+                    "alt": "Step 2 - EFS MS",
+                    "width": 400,
+                    "height": 400,
                     "float": null
                 },
                 {
@@ -311,10 +328,10 @@
                 },
                 {
                     "type": "image",
-                    "src": "http://cis1.towson.edu/~cssecinj/wp-content/uploads/ency_images//image_7.PNG",
-                    "alt": "Step 3",
-                    "width": 270,
-                    "height": 364,
+                    "src": "https://s3.amazonaws.com/security-injections.clark.center/assets/Computer_Literacy-Cryptography/EFS3.png",
+                    "alt": "Step 3 - EFS MS",
+                    "width": 400,
+                    "height": 400,
                     "float": null
                 },
                 {
@@ -596,7 +613,7 @@
                 },
                 {
                     "type": "paragraph",
-                    "text": "1. Create a Microsoft word document and encrypt it using Microsoft Word 2013. Submit the encrypted document to your instructor."
+                    "text": "1. Create a Microsoft word document and encrypt using the steps shown in Encrypt Responsibly. Submit the encrypted document to your instructor."
                 },
                 {
                     "type": "paragraph",

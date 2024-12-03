@@ -1,59 +1,7 @@
 # security-injections
-Cybersecurity modules to teach secure programming principles
 
-This repository contains code for web-applications designed to teach secure coding principles to introductory-level CS students.
+A Security Injection is a self-contained learning module that organizations and educators can use to teach students or trainees about a new skill or concept. Security Injections were created by Dr. Blair Taylor of Towson University, who named them so because their purpose is to make it easy for educators to inject secure coding principles into their Computer Science courses. Since their creation in 2008, they have been utilized by more than 200 institutions to teach a variety of subjects.
 
+A Security Injection typically looks like a webpage with a background section, multiple choice questions, short-answer questions, lab assignment(s), and a completion certificate. Note that they are used for teaching purposes only, and not for testing or grading. To try a Security Injection yourself, please visit [this link](https://clark.center/c/secinj).
 
-
-## NODE DEPENDENCIES (must be installed separately; see instructions below)
-- express
-- cors
-- uglify-js
-- uglifycss
-
-
-
-
-
-## SCRIPTS
-- server.js - server-side script to handle interaction with clients
-- create.js - compiles HTML, CSS, JS, and JSON into single HTML document
-- validate.js - parses JSON content and checks that each field is permissible
-
-
-
-
-
-## DIRECTORIES
-- content - contains directories for each module/variant, which contain JSON and other content files
-- design - contains design documents for this project
-- public - repository for all GETtable content, including images, published injections, and minified JSON content
-- resources - contains HTML, JS, and CSS files which are combined into a module
-
-
-
-
-
-## HOW TO INSTALL NODE DEPENENCIES
-1) Install node and npm
-2) Open a terminal
-3) Navigate to your project directory
-4) Type the following command:
-
-`npm install`
-
-5) All dependencies required should be automatically downloaded and stored in a "node_modules" directory in your project folder.
-
-
-
-
-
-## OTHER IMPORTANT STEPS OF CONFIGURATION
-1) On the root of the repository, create a folder called "public". 
-
-`mkdir public`
-
-2) Inside that folder, create another folder called "securityinjections".
-
-`cd public`
-`mkdir securityinjections`
+Want to create your own Security Injection? You can read [Developer's Guide.md](https://github.com/Cyber4All/security-injections/blob/8b9c34a643cff5b0a8a8f24e8f939324358bd944/Developer's%20Guide.md) if you are an experienced developer, or [How to create a Security Injection.md](https://github.com/Cyber4All/security-injections/blob/8b9c34a643cff5b0a8a8f24e8f939324358bd944/How%20to%20create%20a%20Security%20Injection.md) for a full tutorial.

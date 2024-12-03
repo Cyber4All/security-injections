@@ -1,11 +1,12 @@
 {
 	"name": "Computer Literacy",
 	"variant": "Passwords",
-	"grant": "The Security Injections@Towson, SPLASH@Towson, and Cyber4All projects are supported by the National Science Foundation under grants NSF DUE-1241738, NSF DUE -0817267, NSF DGE-1516113, NSF DGE-1516113, NSF DGE-1241649, the GenCyber program, and the Intel Corporation.",
+	"grant": "The Security Injections@Towson, SPLASH@Towson, and Cyber4All projects are supported by the National Science Foundation under grants NSF DUE-1241738, NSF DUE -0817267, NSF DGE-1516113, NSF DGE-1241649, the GenCyber program, and the Intel Corporation.",
 	"license": {
 		"name": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License",
 		"link": "http://creativecommons.org/licenses/by-nc-sa/3.0/"
 	},
+	
 	"sections": [
 		{
 			"header": "Background",
@@ -614,7 +615,7 @@
 				{
 					"type": "list",
 					"items" : [
-						"Use the Password Meter to verify whether your passwords are strong enough. The Password Meter is a free tool and is available at: <a href = http://www.passwordmeter.com> www.passwordmeter.com </a>",
+						"Use Password Monster to verify whether your passwords are strong enough. The Password Monster is a free tool and is available at: <a href = https://www.passwordmonster.com/> https://www.passwordmonster.com/ </a>",
 					  "Click the link to watch a video on <a href = 'https://www.usatoday.com/videos/tech/2016/02/07/79939088'>how to make your passwords less hackable</a>."
 					]
 				}

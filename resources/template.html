@@ -2,7 +2,7 @@
 	<main ng-controller="modCtrl" onselectstart="return false" autocomplete=off>
 		<div id="side-tabs">
 			<a class="feedback" href="mailto:info@secured.team?subject=Security Injections Feedback">
-				<img alt="Submit Feedback to info@secured.team" src="https://cisserv1.towson.edu/~cssecinj/wp-content/uploads/feedback9.png">
+				<p>Provide Feedback</p>
 			</a>
 		</div>
 
@@ -85,7 +85,7 @@
 
 								<div ng-switch-when="image" class="col-sm-12">
 									<img src="{{ unit.src }}" alt="{{ unit.alt }}"
-										style="width: {{ unit.width }} px; height: {{ unit.height }} px; float: {{ unit.float }}; align: {{ unit.align }};"
+										ng-style="{ 'width': '{{unit.width}}px', 'height': '{{ unit.height }} px', 'float': '{{ unit.float }}', 'align': '{{ unit.align }}'}"
 										class="img-responsive">
 								</div>
 								<div ng-switch-when="video" class="col-sm-12 embed-responsive embed-responsive-16by9">
@@ -209,6 +209,11 @@
 													<td class="si-checklist-label-cell">
 														<span id="{{ unit.id+'-'+group.id+'-'+item.id }}-label"
 															ng-bind-html="item.text"></span>
+															<div id="{{ unit.id+'-'+group.id+'-'+item.id }}-progress-label"
+															class="progress-hidden">
+															<div id="{{ unit.id+'-'+group.id+'-'+item.id }}-progress-data-label"
+															class="progress-data"></div>
+															</div>
 													</td>
 													<td style="vertical-align: middle;" ng-if="item.js"
 														class="si-checklist-box-cell">
@@ -234,7 +239,7 @@
 										</div>
 									</div>
 									<div class="col-sm-7 checklist-block" style="position:relative;">
-										<p>Complete by clicking the corresponding code below</p>
+										<p ng-if="unit.code">Complete by clicking the corresponding code below</p>
 										<pre ng-if="unit.code" class="si-checklist-code" ng-bind-html="unit.code"></pre>
 										<script ng-if="unit.javascript" ng-bind="unit.javascript"></script>
 										<noscript>

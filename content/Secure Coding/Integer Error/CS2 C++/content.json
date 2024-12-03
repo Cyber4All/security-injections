@@ -20,7 +20,7 @@
                 },
                 {
                     "type": "image",
-                    "src": "http://imgs.xkcd.com/comics/cant_sleep.png",
+                    "src": "https://s3.amazonaws.com/security-injections.clark.center/assets/Integer_Error/cant_sleep.png",
                     "alt": "*XKCD Comic*",
                     "width": 740,
                     "height": 244,
@@ -30,7 +30,7 @@
                     "type": "attribution",
                     "copyright": "XKCD",
                     "date": "2017",
-                    "link": "http://imgs.xkcd.com/comics/cant_sleep.png"
+                    "link": "https://s3.amazonaws.com/security-injections.clark.center/assets/Integer_Error/cant_sleep.png"
                 },
                 {
                     "type": "subheader",
@@ -140,7 +140,7 @@
                 },
                 {
                     "type": "paragraph",
-                    "text": "<small><small><small>[1]See <a href = https://www.securecoding.cert.org/confluence/display/cplusplus/VOID+INT32-CPP.+Ensure+that+operations+on+signed+integers+do+not+result+in+overflow >https://www.securecoding.cert.org/confluence/display/cplusplus/VOID+INT32-CPP.+Ensure+that+operations+on+signed+integers+do+not+result+in+overflow</a> for examples of solutions for other operations.</small></small></small>"
+                    "text": "<small><small><small>[1]See <a href = https://wiki.sei.cmu.edu/confluence/display/c/INT32-C.+Ensure+that+operations+on+signed+integers+do+not+result+in+overflow > https://wiki.sei.cmu.edu/confluence/display/c/INT32-C.+Ensure+that+operations+on+signed+integers+do+not+result+in+overflow</a> for examples of solutions for other operations.</small></small></small>"
                 },
                 {
                     "type": "question",
@@ -298,7 +298,7 @@
                         },
                         {
                             "id": "vuln",
-                            "header": "For each variable:",
+                            "header": "Check each variable instance:",
                             "items": [
                                 {
                                     "id": "input",
@@ -335,7 +335,7 @@
             "units": [
                 {
                     "type": "image",
-                    "src": "http://4.bp.blogspot.com/-58kvuzDhzus/TWgnjsyE-7I/AAAAAAAAAG4/0HijRxwS8Ew/s1600/group+reaches+s.png",
+                    "src": "https://s3.amazonaws.com/security-injections.clark.center/assets/Integer_Error/group+reaches+s.png",
                     "alt": "*Facebook group image*",
                     "width": 175,
                     "height": 120,

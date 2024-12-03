@@ -137,7 +137,7 @@ navigator.sayswho = (function () {
 
 	// initialize all non-function fields
 	function initialize() {
-		$scope.repo = "https://cisserv1.towson.edu/~cyber4all/modules/content/";		// IP address of our production server TODO: change as needed
+		$scope.repo = "https://security-injections.towson.edu";		// IP address of our production server TODO: change as needed
 		$scope.sectionscompleted = 0;				// start from the first section
 		$scope.loadContent();						// initialize module object and contentError boolean
 		loadCoverPage();
@@ -438,15 +438,22 @@ $scope.checkAnswers = function() {
 			for (j in unit.list) {
 				group = unit.list[j];
 				group_id = id+"-"+group.id;
-
 				for (k in group.items) {
+					// console.log(group.items)
 					item = group.items[k];
+					// console.log('ITEM', item);
 					item_id = group_id+"-"+item.id;
+
+					// console.log("item.value: " + item.value);
+					// console.log("item.ans: " + item.ans);
 
 					// if checkbox hasn't been touched, angular thinks it is undefined
 					if(typeof(item.value)==='undefined') item.value = false;
 					// when checkbox is mediated by javascript, must manually bind item.value
 					if(item.js) item.value = $(item_id).is(':checked');
+
+					// console.log("item.value after: " + item.value);
+					// console.log("item.ans after: " + item.ans);
 
 					var item_right = item.value == item.ans;
 

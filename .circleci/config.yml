@@ -1,0 +1,108 @@
+version: 2.1
+
+orbs:
+  node: circleci/node@6.1.0
+  python: circleci/python@2.1.1
+  aws-cli: circleci/aws-cli@5.1
+  aws-s3: circleci/aws-s3@4.1.0
+  slack: circleci/slack@5.0.0
+
+jobs:
+  plan:
+    executor: python/default
+    steps:
+      - checkout
+      - python/install-packages: 
+          pkg-manager: pip
+      - run: 
+          name: Plan Module Updates
+          command: | 
+            python3 scripts/plan.py
+      - persist_to_workspace:
+          root: ~/project
+          paths: 
+            - scripts/*.txt
+  
+  build:
+    executor: node/default
+    steps:
+      - checkout
+      - attach_workspace:
+          at: .
+      - node/install-packages:
+          pkg-manager: npm
+      - run: 
+          command: |
+            node create.js scripts/moduleOutput.txt
+      - run:
+          name: Check for Output
+          command: |
+            if [ ! -f ~/project/outputDir/* ]; then
+              circleci-agent step halt
+            fi
+      - persist_to_workspace:
+          root: ~/project
+          paths:
+            - outputDir/*
+
+  deploy:
+    executor: aws-cli/default
+    parameters: 
+      bucket_name: 
+        type: string
+      distribution_id:
+        description: |
+          The CloudFront distribution ID to invalidate.
+        type: env_var_name
+    steps:  
+      - aws-cli/setup:
+          region: us-east-1
+          role_arn: $S3_OIDC_ROLE
+      - attach_workspace:
+          at: .
+      - run:
+          name: Check for Files to Deploy
+          command: |
+            if [ ! -f ~/project/outputDir/* ]; then
+              circleci-agent step halt
+            fi
+      - aws-s3/sync:
+          from: ./outputDir
+          to: "s3://<<parameters.bucket_name>>"
+      - run:
+          name: Invalidate Cloudfront
+          command: aws cloudfront create-invalidation --distribution-id $<<parameters.distribution_id>> --paths /*
+      - slack/notify:
+          event: fail
+          template: basic_fail_1
+      - slack/notify:
+          event: pass
+          template: success_tagged_deploy_1
+
+      
+
+workflows:
+  continuous-integration:
+    jobs:
+    - plan:
+        context: [Github]
+    - build:
+        requires: [plan]
+    - deploy:
+        requires: [build]
+        context: [ aws_staging, Slack ]
+        bucket_name: security-injections.yeetbot.click
+        distribution_id: DISTRIBUTION_ID
+        filters:
+          branches:
+            only:
+            - /main/ 
+    - deploy:
+        requires: [build]
+        context: [ AWS, Slack ]
+        bucket_name: security-injections.clark.center
+        distribution_id: PROD_DISTRIBUTION_ID
+        filters:
+          branches:
+            only:
+            - /releases/ 

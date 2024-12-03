@@ -14,32 +14,33 @@ var fs = require('fs');
 var UglifyJS = require("uglify-js");
 var UglifyCSS = require('uglifycss');
 var Validate = require("./validate.js");
+const readline = require('readline');
 
 
-exports.write_3 = function(name, variant, dev) {
+exports.write_3 = function(grandp, name, variant, dev) {
 	if(typeof(dev)==='undefined') dev = false;		// default value for dev
 
-	// CONSTANTSi
-	var contentDir = "content/Interdisciplinary/";
+	// CONSTANTS
+	var contentDir = "content/" + grandp + "/";
 
 	var resourceDir = "resources/";
-	var publicDir = "public/";
-	var moduleDir = publicDir+"securityinjections/";
+	var outputDir = "outputDir/";
 	// MORE CONSTANTS
 	var contentLoc = name+"/"+variant+"/";
 	var templateFile = resourceDir+"template.html";
 	var angularFile = resourceDir+"angular.js";
 	var styleFile = resourceDir+"style.css";
 	var moduleFile = name+'-'+variant+'.html';	// for output
+
 	if(dev) {
 		moduleFile = 'DEV-'+moduleFile;
 	}
 
-	//Make folder for blank JSON
-	var newFolderDir = "public/"+name;
-	if (!fs.existsSync(newFolderDir)){
-	    fs.mkdirSync(newFolderDir);
+	// Ensure the parent directory exists
+	if (!fs.existsSync(outputDir)) {
+		fs.mkdirSync(outputDir);
 	}
+
 
 	// STEP 1 - load all content files and parse/validate/minify into single JSON string
 	var content = {}									// parameters for parsing
@@ -109,88 +110,39 @@ exports.write_3 = function(name, variant, dev) {
 	// Make the URL more readable, avoiding %20 for space characters
 	moduleFile = moduleFile.split(' ').join('_');
 
-	// STEP 4 - write string to output file
-	fs.writeFileSync(publicDir+contentLoc.slice(0,-1)+".json", content);
-	fs.writeFileSync(moduleDir+moduleFile, html);
+	// STEP 4 - write string to output file 
+	fs.writeFileSync(outputDir+moduleFile, html);
 }
 
-// Phase 2: also create a 1.0 write function
+const inputFile = process.argv[2] // input file is passed as an argument in node command
 
+if(!inputFile){
+	console.log('No file provided as argument');
+	process.exit(1);
+}
 
+const fileStream = fs.createReadStream(inputFile, 'utf8');
 
-//Phase 2: module should not have "MAIN"
-// MAIN
+const rl = readline.createInterface({
+	input: fileStream,
+	output: process.stdout,
+	terminal: false
+  });
+  
+rl.on('line', (line) => {  // Read the file line by line
+	var words = line.split(','); // splits each line into an array, dividing elements by the comma as text file is in csv format
+	var parent = words[0]; // parent folder is the first element
+	var grandparent = words[1]; // grandparent folder is the second element
+	var greatgrandparent = words[2]; // great  grandparent folder is the third element
+	try {
+		exports.write_3(greatgrandparent, grandparent, parent);
+	} catch (e) {
+		console.log('Welp ', e);
+	}
 
-// exports.write_3("Integer Error", "CS0 C++");
-// exports.write_3("Integer Error", "CS0 Java");
-// exports.write_3("Integer Error", "CS0 Pseudocode");
-// exports.write_3("Integer Error", "CS1 C++");
-// exports.write_3("Integer Error", "CS1 Java");
-// exports.write_3("Integer Error", "CS2 C++");
-// exports.write_3("Integer Error", "CS2 Java");
-// exports.write_3("Input Validation", "CS0 C++");
-// exports.write_3("Input Validation", "CS0 Java");
-// exports.write_3("Input Validation", "CS0 Python");
-// exports.write_3("Input Validation", "CS0 Pseudocode");
-// exports.write_3("Input Validation", "CS1 C++");
-// exports.write_3("Input Validation", "CS1 Java");
-// exports.write_3("Input Validation", "CS1 Python");
-// exports.write_3("Input Validation", "CS2 C++");
-// exports.write_3("Input Validation", "CS2 Java");
-// exports.write_3("Buffer Overflow", "CS0 C++");
-// exports.write_3("Buffer Overflow", "CS0 Java");
-// exports.write_3("Buffer Overflow", "CS0 Python");
-// exports.write_3("Buffer Overflow", "CS0 Pseudocode");
-// exports.write_3("Buffer Overflow", "CS1 C++");
-// exports.write_3("Buffer Overflow", "CS1 Java");
-// exports.write_3("Buffer Overflow", "CS1 Python");
-// exports.write_3("Buffer Overflow", "CS2 C++");
-// exports.write_3("Buffer Overflow", "CS2 Java");
-// exports.write_3("Software Development Lifecycle", "CS0 C++");
-// exports.write_3("Software Development Lifecycle", "CS0 Java");
-// exports.write_3("Software Development Lifecycle", "CS0 Python");
-// exports.write_3("Best Practices for Secure Variables", "CS1 Java");
-// exports.write_3("Encapsulation", "CS2 C++");
-// exports.write_3("Encapsulation", "CS2 Java");
-// exports.write_3("Data Hiding","CS0 C++");
-// exports.write_3("Data Hiding","CS2 Java");
-// exports.write_3("Data Hiding","CS2 C++");
-// exports.write_3("Data Hiding","CS2 Python");
-// exports.write_3("Exception Handling", "CS2 C++");
-// exports.write_3("Exception Handling", "CS2 Java");
-// exports.write_3("Cross-Site Scripting", "PHP");
-// exports.write_3("Cross-Site Scripting", "Ruby on Rails");
-// exports.write_3("SQL Injections", "Introduction");
-
-// exports.write_3("Computer Literacy", "Passwords");
-// exports.write_3("Computer Literacy", "Phishing");
-// exports.write_3("Computer Literacy", "Cryptography");
-// exports.write_3("Computer Literacy", "Social Networking Security");
-
-
-// exports.write_3("Integer Error", "CS0 C++");
-
-
-// exports.write_3("Integer Error", "CS0 C++ Sample");
-
-// exports.write_3("Industrial Control Systems", "Introduction");
-// exports.write_3("Mobile Risk Management", "Introduction");
-
-// exports.write_3("Mitigating Risk", "Value Modeling");
-// exports.write_3("Healthcare Management", "Risk Management");
-// exports.write_3("Healthcare Management", "HIPPA");
-// exports.write_3("Healthcare Management", "Hipaa");
-// exports.write_3("Business", "Risk Assessment");
-// exports.write_3("Business", "CAT");
-// exports.write_3("Business", "Business Use Security");
-// exports.write_3("Business", "Government Use Security");
-// exports.write_3("Security Training for Election Judges", "Ensuring Pollbook Security");
-// exports.write_3("Security Training for Election Judges", "Ensuring Provisional Voting Security");
-// exports.write_3("Security Training for Election Judges", "Operating the Scanning Unit");
-// exports.write_3("Security Training for Election Judges", "Ensuring Pollbook Security Anne Arundel");
-// exports.write_3("Security Training for Election Judges", "Ensuring Provisional Voting Security Anne Arundel");
-// exports.write_3("Security Training for Election Judges", "Operating the Scanning Unit Anne Arundel");
-// exports.write_3("Security Training for Election Judges", "Chief Judge Security Anne Arundel");
-// exports.write_3("Security Training for Election Judges", "Ensuring Ballot-Marking Devices Security Anne Arundel");
-// exports.write_3("Security Training for Election Judges", "Ensuring Voting Booth Security Anne Arundel");
-// exports.write_3("Security Training for Election Judges", "Same Day Registration");
+  });
+  
+  // Handle end of file
+  rl.on('close', () => {
+	console.log('Finished reading the file.');
+  });

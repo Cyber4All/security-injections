@@ -310,7 +310,7 @@
                         },
                         {
                             "type": "paragraph",
-                            "text": "<img src = 'http://cis1.towson.edu/~cyber4all/wp-content/uploads/2017/08/Picture1.png'><img src = 'http://cis1.towson.edu/~cyber4all/wp-content/uploads/2017/08/Picture2.png'><img src = 'http://cis1.towson.edu/~cyber4all/wp-content/uploads/2017/08/Picture3.png' height='198' width='265'>"
+                            "text": "<img src = 'https://cisserv1.towson.edu/~cyber4all/wp-content/uploads/2017/08/Picture1.png'><img src = 'https://cisserv1.towson.edu/~cyber4all/wp-content/uploads/2017/08/Picture2.png'><img src = 'https://cisserv1.towson.edu/~cyber4all/wp-content/uploads/2017/08/Picture3.png' height='198' width='265'>"
                         },
                         {
                             "type": "paragraph",
@@ -318,7 +318,7 @@
                         },
                         {
                             "type": "image",
-                            "src": "http://cis1.towson.edu/~cyber4all/wp-content/uploads/2017/08/Picture4.png",
+                            "src": "https://cisserv1.towson.edu/~cyber4all/wp-content/uploads/2017/08/Picture4.png",
                             "alt": " ",
                             "width": "265",
                             "height": "198",

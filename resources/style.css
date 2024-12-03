@@ -282,22 +282,9 @@ footer a:hover {
 	}
 }
 
-
-
-
-
-
-
-
-
-
-
-
 textarea {
    resize: none;
 }
-
-
 
 .table-bordered th,
 .table-bordered td {
@@ -308,31 +295,25 @@ textarea {
 	border: 0px solid #999 !important;
 }
 
-
 .feedback{
 position:fixed;
-max-width: 38.46px;
-max-height: 125px;
+max-width: 125px;
+max-height: 200px;
 min-width: 1px;
 min-height: 1px;
 width:100%;
 height: auto;
-right:-5px;
+right:0px;
 top:40%;
 padding:0px 5px 5px 0px;
 z-index: 1;
+transform: rotate(90deg);
 }
 
 .feedback img{width:100%;height:auto;}​
 
-
-
-
-
-
 /* For bootstrap since relies on empty hrefs */
 .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
-
 
 #checkMark {
   position: relative;
@@ -348,7 +329,7 @@ z-index: 1;
   font-size: 35px;
   /*color: #09ad7e;*/
 	color: forestgreen;
-  transition: all .2s;
+  transition: all 1s;
 }
 
 .popover {
@@ -361,6 +342,7 @@ z-index: 1;
     width:auto;
 
 }
+
 .popover:after, .popover:before {
     right: 100%;
     border: solid transparent;
@@ -370,6 +352,7 @@ z-index: 1;
     position: absolute;
     pointer-events: none;
 }
+
 .popover:after {
     border-color: rgba(255, 255, 255, 0);
     border-right-color: #ffffff;
@@ -377,6 +360,7 @@ z-index: 1;
     top: 50%;
     margin-top: -10px;
 }
+
 .popover:before {
     border-color: rgba(201, 201, 201, 0);
     border-right-color: #c9c9c9;
@@ -392,19 +376,23 @@ z-index: 1;
 	height: 40px;
 	/*background-color: #464646;*/
 }
+
 .header-text{
 	font-family: "Sabon";
 	/*color: whitesmoke;*/
 	text-align: left;
 }
+
 .header-image {
     width:auto; /* you can use % */
     height: 20px;
 		float: right;
 }
+
 .page-header{
 	border-bottom: 5px solid #337ab7;
 }
+
 .footer{
 	margin: 0 auto !important;
 	text-align: center !important;
@@ -415,6 +403,7 @@ z-index: 1;
 	max-height:120px;
 	background-color: #464646;
 }
+
 .footer-text{
 	color: whitesmoke;
 	text-align: center;
@@ -425,10 +414,12 @@ z-index: 1;
 	margin-bottom: 0px;
 	background-color:silver;
 }
+
 .navbar-default {
     background-color: whitesmoke;
     border-color: whitesmoke;
 }
+
 .navbar-toggle {
     position: relative;
     float: right;
@@ -454,12 +445,15 @@ z-index: 1;
 		color: #555;
     height: 50px;
 }
+
 .nav > li.disabled > a {
   color: #9999;
 }
+
 .nav-tabs > li.active > a{
   color: #337ab7;
 }
+
 .container{
 	margin-top: 25px;
 	margin-bottom: 25px;
@@ -470,6 +464,7 @@ z-index: 1;
 		padding: 5px;
 		box-shadow: 0 8px 16px -6px black;
 }
+
 .well{
 
 }
@@ -489,7 +484,6 @@ z-index: 1;
 	border: 1px solid red;
 }
 
-
 .si-question-correct .well{
 	background-color: lightgreen;
 }
@@ -497,6 +491,7 @@ z-index: 1;
 .si-question-incorrect .well{
 	background-color: lightpink;
 }
+
 /*
 .si-checkbox-label-correct::before {
 	color: forestgreen;
@@ -517,15 +512,47 @@ z-index: 1;
 	background-color: lightpink;
 }
 
+/* increase font size */
 .si-checklist-active {
-	font-size: 1.6em;
+	font-size: 1.5em;
 }
 
+/* correctly clicked code */
 .si-code-clicked {
 	font-weight: bold;
 	font-style: italic;
+	border-radius: 3px;
+	background-color: lightgreen;
+	transition: background-color 0.5s;
 }
 
-.si-code-vulnerability {
+/* .si-code-vulnerability {
 	background-color: yellow;
+} */
+
+.progress{
+	visibility: visible;
+	width: auto;
+	height: 20px;
+	opacity: 100%;
+	margin-top: 10px;
+	position:relative;
+	border-radius: 10px;
+	background-color: #c9c9c9;
+	transition-delay: 1s;
+	transition: opacity 1s;
+}
+
+.progress-data{
+	width: 0%;
+	height: 100%;
+	background-color: lightgreen;
+	border-radius: 10px;
+	position: absolute;
+	transition: width 1s;
+}
+
+.progress-hidden {
+	visibility: hidden;
+	opacity: 0%;
 }

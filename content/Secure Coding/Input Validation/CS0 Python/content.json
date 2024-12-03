@@ -48,7 +48,7 @@
                 },
                 {
                     "type": "image",
-                    "src": "http://cis1.towson.edu/~cssecinj/wp-content/uploads/fat_finger.jpg",
+                    "src": "https://s3.amazonaws.com/security-injections.clark.center/assets/Input_Validation/fat_finger.jpeg",
                     "alt": "Dominik Joswig",
                     "width": 406,
                     "height": 226,
@@ -344,7 +344,7 @@
       								{
       									"id": "length",
       									"text": "Check length?",
-      									"ans": false,
+      									"ans": true,
       									"js": false
       								},
       								{
@@ -356,7 +356,7 @@
       								{
       									"id": "format",
       									"text": "Check format?",
-      									"ans": false,
+      									"ans": true,
       									"js": false
       								},
                       {
