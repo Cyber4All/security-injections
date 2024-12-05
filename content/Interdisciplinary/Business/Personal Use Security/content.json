@@ -55,7 +55,7 @@
                 },
                 {
                     "type": "subheader",
-                    "text": "Example of Occurence: Scenarios"
+                    "text": "Example of Occurrence: Scenarios"
                 },
                 {
                     "type": "paragraph",
@@ -154,7 +154,7 @@
             "units": [
                 {
                     "type": "subheader",
-                    "text": "How Can These Error Be Avoided?"
+                    "text": "How Can These Errors Be Avoided?"
                 },
                 {
                     "type": "paragraph",
@@ -261,7 +261,7 @@
                 {
                     "type": "question",
                     "id": "dq1",
-                    "prompt": "The original WiMAX IEEE 802.16N city-wide Internet was scrapped because there was no security and too much interference. The current 4G LTE (4th Generation Long Term Evolution) is based on IEEE 802.16e-2005 and has higher levels of security. In moving from 3G to 4G and 4G LTE it often seems that the focus is on greater bandwidth and higher speeds. Discuss the importance of security in what is essentially an open global Internet.",
+                    "prompt": "The original WiMAX IEEE 802.16 city-wide Internet was scrapped because there was no security and too much interference. The current 4G LTE (4th Generation Long Term Evolution) is based on IEEE 802.16e-2005 and has higher levels of security. In moving from 3G to 4G and 4G LTE it often seems that the focus is on greater bandwidth and higher speeds. Discuss the importance of security in what is essentially an open global Internet.",
                     "ignored": true,
                     "mode": "textarea",
                     "pattern": "null"
